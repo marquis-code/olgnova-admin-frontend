@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Withcapera Dashboard",
+      title: "Withcapera Website",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
@@ -48,12 +48,12 @@ export default defineNuxtConfig({
       enabled: true
     },
     meta: {
-      title: "Withcapera Dashboard",
+      title: "Withcapera Website",
       author: "Marquis",
       mobileAppIOS: false,
       mobileApp: true,
       description:
-        "Withcapera Dashboard",
+        "Withcapera Website",
       theme_color: "#27396B"
     },
     icon: {
