@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  target: 'static',
+  ssr: true,
   postcss: {
     plugins: {
       "postcss-import": {},
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Buildr - Build the future of your business",
+      title: "Withcapera Dashboard",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
@@ -41,7 +41,6 @@ export default defineNuxtConfig({
     preconnect: true, // Optional: Preconnect to the font server
     preload: true, // Optional: Preload the font
   },
-  plugins: ["~/plugins/aos.client.ts"],
   css: ["/assets/css/main.css"],
   modules: ['@kevinmarrec/nuxt-pwa', "@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
   pwa: {
@@ -49,51 +48,20 @@ export default defineNuxtConfig({
       enabled: true
     },
     meta: {
-      title: "Buildr - Build the future of your business",
+      title: "Withcapera Dashboard",
       author: "Marquis",
       mobileAppIOS: false,
       mobileApp: true,
       description:
-        "specialize in software development, product design, and bespoke solutions to help businesses innovate and thrive in the digital age.",
-      theme_color: "#27396B",
-      background_color: "#27396B",
-      display: "standalone",
-      start_url: "/",
-      nativeUI: true,
+        "Withcapera Dashboard",
+      theme_color: "#27396B"
     },
     icon: {
       sizes: [64, 120, 144, 152, 192, 384, 512],
     },
     manifest: {
-      name: "Achilles Drill",
+      name: "Marquis",
       lang: "fa",
-      useWebmanifestExtension: false,
-    },
-    runtimeCaching: [
-      {
-        urlPattern: "https://fonts.googleapis.com/.*",
-        handler: "cacheFirst",
-        method: "GET",
-        strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
-      },
-      {
-        urlPattern: "https://fonts.gstatic.com/.*",
-        handler: "cacheFirst",
-        method: "GET",
-        strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
-      },
-      {
-        urlPattern: "https://cdn.snipcart.com/.*",
-        method: "GET",
-        strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
-      },
-      {
-        urlPattern:
-          "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
-        handler: "cacheFirst",
-        method: "GET",
-        strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
-      },
-    ],
+    }
   }
 });
