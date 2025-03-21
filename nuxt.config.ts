@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   postcss: {
     plugins: {
       "postcss-import": {},
@@ -15,9 +15,22 @@ export default defineNuxtConfig({
       title: "Withcapera Website",
       htmlAttrs: { lang: "en" },
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "format-detection", content: "telephone=no" },
+        { name: 'description', content: 'WithCapera' },
+        { name: 'keywords', content: 'WithCapera, Fintech, Finance, website' },
+        { name: 'robots', content: 'index, follow' }, // Allow indexing and following links
+
+        // Open Graph Meta Tags
+        { property: 'og:title', content: 'WithCapera' }, // Open Graph title
+        { property: 'og:description', content: 'Your website description for Open Graph' },
+        { property: 'og:image', content: 'https://example.com/image.jpg' }, // Open Graph image
+        { property: 'og:url', content: 'https://www.yourwebsite.com' }, // Open Graph URL
+        { property: 'og:type', content: 'website' },
+      
+      // Twitter Cards (Optional)
+      { name: 'twitter:card', content: 'summary_large_image' }, // This creates a large image preview on Twitter
+      { name: 'twitter:title', content: 'Your Website Title' },
+      { name: 'twitter:description', content: 'Your website description' },
+      { name: 'twitter:image', content: 'https://example.com/og-image.jpg' }, // Example image
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.svg" },
@@ -49,25 +62,5 @@ export default defineNuxtConfig({
     "@kevinmarrec/nuxt-pwa",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
-  ],
-  pwa: {
-    workbox: {
-      enabled: true,
-    },
-    meta: {
-      title: "Withcapera Website",
-      author: "Marquis",
-      mobileAppIOS: false,
-      mobileApp: true,
-      description: "Withcapera Website",
-      theme_color: "#27396B",
-    },
-    icon: {
-      sizes: [64, 120, 144, 152, 192, 384, 512],
-    },
-    manifest: {
-      name: "Marquis",
-      lang: "fa",
-    },
-  },
+  ]
 });
