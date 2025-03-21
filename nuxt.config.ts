@@ -47,6 +47,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+<<<<<<< HEAD
 
   googleFonts: {
     families: {
@@ -63,4 +64,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
   ]
+=======
+  css: ["/assets/css/main.css"],
+  modules: ["@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
+>>>>>>> b971005 (updated code to remove sitemap)
 });

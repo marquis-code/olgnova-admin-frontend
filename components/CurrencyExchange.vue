@@ -57,7 +57,7 @@
               <div class="relative">
                 <button class="flex items-center bg-gray-100 rounded-full py-2 px-4 text-gray-800">
                   <span class="w-6 h-6 rounded-full overflow-hidden mr-2 flex items-center justify-center">
-                    <img src="/cn-flag.svg" alt="China Flag" class="w-full h-full object-cover" />
+                    <!-- <img src="/cn-flag.svg" alt="China Flag" class="w-full h-full object-cover" /> -->
                   </span>
                   <span class="font-medium">CNY</span>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">

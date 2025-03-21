@@ -5,11 +5,11 @@
         <div class="relative">
           <!-- Hero image with coworking space -->
           <div class="relative">
-            <img 
+            <!-- <img 
               src="/coworking-image.jpg" 
               alt="People collaborating in a coworking space" 
               class="w-full h-auto object-cover rounded-3xl"
-            />
+            /> -->
             
             <!-- Capera text overlay with blend effect -->
             <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
