@@ -1,3 +1,1 @@
-# Nuxt 3 Starter Kit
-
-WithCapera Website
+WithCapera Website Project
