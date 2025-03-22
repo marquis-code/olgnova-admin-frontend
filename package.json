@@ -25,6 +25,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^7.2.9",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@vueuse/core": "^13.0.0",
     "aos": "^3.0.0-beta.6",
     "lucide-vue-next": "^0.483.0",
     "vue3-toastify": "^0.2.1"

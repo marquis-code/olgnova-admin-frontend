@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-5xl mx-auto px-4 py-8">
-      <div class="bg-green-500 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-[#3BAB22] rounded-3xl p-8 md:p-12 relative overflow-hidden">
         <!-- Grid overlay - only covers the background, not the globe -->
         <div class="absolute inset-0 grid-pattern"></div>
         
@@ -12,7 +12,7 @@
           </h1>
           
           <!-- Subtext -->
-          <p class="text-white text-center max-w-2xl mx-auto mb-8 opacity-90 text-base md:text-lg">
+          <p class="text-white text-center max-w-xl mx-auto mb-8 opacity-90 text-base md:text-lg">
             Transfer funds faster to and from your digital accounts via 
             bank transfers or mobile wallets in 60+ countries. Enjoy 
             real-time payments at a fraction of the cost of bank wires.
@@ -22,49 +22,15 @@
           <div class="flex justify-center mb-12">
             <a href="#" class="inline-flex items-center text-white font-medium hover:underline">
               Learn about Payout
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.50005 6C9.50005 6 15.5 10.4189 15.5 12C15.5 13.5812 9.5 18 9.5 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
             </a>
-          </div>
-          
-          <!-- Globe Visualization -->
-          <div class="relative flex justify-center">
-            <div class="globe-container relative">
-              <!-- Globe with mesh pattern -->
-              <div class="globe">
-                <!-- The mesh pattern is applied only to the globe via CSS -->
-              </div>
-              
-              <!-- Transfer routes - curved lines -->
-              <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 400">
-                <path d="M200,80 Q300,150 350,200" stroke="white" fill="none" stroke-width="1" opacity="0.7" />
-                <path d="M200,80 Q100,150 50,200" stroke="white" fill="none" stroke-width="1" opacity="0.7" />
-                <path d="M150,100 Q200,200 300,250" stroke="white" fill="none" stroke-width="1" opacity="0.7" />
-                <path d="M250,100 Q200,200 100,250" stroke="white" fill="none" stroke-width="1" opacity="0.7" />
-                <path d="M200,50 Q250,150 350,150" stroke="white" fill="none" stroke-width="1" opacity="0.7" />
-                <path d="M200,50 Q150,150 50,150" stroke="white" fill="none" stroke-width="1" opacity="0.7" />
-                
-                <!-- Connection dots -->
-                <circle cx="200" cy="80" r="3" fill="white" />
-                <circle cx="350" cy="200" r="3" fill="white" />
-                <circle cx="50" cy="200" r="3" fill="white" />
-                <circle cx="300" cy="250" r="3" fill="white" />
-                <circle cx="100" cy="250" r="3" fill="white" />
-                <circle cx="350" cy="150" r="3" fill="white" />
-                <circle cx="50" cy="150" r="3" fill="white" />
-              </svg>
-              
-              <!-- Transaction notification -->
-              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full py-2 px-4 flex items-center shadow-lg">
-                <div class="w-6 h-6 rounded-full overflow-hidden mr-3">
-                  <img src="/us-flag.svg" alt="US Flag" class="w-full h-full object-cover" />
-                </div>
-                <span class="font-medium mr-3">Sent</span>
-                <span class="font-bold">$398</span>
-              </div>
-            </div>
-          </div>
+</div>
+                                                                                                                                                                                            
+<img src="@/assets/img/global-visualization.png" />
+                                                                                                                                                                               
         </div>
       </div>
     </div>

@@ -1,20 +1,34 @@
 <template>
   <main>
     <GlassyNavbar />
-    <!-- <HeroSection /> -->
+    <div class="platform-container space-y-10 mt-32">
+    <div class="flex justify-center space-y-2 items-center flex-col">
+      <h2 class="text-[#1A1A1B]">Our Platform</h2>
+      <p class="text-[#1A1A1B] text-3xl max-w-xl text-center">Gain seamless access to top-tier global payment solutions with a single contract and API integration.</p>
+    </div>
+
+   <div class="flex justify-center items-center">
+    <img src="@/assets/img/plattform.png" class="w-auto h-[920px]" />
+   </div>
+     </div>
+     <PlatformFeatures />
     <AboutUs />
-    <CaperaCta />
-    <CurrencyExchange />
     <GlobalTransferCard />
+    <CurrencyExchange />
     <IndustrySolutions />
-    <PlatformFeatures />
-    <PlatformGlobe />
-    <SecuritySection />
+    <PlatformBenefits />
+    <GlobalPayouts />
+    <GlobalPayments />
     <TestimonialCarousel />
+    <SecuritySection />
+    <!-- <CaperaCta /> -->
   </main>
 </template>
 
 <script setup>
+import GlobalPayments from '~/components/GlobalPayments.vue';
+import GlobalPayouts from '~/components/GlobalPayouts.vue';
+
 useHead({
   title: 'WithCapera',
   meta: [
