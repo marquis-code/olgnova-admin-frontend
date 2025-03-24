@@ -1,19 +1,12 @@
 <template>
     <footer class="py-12 px-4 md:px-8 bg-white">
       <div class="max-w-7xl mx-auto">
-        <!-- Logo and Social Icons -->
         <div class="flex flex-col space-y-6 mb-10">
           <!-- Logo -->
           <div class="flex items-center">
             <img src="@/assets/icons/logo-black.svg" />
-            <!-- <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10">
-              <path d="M20 0L0 11.5V28.5L20 40L40 28.5V11.5L20 0Z" fill="#1A1A1A"/>
-              <path d="M20 8L8 14.5V27.5L20 34L32 27.5V14.5L20 8Z" fill="#4CAF50"/>
-            </svg>
-            <span class="ml-2 text-2xl font-medium text-gray-900">Capera</span> -->
           </div>
-          
-          <!-- Social Media Icons -->
+        
           <div class="flex space-x-4">
             <!-- Twitter -->
             <a href="#" class="text-gray-600 hover:text-gray-900">

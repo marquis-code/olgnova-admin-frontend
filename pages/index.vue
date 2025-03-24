@@ -21,6 +21,7 @@
     <GlobalPayments />
     <TestimonialCarousel />
     <SecuritySection />
+    <PaymentFooter />
     <!-- <CaperaCta /> -->
   </main>
 </template>
