@@ -1,10 +1,11 @@
 <template>
-    <main>
-  
-    </main>
-  </template>
-  
-  <script setup lang="ts">
-  
-  
-  </script>
+  <div>
+    <IntegrationsHeroSection />
+    <IntegrationsFeaturesSection />
+    <IntegrationsVersatileApiSection />
+    <IntegrationsGettingStartedSection />
+    <IntegrationsScaleSection />
+    <IntegrationsPossibilitiesSection />
+    <IntegrationsCtaSection />
+  </div>
+</template>

@@ -140,6 +140,13 @@
         </div>
       </div>
     </section>
+    <PaymentFooter 
+    title="Exchange on CAPERA" 
+    description="Sign up on Capera to enjoy great FX rates."
+:actions="[
+    { text: 'Get started', onClick: () => console.log('Start clicked') }
+  ]"
+/>
     </div>
   </template>
   

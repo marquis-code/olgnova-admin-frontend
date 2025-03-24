@@ -507,6 +507,13 @@
         </div>
       </div>
     </footer>
+    <PaymentFooter 
+    title="Start trading OTC with CAPERA" 
+    description="If you're ready to unlock OTC trading with Capera, send us an email. A member of the Capera team will reach out to help you get set up."
+:actions="[
+    { text: 'Talk to us', onClick: () => console.log('Start clicked') }
+  ]"
+/>
   </div>
 </template>
 
