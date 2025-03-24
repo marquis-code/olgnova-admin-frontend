@@ -1,6 +1,7 @@
 <template>
   <main>
-    <GlassyNavbar />
+    <LandingHero />
+    <!-- <GlassyNavbar /> -->
     <div class="platform-container space-y-10 mt-32">
     <div class="flex justify-center space-y-2 items-center flex-col">
       <h2 class="text-[#1A1A1B]">Our Platform</h2>
