@@ -1,99 +1,90 @@
 <template>
-    <footer class="py-16 px-4 md:px-8 lg:px-16 border-t border-gray-100">
-      <div class="container mx-auto">
-        <!-- Top section with logo and social icons -->
-        <div class="mb-12">
-          <!-- Logo -->
-          <div class="flex items-center mb-6">
-            <div class="mr-3">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 8L30 0L20 20L0 30L10 8Z" fill="#4CAF50" />
-                <path d="M10 8L30 0L20 40L0 30L10 8Z" fill="#2E7D32" opacity="0.8" />
-              </svg>
-            </div>
-            <span class="text-2xl font-semibold">Capera</span>
-          </div>
-          
-          <!-- Social icons -->
-          <div class="flex space-x-4">
-            <a href="#" aria-label="Twitter">
-              <Twitter class="w-6 h-6 text-gray-700" />
+  <footer class="py-8 px-4 md:px-8">
+    <div class="container mx-auto flex justify-between items-start">
+      <!-- Left Side: Logo and Social Icons -->
+      <div class="flex items-center">
+        <div class="flex flex-col">
+          <img src="@/assets/icons/logo-black.svg" alt="Capera Logo" />
+          <div class="flex space-x-4 pt-3">
+            <a href="#" aria-label="Twitter" class="text-[#1A1A1B] hover:text-gray-800">
+              <img src="@/assets/icons/socials/twitter.svg" />
             </a>
-            <a href="#" aria-label="LinkedIn">
-              <Linkedin class="w-6 h-6 text-gray-700" />
+            <a href="#" aria-label="LinkedIn" class="text-[#1A1A1B] hover:text-gray-800">
+              <img src="@/assets/icons/socials/linkedin.svg" />
             </a>
-            <a href="#" aria-label="Facebook">
-              <Facebook class="w-6 h-6 text-gray-700" />
+            <a href="#" aria-label="Facebook" class="text-[#1A1A1B] hover:text-gray-800">
+              <img src="@/assets/icons/socials/facebook.svg" />
             </a>
           </div>
-        </div>
-        
-        <!-- Footer links -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
-          <!-- Products column -->
-          <div>
-            <h3 class="text-lg font-medium mb-4">Products</h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Global Payouts</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Currency Exchange</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">API Integration</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Over the Counter</a></li>
-            </ul>
-          </div>
-          
-          <!-- Company column -->
-          <div>
-            <h3 class="text-lg font-medium mb-4">Company</h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">About us</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Careers</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Press</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Contact us</a></li>
-            </ul>
-          </div>
-          
-          <!-- Resources column -->
-          <div>
-            <h3 class="text-lg font-medium mb-4">Resources</h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Blog</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Help Center</a></li>
-            </ul>
-          </div>
-          
-          <!-- Legal column -->
-          <div>
-            <h3 class="text-lg font-medium mb-4">Legal</h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Terms & Conditions</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Privacy Policy</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Regulatory</a></li>
-            </ul>
-          </div>
-          
-          <!-- Developer column -->
-          <div>
-            <h3 class="text-lg font-medium mb-4">Developer</h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Documentation</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">API status</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-gray-900">Sandbox</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <!-- Copyright -->
-        <div class="pt-8 border-t border-gray-100">
-          <p class="text-gray-700">© 2025 Capera</p>
         </div>
       </div>
-    </footer>
-  </template>
-  
-  <script setup lang="ts">
-  import { Twitter, Linkedin, Facebook } from 'lucide-vue-next';
-  </script>
-  
-  <style scoped>
-  /* Any additional custom styles can go here */
-  </style>
+      
+      <!-- Right Side: Footer Links -->
+      <div class="grid flex-1 pl-60 grid-cols-5 gap-4">
+        <!-- Products -->
+        <div>
+          <h3 class="f text-[#454745] mb-3">Products</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Global Payouts</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Currency Exchange</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">API Integration</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Over the Counter</a></li>
+          </ul>
+        </div>
+        
+        <!-- Company -->
+        <div>
+          <h3 class="f text-[#454745] mb-3">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">About us</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Careers</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Press</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Contact us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Resources -->
+        <div>
+          <h3 class="f text-[#454745] mb-3">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Blog</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Help Center</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h3 class="f text-[#454745] mb-3">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Terms & Conditions</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Privacy Policy</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Regulatory</a></li>
+          </ul>
+        </div>
+        
+        <!-- Developer -->
+        <div>
+          <h3 class="f text-[#454745] mb-3">Developer</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Documentation</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">API status</a></li>
+            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Sandbox</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="container mx-auto mt-8">
+      <p class="text-[#1A1A1B]">© 2025 Capera</p>
+    </div>
+  </footer>
+</template>
+
+<script setup lang="ts">
+// No additional imports needed
+</script>
+
+<style scoped>
+/* Any additional custom styles can go here */
+</style>

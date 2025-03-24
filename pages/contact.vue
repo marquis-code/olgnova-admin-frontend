@@ -1,9 +1,12 @@
 <template>
+<main>
+  <NavbarSticky />
     <div>
-        <!-- <AboutSiteHeader /> -->
-      <ContactContactSection />
-      <ContactContactCards />
+        <AboutSiteHeader />
+      <ContactSection />
+      <ContactCards />
       <ContactFaqSection />
     </div>
+</main>
   </template>
   

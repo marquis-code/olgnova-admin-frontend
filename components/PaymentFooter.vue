@@ -3,7 +3,7 @@
       <div class="relative w-full overflow-hidden rounded-3xl bg-[#1A1A1B] text-white">
         <!-- Main content -->
         <div class="relative z-10 px-6 py-16 text-center md:px-12 md:py-24 mb-60">
-          <h2 class="mb-4 text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+          <h2 class="mb-4 text-4xl font-bold uppercase lg:max-w-4xl mx-auto tracking-tight md:text-6xl lg:text-7xl">
             {{title}}
           </h2>
           <p class="mx-auto mb-10 max-w-2xl text-base md:text-lg">
