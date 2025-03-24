@@ -21,7 +21,15 @@
     <GlobalPayments />
     <TestimonialCarousel />
     <SecuritySection />
-    <PaymentFooter />
+    <PaymentFooter 
+    title="Ready to start your CAPERA journey?" 
+    description="Join other business users today.
+Contact our professional service team to learn more or open an account online for free."
+:actions="[
+    { text: 'Get started', onClick: () => console.log('Start clicked') },
+    { text: 'Contact Sales', onClick: () => console.log('Docs clicked') }
+  ]"
+/>
     <!-- <CaperaCta /> -->
   </main>
 </template>

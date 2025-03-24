@@ -221,6 +221,15 @@
     </section>
 
     <PayoutsDeveloperSection />
+
+    <PaymentFooter 
+    title="START MAKING PAYMENTS TODAY" 
+    description="Secure, instant transactions with no hidden fees—begin your journey to smarter financial management now."
+:actions="[
+    { text: 'Get started', onClick: () => console.log('Start clicked') },
+    { text: 'Explore our docs', onClick: () => console.log('Docs clicked') }
+  ]"
+/>
   </div>
 </template>
 
