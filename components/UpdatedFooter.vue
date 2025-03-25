@@ -1,6 +1,6 @@
 <template>
   <footer class="py-8 px-4 md:px-8">
-    <div class="container mx-auto flex justify-between items-start">
+    <div class="container mx-auto space-y-6 lg:space-y-0 lg:flex justify-between items-start">
       <!-- Left Side: Logo and Social Icons -->
       <div class="flex items-center">
         <div class="flex flex-col">
@@ -20,7 +20,7 @@
       </div>
       
       <!-- Right Side: Footer Links -->
-      <div class="grid flex-1 pl-60 grid-cols-5 gap-4">
+      <div class="grid flex-1 lg:pl-60 md: grid-cols-2 lg:grid-cols-5 gap-4">
         <!-- Products -->
         <div>
           <h3 class="f text-[#454745] mb-3">Products</h3>

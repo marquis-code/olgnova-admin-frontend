@@ -1,20 +1,12 @@
 <template>
   <div class="font-sans text-gray-900">
     <!-- Navigation -->
-     <Navbar />
+    <NavbarSticky />
 
-    <!-- Mobile Menu -->
-    <div v-if="mobileMenuOpen" class="fixed inset-0 z-40 bg-white pt-20 px-4">
-      <div class="flex flex-col space-y-6 text-xl">
-        <a href="#about" @click="mobileMenuOpen = false" class="hover:text-green-600 transition-colors">About OTC</a>
-        <a href="#features" @click="mobileMenuOpen = false" class="hover:text-green-600 transition-colors">Features</a>
-        <a href="#benefits" @click="mobileMenuOpen = false" class="hover:text-green-600 transition-colors">Benefits</a>
-        <a href="#faq" @click="mobileMenuOpen = false" class="hover:text-green-600 transition-colors">FAQ</a>
-      </div>
-    </div>
+
 
     <!-- Hero Section -->
-    <section class="bg-[#1C5310] text-white pt-24 pb-16 relative overflow-hidden">
+    <section class="bg-[#1C5310] text-white pt-56 pb-16 relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
           <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -27,7 +19,7 @@
         <p class="text-center mb-2 opacity-90">(OTC) OVER THE COUNTER</p>
         <main class="container mx-auto px-4 text-center relative z-10">
         <h1 class="text-5xl md:text-7xl pb-0 mb-0 font-semibold text-white uppercase">Trade Beyond</h1>
-        <div class="flex items-center pt-0 -mt-10 justify-center">
+        <div class="flex items-center pt-0 justify-center">
           <h1 class="text-5xl md:text-7xl font-semibold text-light-green uppercase">Exchanges</h1>
         </div>
         </main>
@@ -358,56 +350,6 @@
       </div>
     </section>
 
-    <!-- CTA Dark Section -->
-    <section class="py-20 bg-gray-900 text-white relative overflow-hidden">
-      <div class="absolute inset-0">
-        <!-- Dotted world map background -->
-        <div class="absolute inset-0 opacity-20">
-          <div v-for="i in 100" :key="i" 
-               class="absolute h-1 w-1 rounded-full bg-white"
-               :style="{
-                 left: `${Math.random() * 100}%`,
-                 top: `${Math.random() * 100}%`,
-                 opacity: Math.random() * 0.8 + 0.2
-               }"
-          ></div>
-        </div>
-        <div class="absolute -left-20 top-1/2 transform -translate-y-1/2 text-[300px] font-semibold text-gray-800/20">
-          OTC
-        </div>
-      </div>
-      
-      <div class="container mx-auto px-4 relative">
-        <h2 
-          class="text-4xl md:text-6xl font-semibold text-center mb-6"
-          v-motion
-          :initial="{ opacity: 0, y: 50 }"
-          :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
-        >
-          START TRADING OTC WITH<br>CAPERA
-        </h2>
-        
-        <p 
-          class="text-center max-w-2xl mx-auto mb-10 opacity-90"
-          v-motion
-          :initial="{ opacity: 0 }"
-          :visibleOnce="{ opacity: 1, transition: { delay: 200, duration: 800 } }"
-        >
-          If you're ready to unlock OTC trading with Capera, send us an email. A member of the Capera team will reach out to help you get set up.
-        </p>
-        
-        <div class="flex justify-center mb-16">
-          <button 
-            class="bg-green-600 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105 hover:bg-green-500"
-            v-motion
-            :initial="{ opacity: 0, scale: 0.8 }"
-            :visibleOnce="{ opacity: 1, scale: 1, transition: { delay: 400, duration: 500 } }"
-          >
-            Talk to us
-          </button>
-        </div>
-      </div>
-    </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-white">
@@ -457,56 +399,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-2xl font-semibold mb-4">Capera</h3>
-            <p class="text-gray-400">Revolutionizing OTC trading with personalized solutions and expert support.</p>
-          </div>
-          
-          <div>
-            <h4 class="font-semibold mb-4">Products</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">OTC Trading</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Currency Exchange</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Risk Management</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Liquidity Solutions</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="font-semibold mb-4">Company</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="font-semibold mb-4">Connect</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Facebook</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p class="text-gray-400">© 2025 Capera. All rights reserved.</p>
-          <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
-          </div>
-        </div>
-      </div>
-    </footer>
     <PaymentFooter 
     title="Start trading OTC with CAPERA" 
     description="If you're ready to unlock OTC trading with Capera, send us an email. A member of the Capera team will reach out to help you get set up."
