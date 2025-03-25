@@ -1,7 +1,9 @@
 <template>
   <main>
     <LandingHero />
-    <!-- <GlassyNavbar /> -->
+   <div class="pt-10">
+    <CurrencyMarquee />
+   </div>
     <div class="platform-container space-y-10 mt-32">
     <div class="flex justify-center space-y-2 items-center flex-col">
       <h2 class="text-[#1A1A1B]">Our Platform</h2>
@@ -12,7 +14,8 @@
     <img src="@/assets/img/plattform.png" class="w-auto h-[920px]" />
    </div>
      </div>
-     <PlatformFeatures />
+     <!-- <PlatformFeatures /> -->
+      <PaymentTabs />
     <AboutUs />
     <GlobalTransferCard />
     <CurrencyExchange />
@@ -31,7 +34,6 @@ Contact our professional service team to learn more or open an account online fo
     { text: 'Contact Sales', onClick: () => console.log('Docs clicked') }
   ]"
 />
-    <!-- <CaperaCta /> -->
   </main>
 </template>
 

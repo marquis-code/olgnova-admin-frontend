@@ -1,6 +1,6 @@
 <template>
-  <Glassy />
-  <section class="bg-[#1C5310] text-white pt-24 pb-16 relative overflow-hidden">
+<NavbarSticky />
+  <section class="bg-[#1C5310] text-white pt-56 pb-16 relative overflow-hidden">
     <div class="absolute inset-0 opacity-20">
       <div class="grid grid-cols-12 h-full">
         <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>

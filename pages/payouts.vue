@@ -1,41 +1,10 @@
 <template>
   <div class="font-sans text-gray-900">
-    <!-- Navigation -->
-    <Navbar />
-
-    <!-- Mobile Menu -->
-    <div v-if="mobileMenuOpen" class="fixed inset-0 z-40 bg-white pt-20 px-4">
-      <div class="flex flex-col space-y-6 text-xl">
-        <a
-          href="#about"
-          @click="mobileMenuOpen = false"
-          class="hover:text-green-600 transition-colors"
-          >About OTC</a
-        >
-        <a
-          href="#features"
-          @click="mobileMenuOpen = false"
-          class="hover:text-green-600 transition-colors"
-          >Features</a
-        >
-        <a
-          href="#benefits"
-          @click="mobileMenuOpen = false"
-          class="hover:text-green-600 transition-colors"
-          >Benefits</a
-        >
-        <a
-          href="#faq"
-          @click="mobileMenuOpen = false"
-          class="hover:text-green-600 transition-colors"
-          >FAQ</a
-        >
-      </div>
-    </div>
+<NavbarSticky />
 
     <!-- Hero Section -->
     <section
-      class="bg-[#1C5310] text-white pt-24 pb-16 relative overflow-hidden"
+      class="bg-[#1C5310] text-white pt-56 pb-16 relative overflow-hidden"
     >
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
@@ -53,14 +22,14 @@
           >
             Instant Payouts,
           </h1>
-          <div class="flex items-center pt-0 -mt-10 flex-col justify-center">
+          <div class="flex items-center pt-0 flex-col justify-center">
             <h1
               class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
             >
               instantly loyal
             </h1>
             <h1
-              class="text-5xl md:text-7xl pt-0 -mt-10 font-semibold text-light-green uppercase"
+              class="text-5xl md:text-7xl pt-0 font-semibold text-light-green uppercase"
             >
               customers
             </h1>
