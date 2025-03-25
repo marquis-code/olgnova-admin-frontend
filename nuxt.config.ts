@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   postcss: {
     plugins: {
       "postcss-import": {},
@@ -12,17 +12,33 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Withcapera Dashboard",
+      title: "Withcapera Website",
       htmlAttrs: { lang: "en" },
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "format-detection", content: "telephone=no" },
+        { name: 'description', content: 'WithCapera' },
+        { name: 'keywords', content: 'WithCapera, Fintech, Finance, website' },
+        { name: 'robots', content: 'index, follow' }, // Allow indexing and following links
+
+        // Open Graph Meta Tags
+        { property: 'og:title', content: 'WithCapera' }, // Open Graph title
+        { property: 'og:description', content: 'Your website description for Open Graph' },
+        { property: 'og:image', content: 'https://example.com/image.jpg' }, // Open Graph image
+        { property: 'og:url', content: 'https://www.yourwebsite.com' }, // Open Graph URL
+        { property: 'og:type', content: 'website' },
+      
+      // Twitter Cards (Optional)
+      { name: 'twitter:card', content: 'summary_large_image' }, // This creates a large image preview on Twitter
+      { name: 'twitter:title', content: 'Your Website Title' },
+      { name: 'twitter:description', content: 'Your website description' },
+      { name: 'twitter:image', content: 'https://example.com/og-image.jpg' }, // Example image
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" },    {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap',
-      }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.svg" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap",
+        },
+      ],
       script: [
         {
           src: "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js",
@@ -34,34 +50,17 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      'Lexend+Tera': [400, 500, 700], // Specify font weights as needed
+      "Lexend+Tera": [400, 500, 700], // Specify font weights as needed
     },
-    display: 'swap', // Optional: Controls how the font is displayed
+    display: "swap", // Optional: Controls how the font is displayed
     prefetch: true, // Optional: Prefetch the font for faster loading
     preconnect: true, // Optional: Preconnect to the font server
     preload: true, // Optional: Preload the font
   },
   css: ["/assets/css/main.css"],
-  modules: ['@kevinmarrec/nuxt-pwa', "@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
-  pwa: {
-    workbox: {
-      enabled: true
-    },
-    meta: {
-      title: "Withcapera Dashboard",
-      author: "Marquis",
-      mobileAppIOS: false,
-      mobileApp: true,
-      description:
-        "Withcapera Dashboard",
-      theme_color: "#27396B"
-    },
-    icon: {
-      sizes: [64, 120, 144, 152, 192, 384, 512],
-    },
-    manifest: {
-      name: "Marquis",
-      lang: "fa",
-    }
-  }
+  modules: [
+    "@kevinmarrec/nuxt-pwa",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts",
+  ]
 });

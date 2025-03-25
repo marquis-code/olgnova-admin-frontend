@@ -18,6 +18,10 @@ module.exports = {
         marquee: 'marquee linear infinite',
       },
       colors: {
+        green: {
+          500: '#4ADE80',
+          900: '#1B4332',
+        },
         gray: {
           25:  "#fafafa",
           50:  "#f2f2f2",
@@ -32,6 +36,9 @@ module.exports = {
           900: "#1a1a1a",
           925: "#0d0d0d",
         },
+      },
+      animation: {
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
