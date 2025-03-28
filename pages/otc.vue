@@ -158,7 +158,7 @@
     </section>
 
     <!-- Start Trading Now Section -->
-    <section class="py-20 bg-[#3BAB22] rounded-xl max-w-7xl mx-auto text-white relative overflow-hidden">
+    <section class="py-20 bg-[#3BAB22] m-3 rounded-xl max-w-7xl mx-auto text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
           <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -211,7 +211,7 @@
     <!-- Original image -->
     <img 
       src="@/assets/icons/start-trading-otc-illustration.svg" 
-      class="h-[700px] w-auto" 
+      class="lg:h-[700px] lg:w-auto" 
       alt="Trading OTC illustration" 
     />
     
