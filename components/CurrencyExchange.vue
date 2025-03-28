@@ -19,8 +19,8 @@
         </div>
   
         <!-- Right side currency converter -->
-        <div class="bg-white max-w-xl w-full">
-              <img src="@/assets/img/capera-value.png" />
+        <div class="bg-white lg:max-w-xl w-full">
+              <img src="@/assets/img/capera-value.png" class="h-full w-full" />
         </div>
       </div>
     </div>

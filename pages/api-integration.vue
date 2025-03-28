@@ -3,9 +3,9 @@
     <IntegrationsHeroSection />
     <IntegrationsFeaturesSection />
     <IntegrationsVersatileApiSection />
+    <IntegrationsPossibilitiesSection />
     <IntegrationsGettingStartedSection />
     <IntegrationsScaleSection />
-    <IntegrationsPossibilitiesSection />
     <IntegrationsCtaSection />
   </div>
 </template>

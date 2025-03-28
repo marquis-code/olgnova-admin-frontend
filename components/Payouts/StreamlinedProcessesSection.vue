@@ -1,10 +1,10 @@
 <template>
-    <section class="py-16 bg-[#F7F7F7] rounded-xl m-10">
+    <section class="py-16 bg-[#F7F7F7] rounded-xl m-2 lg:m-10">
       <div class="container mx-auto px-4 md:px-8 max-w-7xl">
-        <h2 class="text-4xl font-bold text-[#1A1A1B] mb-16">Streamlined Processes</h2>
+        <h2 class="text-3xl lg:text-4xl font-bold text-[#1A1A1B] mb-16">Streamlined Processes</h2>
         
         <div class="flex flex-col lg:flex-row items-center">
-          <div class="w-full lg:w-1/2 space-y-5">
+          <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5">
             <!-- Feature 1 -->
             <div class="flex flex-col space-y-4">
               <div class="w-16 h-16">
@@ -16,8 +16,8 @@
 
                 </div>
               </div>
-              <h3 class="text-2xl font-semibold text-[#1A1A1B]">Automate processes</h3>
-              <p class="text-[#454745] text-lg">Seamlessly scale your operations with the capability to handle thousands of payouts per second.</p>
+              <h3 class="text-xl lg:text-2xl font-medium text-[#1A1A1B]">Automate processes</h3>
+              <p class="text-[#454745] lg:text-lg text-base">Seamlessly scale your operations with the capability to handle thousands of payouts per second.</p>
             </div>
             
             <!-- Feature 2 -->
@@ -33,8 +33,8 @@
 
                 </div>
               </div>
-              <h3 class="text-2xl font-semibold text-[#1A1A1B]">Total visibility and control</h3>
-              <p class="text-[#454745] text-lg">Monitor your payments effortlessly and receive instant notifications when funds arrive.</p>
+              <h3 class="text-xl lg:text-2xl font-medium text-[#1A1A1B]">Total visibility and control</h3>
+              <p class="text-[#454745] lg:text-lg text-base">Monitor your payments effortlessly and receive instant notifications when funds arrive.</p>
             </div>
             
             <!-- Feature 3 -->
@@ -49,8 +49,8 @@
 
                 </div>
               </div>
-              <h3 class="text-2xl font-semibold text-[#1A1A1B]">Streamlined reconciliation</h3>
-              <p class="text-[#454745] text-lg">Using Capera's dashboard? Track payouts in real time. Using our API? Automate payout reporting across all properties.</p>
+              <h3 class="text-xl lg:text-2xl font-medium text-[#1A1A1B]">Streamlined reconciliation</h3>
+              <p class="text-[#454745] lg:text-lg text-base">Using Capera's dashboard? Track payouts in real time. Using our API? Automate payout reporting across all properties.</p>
             </div>
           </div>
           

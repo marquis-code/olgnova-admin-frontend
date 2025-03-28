@@ -47,7 +47,9 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+  build: {
+    transpile: ["lucide-vue-next"],
+  },
   googleFonts: {
     families: {
       "Lexend+Tera": [400, 500, 700], // Specify font weights as needed

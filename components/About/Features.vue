@@ -1,6 +1,6 @@
 <template>
     <section class="py-20 px-4 md:px-8 max-w-6xl mx-auto">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 max-w-4xl mx-auto leading-tight">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium  text-center mb-16 max-w-4xl mx-auto leading-tight">
         We're redefining global payments to enable the businesses of tomorrow.
       </h2>
       

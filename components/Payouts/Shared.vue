@@ -18,7 +18,7 @@
           
                                                                                                                                                                                  
            <div class="flex justify-center items-center">
-            <img src="@/assets/icons/payout-model-illustration.svg" class="h-[767px] w-[770px]" />
+            <img src="@/assets/icons/payout-model-illustration.svg" class="lg:h-[767px] lg:w-[770px]" />
            </div>
                                                                                                                                                                                
         </div>
