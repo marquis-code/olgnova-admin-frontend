@@ -1,10 +1,10 @@
 <template>
-    <section class="py-16 bg-[#F7F7F7] rounded-xl m-10">
+    <section class="py-16 bg-[#F7F7F7] rounded-xl m-2 lg:m-10">
       <div class="container mx-auto px-4 md:px-8 max-w-7xl">
-        <h2 class="text-5xl font-bold text-gray-900 mb-16">Global Payouts</h2>
+        <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-16">Global Payouts</h2>
         
         <div class="flex flex-col lg:flex-row items-center">
-          <div class="w-full lg:w-1/2 space-y-5">
+          <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5">
             <!-- Feature 1 -->
             <div class="flex flex-col space-y-4">
               <div class="w-16 h-16">
@@ -18,8 +18,8 @@
 
                 </div>
               </div>
-              <h3 class="text-2xl font-semibold text-gray-900">Round-the-clock payment solutions</h3>
-              <p class="text-[#454745] text-lg">Send payouts anytime, anywhere—even during holidays—with Capera.</p>
+              <h3 class="text-xl lg:text-2xl font-medium text-gray-900">Round-the-clock payment solutions</h3>
+              <p class="text-[#454745] lg:text-lg text-base">Send payouts anytime, anywhere—even during holidays—with Capera.</p>
             </div>
             
             <!-- Feature 2 -->
@@ -37,8 +37,8 @@
 
                 </div>
               </div>
-              <h3 class="text-2xl font-semibold text-gray-900">Global FX</h3>
-              <p class="text-[#454745] text-lg">Access industry-leading FX rates and eliminate unnecessary conversion fees with ease.</p>
+              <h3 class="text-xl lg:text-2xl font-medium text-gray-900">Global FX</h3>
+              <p class="text-[#454745] lg:text-lg text-base">Access industry-leading FX rates and eliminate unnecessary conversion fees with ease.</p>
             </div>
             
             <!-- Feature 3 -->
@@ -52,8 +52,8 @@
 
                 </div>
               </div>
-              <h3 class="text-2xl font-semibold text-gray-900">Pre-Authorisation for Payments</h3>
-              <p class="text-[#454745] text-lg">Pre-authorisation solutions to prevent payment delays and errors</p>
+              <h3 class="text-xl lg:text-2xl font-medium text-gray-900">Pre-Authorisation for Payments</h3>
+              <p class="text-[#454745] lg:text-lg text-base">Pre-authorisation solutions to prevent payment delays and errors</p>
             </div>
           </div>
           

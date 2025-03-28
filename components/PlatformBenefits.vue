@@ -1,6 +1,6 @@
 <template>
 <main>
-    <section class="max-w-7xl mx-auto">
+    <section class="max-w-7xl mx-auto px-6">
       <h2 class="platform-benefits__title">PLATFORM BENEFITS</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -15,7 +15,7 @@
       </div>
     </section>
     <div class="w-full p-6 mt-14">
-        <img src="@/assets/img/smiling.png" class="w-full" />
+        <img src="@/assets/img/smiling.png" class="w-full h-" />
     </div>
 </main>
   </template>

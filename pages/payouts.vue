@@ -4,7 +4,7 @@
 
     <!-- Hero Section -->
     <section
-      class="bg-[#1C5310] text-white pt-56 pb-16 relative overflow-hidden"
+      class="bg-[#1C5310] text-white pt-44 pb-16 relative overflow-hidden"
     >
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
@@ -22,21 +22,21 @@
           >
             Instant Payouts,
           </h1>
-          <div class="flex items-center pt-0 flex-col justify-center">
+          <div class="flex items-center -pt-20 flex-col justify-center">
             <h1
               class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
             >
               instantly loyal
             </h1>
             <h1
-              class="text-5xl md:text-7xl pt-0 font-semibold text-light-green uppercase"
+              class="text-5xl md:text-7xl lg:-mt-6 font-semibold text-light-green uppercase"
             >
               customers
             </h1>
           </div>
         </main>
         <p
-          class="text-center max-w-2xl mx-auto leading-relaxed mb-12 opacity-90"
+          class="text-center max-w-2xl mx-auto leading-relaxed pt-10 mb-12 opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
@@ -47,7 +47,7 @@
         </p>
         <div class="flex justify-center mb-16">
           <button
-            class="bg-[#3BAB22] hover:bg-green-500 text-white px-8 py-3 rounded-full transition-all transform"
+            class="bg-[#3BAB22] text-white px-8 py-3 rounded-full transition-all transform"
             v-motion
             :initial="{ opacity: 0, scale: 0.8 }"
             :enter="{

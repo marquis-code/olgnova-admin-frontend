@@ -20,16 +20,16 @@
           
           <!-- CTA Button -->
           <div class="flex justify-center mb-12">
-            <a href="#" class="inline-flex items-center text-white font-medium hover:underline">
+            <NuxtLink to="/payouts" class="inline-flex items-center text-white font-medium hover:underline">
               Learn about Payout
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.50005 6C9.50005 6 15.5 10.4189 15.5 12C15.5 13.5812 9.5 18 9.5 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
-            </a>
+            </NuxtLink>
 </div>
                                                                                                                                                                                             
-<img src="@/assets/img/global-visualization.png" />
+         <img src="@/assets/img/global-visualization.png" class="w-full h-full" />
                                                                                                                                                                                
         </div>
       </div>
