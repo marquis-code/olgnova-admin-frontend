@@ -105,12 +105,11 @@
           </p>
           
           <!-- Currency symbols with arrows background -->
-          <div class="absolute bottom-0 right-0 w-64 h-64">
-            <!-- <img 
-              :src="currencyExchangeImage" 
+          <div class="">
+            <img 
+              src="@/assets/img/currency-exchange2.png" 
               alt="Currency exchange illustration" 
-              class="w-full h-full object-contain"
-            /> -->
+            />
           </div>
         </div>
   
@@ -124,81 +123,15 @@
 
           </div>
           <h3 class="text-2xl font-bold mb-3">FX limit orders</h3>
-          <p class="text-gray-600 mb-8 max-w-md">
+          <p class="text-gray-600 mb-16 max-w-md">
             Set up limit orders for automatic exchanges at your preferred rates, ensuring seamless transactions when market conditions align.
           </p>
           
           <!-- Limit order form UI -->
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <h4 class="text-lg font-medium mb-4">Limit</h4>
-            
-            <!-- Market rate display -->
-            <div class="mb-4">
-              <div class="flex items-center mb-2">
-                <span class="text-sm text-gray-500">When 1</span>
-                <div class="flex items-center mx-1">
-                  <img src="https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/us.svg" alt="USD" class="w-4 h-3 mr-1" />
-                  <span>USD</span>
-                </div>
-                <span class="text-sm text-gray-500">is worth</span>
-              </div>
-              
-              <div class="flex items-center justify-between">
-                <span class="text-xl font-semibold">6,556</span>
-                <div class="flex items-center">
-                  <div class="w-5 h-5 rounded-full bg-red-500  mr-1">
-                    <span class="text-white text-xs">¥</span>
-                  </div>
-                  <span>CNY</span>
-                </div>
-              </div>
-              
-              <div class="flex gap-2 mt-2">
-                <span class="text-xs text-gray-500">Market</span>
-                <span class="text-xs text-gray-500">+1%</span>
-                <span class="text-xs text-gray-500">+5%</span>
-                <span class="text-xs text-gray-500">+10%</span>
-              </div>
-            </div>
-            
-            <!-- You pay -->
-            <div class="mb-4">
-              <div class="text-sm text-gray-500 mb-1">You Pay</div>
-              <div class="flex items-center justify-between border rounded-md p-2">
-                <span class="text-lg font-medium">1,000</span>
-                <div class="flex items-center">
-                  <img src="https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/us.svg" alt="USD" class="w-4 h-3 mr-1" />
-                  <span>USD</span>
-                  <ChevronDownIcon class="w-4 h-4 ml-1" />
-                </div>
-              </div>
-            </div>
-            
-            <!-- Arrows -->
-            <div class="flex justify-center my-2">
-              <ArrowDownUpIcon class="text-gray-400" />
-            </div>
-            
-            <!-- You receive -->
-            <div class="mb-6">
-              <div class="text-sm text-gray-500 mb-1">You receive</div>
-              <div class="flex items-center justify-between border rounded-md p-2">
-                <span class="text-lg font-medium">7,175.56</span>
-                <div class="flex items-center">
-                  <div class="w-5 h-5 rounded-full bg-red-500  mr-1">
-                    <span class="text-white text-xs">¥</span>
-                  </div>
-                  <span>CNY</span>
-                  <ChevronDownIcon class="w-4 h-4 ml-1" />
-                </div>
-              </div>
-            </div>
-            
-            <!-- Confirm button -->
-            <button class="w-full bg-green-500 text-white py-3 rounded-md font-medium">
-              Confirm
-            </button>
-          </div>
+          <img 
+              src="@/assets/img/currency-exchange1.png" 
+              alt="Currency exchange illustration" 
+            />
         </div>
       </div>
     </section>

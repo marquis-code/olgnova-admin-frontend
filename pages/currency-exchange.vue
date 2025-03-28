@@ -32,7 +32,7 @@
           </p>
           <div class="flex justify-center mb-16">
             <button 
-              class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105"
+              class="bg-green-600 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105"
               v-motion
               :initial="{ opacity: 0, scale: 0.8 }"
               :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
