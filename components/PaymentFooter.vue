@@ -35,7 +35,7 @@
           </div>
   
           <!-- Map image -->
-          <img src="@/assets/icons/map-vector.svg" class="mt-96" />
+          <img src="@/assets/icons/map-vector.svg" class="mt-96 absolute bottom-0 h-full w-full" />
   
           <!-- Green dots -->
           <div class="absolute left-[28%] top-[68%] h-2 w-2 rounded-full bg-green-500"></div>

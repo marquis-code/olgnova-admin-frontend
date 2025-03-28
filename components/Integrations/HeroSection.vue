@@ -51,7 +51,7 @@
         </button>
       </div>
 
-      <div class="flex justify-center items-center">
+      <div class="lg:flex justify-center items-center">
         <img src="@/assets/icons/hero-codes.svg" />
       </div>
     </div>

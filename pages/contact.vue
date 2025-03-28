@@ -2,7 +2,7 @@
 <main>
   <NavbarSticky />
     <div>
-        <AboutSiteHeader />
+      <AboutSiteHeader />
       <ContactSection />
       <ContactCards />
       <ContactFaqSection />

@@ -3,21 +3,21 @@
       <div class="text-center mb-12">
         <h3 class="text-sm uppercase tracking-wider text-gray-800 mb-2">PLATFORM FEATURES</h3>
         <div class="mb-2">
-          <h2 class="text-4xl md:text-6xl font-bold text-[#1A1A1B]">PAYMENTS</h2>
+          <h2 class="text-3xl md:text-6xl font-bold text-[#1A1A1B]">PAYMENTS</h2>
         </div>
         <div class="flex items-center justify-center">
           <div class="w-10 h-2 bg-[#3BAB22] mr-4"></div>
-          <h2 class="text-4xl md:text-6xl font-bold text-[#3BAB22]">WITHOUT BORDERS</h2>
+          <h2 class="text-3xl md:text-6xl font-bold text-[#3BAB22]">WITHOUT BORDERS</h2>
         </div>
       </div>
       
-      <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
         <button
           v-for="tab in tabs"
           :key="tab.id"
           @click="activeTab = tab.id"
           :class="[
-            'flex items-center px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 hover:shadow-md',
+            'flex items-center px-6 py-3 rounded-full text-xs lg:text-sm font-medium transition-all duration-200 hover:shadow-md',
             activeTab === tab.id 
               ? 'bg-[#E2FEDC] text-[#3BAB22]' 
               : 'bg-gray-50 text-gray-700'

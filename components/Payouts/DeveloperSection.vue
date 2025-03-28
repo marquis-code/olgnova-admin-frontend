@@ -1,11 +1,11 @@
 <template>
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4 md:px-8 max-w-7xl">
-        <h2 class="text-5xl font-bold text-center mb-20">BUILT WITH DEVELOPERS<br />IN MIND</h2>
+        <h2 class="text-3xl lg:text-5xl font-semibold text-center mb-20">BUILT WITH DEVELOPERS<br />IN MIND</h2>
         
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="grid md:grid-cols-3 p-3 lg:p-0 gap-8 mb-16">
           <!-- Feature 1 -->
-          <div class="flex flex-col space-y-4">
+          <div class="flex flex-col space-y-6 lg:space-y-4">
             <div class="w-16 h-16 mb-2">
               <div class="flex items-center justify-center">
                 <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

@@ -23,7 +23,7 @@
           </div>
           </main>
           <p 
-            class="text-center max-w-lg mx-auto leading-relaxed mb-12 opacity-90"
+            class="text-center max-w-lg mt-3 lg:mt-10 mx-auto leading-relaxed mb-12 opacity-90"
             v-motion
             :initial="{ opacity: 0 }"
             :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
@@ -32,7 +32,7 @@
           </p>
           <div class="flex justify-center mb-16">
             <button 
-              class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105"
+              class="bg-green-600 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105"
               v-motion
               :initial="{ opacity: 0, scale: 0.8 }"
               :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
@@ -167,9 +167,9 @@ import Navbar from '../components/Navbar.vue'
   
   
   // Toggle FAQ open/close
-  const toggleFaq = (index: number) => {
-    faqs.value[index].open = !faqs.value[index].open
-  }
+  // const toggleFaq = (index: number) => {
+  //   faqs.value[index].open = !faqs.value[index].open
+  // }
   
   // Animation on scroll with Intersection Observer
   onMounted(() => {

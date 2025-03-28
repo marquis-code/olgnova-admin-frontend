@@ -7,11 +7,11 @@
     <div class="platform-container space-y-10 mt-32">
     <div class="flex justify-center space-y-2 items-center flex-col">
       <h2 class="text-[#1A1A1B]">Our Platform</h2>
-      <p class="text-[#1A1A1B] text-3xl max-w-xl text-center">Gain seamless access to top-tier global payment solutions with a single contract and API integration.</p>
+      <p class="text-[#1A1A1B] mx-3 lg:px-0 text-3xl max-w-xl text-center">Gain seamless access to top-tier global payment solutions with a single contract and API integration.</p>
     </div>
 
    <div class="flex justify-center items-center">
-    <img src="@/assets/img/plattform.png" class="w-auto h-[920px]" />
+    <img src="@/assets/img/plattform.png" class="w-auto lg:h-[920px]" />
    </div>
      </div>
      <!-- <PlatformFeatures /> -->
@@ -19,10 +19,10 @@
     <AboutUs />
     <GlobalTransferCard />
     <CurrencyExchange />
-    <IndustrySolutions />
     <PlatformBenefits />
-    <GlobalPayouts />
-    <GlobalPayments />
+    <!-- <IndustrySolutions /> -->
+    <!-- <GlobalPayouts /> -->
+    <GlobalPayments class="pt-20" />
     <TestimonialCarousel />
     <SecuritySection />
     <PaymentFooter 

@@ -14,7 +14,7 @@
                                                                                                                                                                                           
          <img src="@/assets/img/twist.png" />
 
-         <div class="grid grid-cols-3 gap-6 py-6">
+         <div class="grid grid-cols-1 md:grid-cols-2 mt-10 lg:mt-0 lg:grid-cols-3 gap-6 py-6">
           <div class=" text-white" v-for="(item, idx) in possibilitiesList" :key="idx">
             {{item}}
          </div>
