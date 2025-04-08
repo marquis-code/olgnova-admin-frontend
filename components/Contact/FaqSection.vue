@@ -3,7 +3,7 @@
       <div class="container mx-auto px-4 md:px-8 max-w-6xl">
         <p class="text-center text-[#1A1A1B] mb-4">GOT QUESTIONS?</p>
         
-        <h2 class="text-4xl text-[#1A1A1B] md:text-5xl lg:text-6xl font-bold text-center mb-12 md:mb-16">
+        <h2 class="text-4xl text-[#1A1A1B] md:text-7xl  font-bold text-center mb-12 md:mb-16">
           FREQUENTLY ASKED<br />QUESTIONS
         </h2>
         

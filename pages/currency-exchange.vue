@@ -4,7 +4,8 @@
     <NavbarSticky />
 
     <!-- Hero Section -->
-    <section class="bg-[#1C5310] text-white pt-56 relative overflow-hidden">
+<section class="p-4">
+  <section class="bg-[#1C5310] text-white rounded-3xl pt-56 relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
           <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -14,25 +15,25 @@
         </div>
       </div>
       <div class="container mx-auto px-4 relative">
-        <p class="text-center mb-2 opacity-90">Currency exchange</p>
+        <p class="text-center mb-2 opacity-90 uppercase">Currency exchange</p>
         <main class="container mx-auto px-4 text-center relative z-10">
           <h1 class="text-5xl md:text-7xl pb-0 mb-0 font-bold text-white uppercase">Your Currency</h1>
-          <div class="flex items-center pt-0 justify-center">
+          <div class="flex items-center -mt-10 pt-0 justify-center">
             <div class="w-8 h-2.5 bg-white mr-4"></div>
             <h1 class="text-5xl md:text-7xl font-bold text-light-green uppercase">Our Expertise</h1>
           </div>
         </main>
         <p 
-          class="text-center max-w-lg mt-3 lg:mt-10 mx-auto leading-relaxed mb-12 opacity-90"
+          class="text-center max-w-lg text-lg mx-auto leading-relaxed opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
         >
           Effortlessly convert USD, CNY (RMB), NGN, and other currencies in real time. Streamline cross-border transactions and elevate your business's global financial agility.
         </p>
-        <div class="flex justify-center mb-16">
+        <div class="flex justify-center mb-16 mt-10">
           <button 
-            class="bg-green-600 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105"
+            class="bg-green-600 text-white px-8 py-3.5 rounded-full transition-all transform hover:scale-105"
             v-motion
             :initial="{ opacity: 0, scale: 0.8 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
@@ -46,14 +47,15 @@
         </div>
       </div>
     </section>
+</section>
 
     <CurrencyExchangeFeatureSection />
 
     <!-- Features Section -->
-    <section id="features" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
+    <section id="features" class="py-32 bg-white">
+      <div class="px-4">
         <h2 
-          class="text-4xl md:text-5xl max-w-2xl mx-auto font-me\ text-center mb-16"
+          class="text-4xl md:text-6xl max-w-5xl mx-auto text-center mb-16"
         >
           Receive payments & convert to your preferred currency
         </h2>
@@ -77,8 +79,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Instant conversions</h3>
-            <p class="text-[#454745] leading-relaxed">Convert your funds in seconds with no hidden charges..</p>
+            <h3 class="text-4xl max-w-xs py-6 font-semibold mb-4">Instant conversions</h3>
+            <p class="text-[#454745] text-lg leading-relaxed">Convert your funds in seconds with no hidden charges..</p>
           </div>
           
           <div 
@@ -95,8 +97,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Faster withdrawals</h3>
-            <p class="text-[#454745] leading-relaxed">Withdraw your funds to local accounts within minutes.</p>
+            <h3 class="text-4xl max-w-xs py-6 font-semibold mb-4">Faster withdrawals</h3>
+            <p class="text-[#454745] text-lg leading-relaxed">Withdraw your funds to local accounts within minutes.</p>
           </div>
 
           <div 
@@ -113,8 +115,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-4">The best FX rates</h3>
-            <p class="text-[#454745] leading-relaxed">Benefit from the most competitive rates available..</p>
+            <h3 class="text-4xl max-w-xs py-6 font-semibold mb-4">The best FX rates</h3>
+            <p class="text-[#454745] text-lg leading-relaxed">Benefit from the most competitive rates available..</p>
           </div>
         </div>
       </div>

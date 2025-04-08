@@ -1,5 +1,6 @@
 <template>
-    <section class="bg-[#1C5310] text-white py-44">
+   <main class="p-3">
+    <section class="bg-[#1C5310] rounded-3xl text-white py-44">
       <div class="container mx-auto px-4 md:px-8 max-w-6xl">
         <p class="uppercase text-center mb-4">Contact</p>
         
@@ -12,5 +13,6 @@
         </p>
       </div>
     </section>
+   </main>
   </template>
   

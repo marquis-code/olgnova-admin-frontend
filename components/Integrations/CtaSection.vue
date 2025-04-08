@@ -1,12 +1,13 @@
 <template>
-  <main class="bg-[#1A1A1B] rounded-3xl container mx-auto">
+<main class="m-5">
+  <main class="bg-[#1A1A1B] rounded-3xl">
     <section
       class="relative overflow-hidden  text-white py-16 px-4"
     >
       <div class="max-w-5xl mx-auto relative z-10">
         <!-- Heading section -->
         <div class="text-center mb-12">
-          <h2 class="text-5xl sm:text-6xl font-bold mb-4 leading-tight">
+          <h2 class="text-5xl sm:text-7xl font-bold mb-4 leading-tight">
             START BUILDING FOR FREE<br />TODAY
           </h2>
           <p class="text-lg mb-8">
@@ -25,6 +26,7 @@
       <img src="@/assets/img/start-building.png" />
     </div>
   </main>
+</main>
 </template>
 
 <script setup lang="ts">
