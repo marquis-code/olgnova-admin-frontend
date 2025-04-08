@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-8 px-4 md:px-8">
+  <footer class="px-4 md:px-8 py-32">
     <div class="container mx-auto space-y-6 lg:space-y-0 lg:flex justify-between items-start">
       <!-- Left Side: Logo and Social Icons -->
       <div class="flex items-center">
@@ -25,10 +25,10 @@
         <div>
           <h3 class="f text-[#454745] mb-3">Products</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Global Payouts</a></li>
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Currency Exchange</a></li>
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">API Integration</a></li>
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Over the Counter</a></li>
+            <li><NuxtLink to="/payouts" class="text-[#1A1A1B] hover:text-gray-800">Global Payouts</NuxtLink></li>
+            <li><NuxtLink to="/currency-exchange" class="text-[#1A1A1B] hover:text-gray-800">Currency Exchange</NuxtLink></li>
+            <li><NuxtLink to="/api-integration" class="text-[#1A1A1B] hover:text-gray-800">API Integration</NuxtLink></li>
+            <li><NuxtLink to="/otc" class="text-[#1A1A1B] hover:text-gray-800">Over the Counter</NuxtLink></li>
           </ul>
         </div>
         
@@ -36,10 +36,10 @@
         <div>
           <h3 class="f text-[#454745] mb-3">Company</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">About us</a></li>
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Careers</a></li>
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Press</a></li>
-            <li><a href="#" class="text-[#1A1A1B] hover:text-gray-800">Contact us</a></li>
+            <li><NuxtLink to="/about" class="text-[#1A1A1B] hover:text-gray-800">About us</NuxtLink></li>
+            <li><NuxtLink to="/" class="text-[#1A1A1B] hover:text-gray-800">Careers</NuxtLink></li>
+            <li><NuxtLink to="/" class="text-[#1A1A1B] hover:text-gray-800">Press</NuxtLink></li>
+            <li><NuxtLink to="/contact" class="text-[#1A1A1B] hover:text-gray-800">Contact us</NuxtLink></li>
           </ul>
         </div>
         

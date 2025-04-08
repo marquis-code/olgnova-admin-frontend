@@ -29,7 +29,7 @@
               instantly loyal
             </h1>
             <h1
-              class="text-5xl md:text-7xl lg:-mt-6 font-semibold text-light-green uppercase"
+              class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
             >
               customers
             </h1>

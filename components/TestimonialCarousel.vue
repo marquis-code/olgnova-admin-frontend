@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="px-4 py-12">
       <div class="relative">
         <!-- Carousel container -->
         <div class="overflow-hidden">
