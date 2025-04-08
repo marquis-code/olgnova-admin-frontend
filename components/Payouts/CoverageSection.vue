@@ -1,10 +1,10 @@
 <template>
-    <section class="py-16 bg-[#F7F7F7] rounded-xl m-2 lg:m-10">
-      <div class="container mx-auto px-4 md:px-8 max-w-7xl">
-        <h2 class="text-3xl lg:text-4xl font-bold text-[#1A1A1B] mb-16">Coverage</h2>
+    <section class="py-16 bg-[#F7F7F7] rounded-xl m-2 lg:m-6">
+      <div class="">
+        <h2 class="text-3xl lg:text-5xl font-bold pl-16 text-[#1A1A1B] mb-16">Coverage</h2>
         
         <div class="flex flex-col lg:flex-row items-center">
-          <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5">
+          <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5 pl-16">
             <!-- Feature 1 -->
             <div class="flex flex-col space-y-4">
               <div class="w-16 h-16">

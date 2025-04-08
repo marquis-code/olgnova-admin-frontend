@@ -1,21 +1,23 @@
 <template>
-  <div class="max-w-6xl mx-auto px-4 py-8">
+  <div class="mx-auto px-4 py-8">
     <div class="bg-[#3BAB22] rounded-3xl p-8 md:p-12 relative overflow-hidden">
       <!-- Grid overlay - only covers the background, not the globe -->
       <div class="absolute inset-0 grid-pattern"></div>
       
       <!-- Content container -->
-      <div class="relative z-10">
+      <div class="relative z-10 space-y-20">
         <!-- Heading -->
-        <h1 class="text-white text-4xl uppercase md:text-6xl font-bold text-center leading-tight mb-6">
+        <h1 class="text-white text-4xl uppercase md:text-7xl font-bold text-center leading-tight mb-6">
           The possibilities are<br />endless.
         </h1>
         
                                                                                                                                                                                           
-         <img src="@/assets/img/twist.png" />
+        <div class="flex justify-center items-center py-20-">
+          <img src="@/assets/img/twist.png" class="w-[720px] h-[346px]" />
+        </div>
 
-         <div class="grid grid-cols-1 md:grid-cols-2 mt-10 lg:mt-0 lg:grid-cols-3 gap-6 py-6">
-          <div class=" text-white" v-for="(item, idx) in possibilitiesList" :key="idx">
+         <div class="grid grid-cols-1 md:grid-cols-2 mt-10 max-w-7xl mx-auto lg:mt-0 lg:grid-cols-3 gap-6 py-6">
+          <div class=" text-white max-w-xs text-lg" v-for="(item, idx) in possibilitiesList" :key="idx">
             {{item}}
          </div>
          </div>                                                                                                                                                                             

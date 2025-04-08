@@ -1,6 +1,6 @@
 <template>
 <main>
-  <div class="max-w-6xl hidden lg:block mx-auto px-4 py-8 md:py-16">
+  <div class="hidden lg:block mx-auto px-4 py-8 md:py-16">
     <div class="relative rounded-3xl overflow-hidden">
       <!-- Main container with rounded corners -->
       <div class="relative">
@@ -13,7 +13,7 @@
           />
           
           <!-- Capera text overlay with blend effect -->
-          <div class="absolute inset-0 flex items-center top-[-400px] justify-center pointer-events-none">
+          <div class="absolute inset-0 flex items-center top-[-500px] justify-center pointer-events-none">
             <h1 class="text-[120px] md:text-[380px] font-bold text-[#1A1A1B] opacity-30 mix-blend-overlay tracking-tighter">
               Capera
             </h1>
@@ -27,12 +27,12 @@
           </p>
           
           <div class="flex justify-center mt-8">
-            <a href="#" class="inline-flex items-center text-[#3BAB22] font-medium">
+            <NuxtLink to="/about" class="inline-flex items-center text-[#3BAB22] font-medium">
               About us
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
