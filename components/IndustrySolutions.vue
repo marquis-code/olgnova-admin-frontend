@@ -2,7 +2,7 @@
     <section class="py-16 px-4 max-w-7xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="uppercase text-base font-medium mb-6">INDUSTRY SOLUTIONS</h2>
-        <p class="text-4xl md:text-5xl font-medium leading-tight max-w-4xl mx-auto">
+        <p class="text-4xl md:text-3xl font-medium leading-tight max-w-4xl mx-auto">
           Capera unifies every essential tool for seamless global payments operations. Whether you're sending funds or collecting them, we streamline every step to simplify cross-border transactions.
         </p>
       </div>

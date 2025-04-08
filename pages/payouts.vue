@@ -3,8 +3,9 @@
 <NavbarSticky />
 
     <!-- Hero Section -->
-    <section
-      class="bg-[#1C5310] text-white pt-44 pb-16 relative overflow-hidden"
+ <section class="p-3">
+  <section
+      class="bg-[#1C5310] text-white pt-44 pb-16 relative overflow-hidden rounded-3xl"
     >
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
@@ -15,25 +16,25 @@
         </div>
       </div>
       <div class="container mx-auto px-4 relative">
-        <p class="text-center mb-2 opacity-90">Global Payouts</p>
+        <p class="text-center uppercase text-lg opacity-90">Global Payouts</p>
         <main class="container mx-auto px-4 text-center relative z-10">
           <h1
-            class="text-5xl md:text-7xl pb-0 mb-0 font-semibold text-white uppercase"
+            class="text-5xl md:text-7xl pb-0 mb-0 font-semibold max-w-3xl mx-auto text-white uppercase"
           >
-            Instant Payouts,
+            Instant Payouts, instantly loyal customers
           </h1>
-          <div class="flex items-center -pt-20 flex-col justify-center">
+          <!-- <div class="flex items-center -pt-20 flex-col justify-center">
             <h1
               class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
             >
               instantly loyal
             </h1>
             <h1
-              class="text-5xl md:text-7xl lg:-mt-6 font-semibold text-light-green uppercase"
+              class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
             >
               customers
             </h1>
-          </div>
+          </div> -->
         </main>
         <p
           class="text-center max-w-2xl mx-auto leading-relaxed pt-10 mb-12 opacity-90"
@@ -65,6 +66,7 @@
         </div>
       </div>
     </section>
+ </section>
 
     <PayoutsOverview />
 
@@ -81,10 +83,10 @@
 
     <!-- Features Section -->
     <section id="features" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <p class="text-center text-gray-600 mb-2">Integrations</p>
+      <div class="px-4">
+        <p class="text-center uppercase text-lg text-gray-600 mb-2">Integrations</p>
         <h2
-          class="text-4xl md:text-5xl py-4 font-medium max-w-2xl mx-auto text-center"
+          class="text-4xl md:text-6xl py-4 font- max-w-4xl mx-auto text-center"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -92,7 +94,7 @@
           Access to a complete payments infrastructure through  a single
           integration.
         </h2>
-        <p class="text-lg max-w-xl mx-auto text-center py-6">
+        <p class="text-lg max-w-xl mx-auto text-[#454745] text-center py-6">
           Whether you want to connect to us via our dashboard or our API, safety
           and security are always top of mind. You’ll be working with the
           world’s leading infrastructure providers, so you can rest easy knowing
@@ -131,12 +133,18 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-3xl font-semibold mb-4">API</h3>
-            <p class="text-[#454745] leading-relaxed">
+            <h3 class="text-3xl font-semibold my-6">API</h3>
+            <p class="text-[#454745] leading-relaxed text-lg">
               Putting you in control of your payments. Customise our payout
               flows with your branding via our API. Automatically collect all
               payout information in the format that works for you.
             </p>
+            <NuxtLink to="/" class="text-[#3BAB22] font-medium flex items-center space-x-2 pt-4">Read our docs
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.00005 6.83691C9.00005 6.83691 15 11.2558 15 12.8369C15 14.4181 9 18.8369 9 18.8369" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </NuxtLink>
           </div>
 
           <div
@@ -178,12 +186,18 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-3xl font-semibold mb-4">Portal</h3>
-            <p class="text-[#454745] leading-relaxed">
+            <h3 class="text-3xl font-semibold my-6">Portal</h3>
+            <p class="text-[#454745] leading-relaxed text-lg">
               Quickly unlock access to new markets by using our ready to go
               portal. Gain real-time insight into all of your payments, pull
               reports and easily track all of your money movements.
             </p>
+            <NuxtLink to="/" class="text-[#3BAB22] font-medium flex items-center space-x-2 pt-4">Read our docs
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.00005 6.83691C9.00005 6.83691 15 11.2558 15 12.8369C15 14.4181 9 18.8369 9 18.8369" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </NuxtLink>
           </div>
         </div>
       </div>

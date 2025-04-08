@@ -8,7 +8,7 @@
         
         <!-- Text Content -->
         <div>
-          <h2 class="text-2xl lg:text-4xl font-semibold mb-6 leading-tight">A versatile API designed to empower businesses of all sizes.</h2>
+          <h2 class="text-2xl lg:text-5xl font-semibold mb-6 leading-tight">A versatile API designed to empower businesses of all sizes.</h2>
           <p class="text-lg text-gray-700 mb-6">
             Businesses of all sizes can now leverage the same powerful platform that drives our operations—helping them save more money, all without needing our direct involvement.
           </p>

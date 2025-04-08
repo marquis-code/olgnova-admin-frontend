@@ -1,7 +1,7 @@
 <template>
-    <section class="py-16 px-4 max-w-7xl mx-auto">
+    <section class="py-16 px-4">
       <!-- First row of features -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
+      <div class="grid grid-cols-1 md:grid-cols-4 container mx-auto gap-8 mb-20">
         <!-- Real-time rates -->
         <div class="flex flex-col">
           <div class="  mb-4">
@@ -11,8 +11,8 @@
             </svg>
 
           </div>
-          <h3 class="text-lg font-semibold mb-2">Real-time rates</h3>
-          <p class="text-gray-600 text-sm">
+          <h3 class="text-xl font-semibold mb-2">Real-time rates</h3>
+          <p class="text-gray-600 text-lg">
             Always updated to reflect the mid-market rates.
           </p>
         </div>
@@ -35,8 +35,8 @@
 </svg>
 
           </div>
-          <h3 class="text-lg font-semibold mb-2">Multiple currency support</h3>
-          <p class="text-gray-600 text-sm">
+          <h3 class="text-xl font-semibold mb-2">Multiple currency support</h3>
+          <p class="text-gray-600 text-lg">
             Over 10 supported currencies, from USD to GBP and CNY(RMB).
           </p>
         </div>
@@ -52,8 +52,8 @@
 </svg>
 
           </div>
-          <h3 class="text-lg font-semibold mb-2">User-friendly tool</h3>
-          <p class="text-gray-600 text-sm">
+          <h3 class="text-xl font-semibold mb-2">User-friendly tool</h3>
+          <p class="text-gray-600 text-lg">
             Convert funds quickly and with ease.
           </p>
         </div>
@@ -72,8 +72,8 @@
 </svg>
 
           </div>
-          <h3 class="text-lg font-semibold mb-2">Secure transactions</h3>
-          <p class="text-gray-600 text-sm">
+          <h3 class="text-xl font-semibold mb-2">Secure transactions</h3>
+          <p class="text-gray-600 text-lg">
             With encryption and fraud protection.
           </p>
         </div>
@@ -99,7 +99,7 @@
 </svg>
 
           </div>
-          <h3 class="text-2xl font-bold mb-3 mt-20">Instantly exchange currency</h3>
+          <h3 class="text-4xl font-bold mb-3 mt-20">Instantly exchange currency</h3>
           <p class="text-gray-600 mb-8 max-w-md">
             Stay informed with our transparent rates. Enjoy instant conversions at the best exchange rates.
           </p>

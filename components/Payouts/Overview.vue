@@ -7,12 +7,12 @@
     <div class="mb-8">
       <!-- Desktop version -->
       <div class="hidden md:block">
-        <h2 class="text-5xl md:text-6xl font-bold text-[#1A1A1B] mb-2">
+        <h2 class="text-5xl md:text-7xl font-bold text-[#1A1A1B] mb-2">
           MAXIMUM REACH,
         </h2>
         <div class="flex items-center justify-center">
-          <div class="w-10 h-2 bg-[#3BAB22] mr-4"></div>
-          <h2 class="text-5xl md:text-6xl font-bold text-[#3BAB22]">
+          <div class="w-10 h-3 bg-[#3BAB22] mr-4"></div>
+          <h2 class="text-5xl md:text-7xl font-bold text-[#3BAB22]">
             MINIMUM EFFORT
           </h2>
         </div>

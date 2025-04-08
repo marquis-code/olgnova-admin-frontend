@@ -6,7 +6,8 @@
 
 
     <!-- Hero Section -->
-    <section class="bg-[#1C5310] text-white pt-56 pb-16 relative overflow-hidden">
+ <section class="p-4">
+  <section class="bg-[#1C5310] text-white pt-56 pb-16 rounded-3xl relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
           <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -17,14 +18,14 @@
       </div>
       <div class="container mx-auto px-4 relative">
         <p class="text-center mb-2 opacity-90">(OTC) OVER THE COUNTER</p>
-        <main class="container mx-auto px-4 text-center relative z-10">
-        <h1 class="text-5xl md:text-7xl pb-0 mb-0 font-semibold text-white uppercase">Trade Beyond</h1>
-        <div class="flex items-center pt-0 justify-center">
+        <main class="container mx-auto px-4 text-center relative  flex justify-center items-center z-10">
+        <h1 class="text-5xl md:text-7xl pb-0 mb-0 max-w-xl max-auto font-semibold text-white uppercase">Trade Beyond Exchanges</h1>
+        <!-- <div class="flex items-center pt-0 justify-center">
           <h1 class="text-5xl md:text-7xl font-semibold text-light-green uppercase">Exchanges</h1>
-        </div>
+        </div> -->
         </main>
         <p 
-          class="text-center max-w-2xl mx-auto leading-relaxed mb-12 opacity-90"
+          class="text-center max-w-xl mx-auto text-lg pt-4 leading-relaxed mb-12 opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
@@ -33,7 +34,7 @@
         </p>
         <div class="flex justify-center mb-16">
           <button 
-            class="bg-[#3BAB22] hover:bg-green-500 text-white px-8 py-3 rounded-full transition-all transform"
+            class="bg-[#3BAB22] hover:bg-green-500 text-white px-8 py-3.5 rounded-full transition-all transform"
             v-motion
             :initial="{ opacity: 0, scale: 0.8 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
@@ -49,13 +50,14 @@
         
       </div>
     </section>
+ </section>
 
     <!-- What is OTC Section -->
     <section id="about" class="py-20 bg-white">
       <div class="container mx-auto px-4">
         <p class="text-center text-gray-600 mb-2">OTC</p>
         <h2 
-          class="text-4xl md:text-5xl font-semibold text-center mb-12"
+          class="text-4xl md:text-6xl font-semibold text-center mb-12"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -69,15 +71,15 @@
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 200, duration: 800 } }"
         >
-          <p class="text-[#7A7A7A] text-lg mb-6 leading-loose">
+          <p class="text-[#7A7A7A] text-lg lg:text-xl mb-6 leading-loose">
             Briefly, OTC (Over-the-counter) is a market where participants exchange equities, commodities, currencies or other instruments. The owners of the assets list with the required information such as the amount, exchange rate and other conditions, then wait for buyers to meet these requirements.
           </p>
           
-          <p class="text-[#7A7A7A] text-lg mb-6 leading-loose">
+          <p class="text-[#7A7A7A] text-lg lg:text-xl mb-6 leading-loose">
             Unlike larger exchange companies, market-makers quote prices at which they will buy and sell in an OTC market. This point distinguishes OTC desk from traditional exchanges, whereas its price is not necessarily publicly disclosed.
           </p>
           
-          <p class="text-[#7A7A7A] text-lg leading-loose">
+          <p class="text-[#7A7A7A] text-lg lg:text-xl leading-loose">
             Moreover, the OTC market does not have this limitation, unlike the well-standardised products traded on the deal with a narrow range of quantity, quality, and identity to be transparent in trading. Therefore, we are talking about an independent and full of opportunities in Over The Counter trading.
           </p>
         </div>
@@ -86,7 +88,7 @@
 
     <!-- Unlock Potential Section -->
     <section class="py-20">
-      <div class="container mx-auto px-4">
+      <div class="">
         <h2 
           class="text-4xl md:text-5xl text-[#1A1A1B] text-center mb-4"
           v-motion
@@ -105,7 +107,7 @@
           Capera puts the power of the OTC markets in your hands, offering unparalleled flexibility and customization in trading. Whether you're a seasoned trader or a growing business, our OTC solutions empower you to:
         </p>
         
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="grid md:grid-cols-3 gap-8 mb-16 container mx-auto px-4">
           <div 
             class="bg-white p-8"
             v-motion
@@ -147,7 +149,7 @@
         </div>
         
         <div 
-          class="rounded-2xl overflow-hidden shadow-lg"
+          class="overflow-hidden p-6"
           v-motion
           :initial="{ opacity: 0, scale: 0.95 }"
           :visibleOnce="{ opacity: 1, scale: 1, transition: { delay: 300, duration: 1000 } }"
@@ -158,7 +160,7 @@
     </section>
 
     <!-- Start Trading Now Section -->
-    <section class="py-20 bg-[#3BAB22] m-3 rounded-xl max-w-7xl mx-auto text-white relative overflow-hidden">
+    <section class="py-20 bg-[#3BAB22] m-3 rounded-xl  text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
           <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -170,7 +172,7 @@
       
       <div class="container mx-auto px-4 relative">
         <h2 
-          class="text-4xl md:text-6xl font-semibold text-center mb-6"
+          class="text-4xl md:text-7xl font-semibold text-center mb-6"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -179,7 +181,7 @@
         </h2>
         
         <p 
-          class="text-center max-w-2xl mx-auto mb-10 opacity-90"
+          class="text-center max-w-2xl text-lg mx-auto mb-10 opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :visibleOnce="{ opacity: 1, transition: { delay: 200, duration: 800 } }"
@@ -200,7 +202,7 @@
         </div> -->
         <div class="flex justify-center mb-16">
         <a href="#" class="inline-flex items-center text-white font-medium hover:underline">
-              Contact us
+          Talk to us
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.50005 6C9.50005 6 15.5 10.4189 15.5 12C15.5 13.5812 9.5 18 9.5 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -223,10 +225,10 @@
 
     <!-- Features Section -->
     <section id="features" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="">
         <p class="text-center text-gray-600 mb-2">FEATURES</p>
         <h2 
-          class="text-4xl md:text-5xl font-medium text-center mb-16"
+          class="text-4xl md:text-6xl text-center mb-16"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -234,7 +236,7 @@
           Large currency trades with private,<br>personalized services
         </h2>
         
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-8 p-4">
           <div 
             class="bg-gray-50 p-8 rounded-xl"
             v-motion
@@ -253,7 +255,7 @@
 
               </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Expert OTC Support</h3>
+            <h3 class="text-3xl font-semibold mb-4">Expert OTC Support</h3>
             <p class="text-[#454745] leading-relaxed">Our easy-to-use, self-service Request for Quotation (RFQ) offers expert OTC support. Receive executable quotes in seconds and settle trades instantly using the existing funds in your account.</p>
           </div>
           
@@ -273,7 +275,7 @@
 
               </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Trade via chat</h3>
+            <h3 class="text-3xl font-semibold mb-4">Trade via chat</h3>
             <p class="text-[#454745] leading-relaxed">Chat securely with our trade desk to confirm the amount and exchange rate for your trade. Benefit from white-glove, personalized service from initial consultation to trade execution.</p>
           </div>
         </div>
@@ -282,9 +284,9 @@
 
     <!-- Benefits Section -->
     <section id="benefits" class="py-20">
-      <div class="container mx-auto px-4">
+      <div class="px-4">
         <h2 
-          class="text-4xl md:text-5xl font-medium text-center mb-16"
+          class="text-4xl md:text-6xl text-center mb-16"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -308,7 +310,7 @@
 </svg>
 
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Customizable solutions for your business</h3>
+            <h3 class="text-3xl font-semibold py-6">Customizable solutions for your business</h3>
             <p class="text-[#7A7A7A] leading-relaxed">We structure every OTC trade with your unique profile in mind – a benefit you will not see on the exchanges.</p>
           </div>
           
@@ -326,7 +328,7 @@
 </svg>
 
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Negotiate Your Rate Directly with Our Experts</h3>
+            <h3 class="text-3xl font-semibold py-6">Negotiate Your Rate Directly with Our Experts</h3>
             <p class="text-[#7A7A7A] leading-relaxed">Tailor terms with our specialists—secure competitive rates and flexible settlements, backed by deep liquidity and support.</p>
           </div>
           
@@ -337,13 +339,14 @@
             :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 600, duration: 800 } }"
           >
             <div class="flex mb-6">
-              <div class="relative">
-                <div class="h-8 w-8 bg-gray-800 rounded-full"></div>
-                <div class="h-12 w-4 bg-gray-300 rounded-full absolute -bottom-4 left-2"></div>
-                <div class="h-4 w-4 bg-gray-800 rounded-full absolute bottom-0 right-0"></div>
-              </div>
+              <svg width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M57.666 20.0034C57.666 11.7191 64.3816 5.00342 72.666 5.00342C80.9504 5.00342 87.666 11.7191 87.666 20.0034C87.666 28.2877 80.9504 35.0034 72.666 35.0034C64.3816 35.0034 57.666 28.2877 57.666 20.0034Z" fill="#1A1A1B"/>
+<path d="M9.66602 76.0034C9.66602 67.719 16.3817 61.0034 24.666 61.0034C32.9503 61.0034 39.666 67.719 39.666 76.0034C39.666 84.2878 32.9503 91.0034 24.666 91.0034C16.3817 91.0034 9.66602 84.2878 9.66602 76.0034Z" fill="#1A1A1B"/>
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M16.666 34.0034C16.666 24.0623 24.7249 16.0034 34.666 16.0034H48.666C50.8752 16.0034 52.666 17.7943 52.666 20.0034C52.666 22.2125 50.8752 24.0034 48.666 24.0034H34.666C29.1432 24.0034 24.666 28.4806 24.666 34.0034C24.666 39.5263 29.1432 44.0034 34.666 44.0034H62.666C72.6072 44.0034 80.666 52.0622 80.666 62.0034C80.666 71.9446 72.6072 80.0034 62.666 80.0034H48.666C46.4568 80.0034 44.666 78.2126 44.666 76.0034C44.666 73.7942 46.4568 72.0034 48.666 72.0034H62.666C68.1888 72.0034 72.666 67.5262 72.666 62.0034C72.666 56.4806 68.1888 52.0034 62.666 52.0034H34.666C24.7249 52.0034 16.666 43.9446 16.666 34.0034Z" fill="#1A1A1B"/>
+</svg>
+
             </div>
-            <h3 class="text-2xl font-semibold mb-4">Better liquidity than other exchanges</h3>
+            <h3 class="text-3xl font-semibold py-6">Better liquidity than other exchanges</h3>
             <p class="text-[#7A7A7A] leading-relaxed">Deep liquidity lets you hold currency positions longer than typical exchange-traded timelines, offering FX flexibility.</p>
           </div>
         </div>
@@ -351,12 +354,20 @@
     </section>
 
 
+    <PaymentFooter 
+    title="Start trading OTC with CAPERA" 
+    description="If you're ready to unlock OTC trading with Capera, send us an email. A member of the Capera team will reach out to help you get set up."
+:actions="[
+    { text: 'Talk to us', onClick: () => console.log('Start clicked') }
+  ]"
+/>
+
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <p class="text-center text-gray-600 mb-2">GOT QUESTIONS ABOUT OTC?</p>
+        <p class="text-center text-[#1A1A1B] mb-2">GOT QUESTIONS ABOUT OTC?</p>
         <h2 
-          class="text-4xl md:text-5xl font-semibold text-center mb-12"
+          class="text-4xl md:text-7xl font-semibold text-center mb-12"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -385,7 +396,7 @@
             </div>
             <div 
               v-if="faq.open" 
-              class="p-6 pt-0 text-gray-600"
+              class="p-6 pt-0 text-lg text-[#454745]"
               v-motion
               :initial="{ opacity: 0, height: 0 }"
               :enter="{ opacity: 1, height: 'auto', transition: { duration: 300 } }"
@@ -399,13 +410,6 @@
       </div>
     </section>
 
-    <PaymentFooter 
-    title="Start trading OTC with CAPERA" 
-    description="If you're ready to unlock OTC trading with Capera, send us an email. A member of the Capera team will reach out to help you get set up."
-:actions="[
-    { text: 'Talk to us', onClick: () => console.log('Start clicked') }
-  ]"
-/>
   </div>
 </template>
 

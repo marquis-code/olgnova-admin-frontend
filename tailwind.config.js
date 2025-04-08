@@ -7,7 +7,7 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
-    "./app.vue",
+    "./app.vue"
   ],
   theme: {
     extend: {
@@ -16,6 +16,7 @@ module.exports = {
       },
       animation: {
         marquee: 'marquee linear infinite',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       colors: {
         green: {
@@ -36,10 +37,7 @@ module.exports = {
           900: "#1a1a1a",
           925: "#0d0d0d",
         },
-      },
-      animation: {
-        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      },
+      }
     },
   },
   variants: {

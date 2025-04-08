@@ -1,7 +1,8 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
+
   postcss: {
     plugins: {
       "postcss-import": {},
@@ -10,6 +11,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   app: {
     head: {
       title: "Withcapera Website",
@@ -47,22 +49,17 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   build: {
     transpile: ["lucide-vue-next"],
   },
-  googleFonts: {
-    families: {
-      "Lexend+Tera": [400, 500, 700], // Specify font weights as needed
-    },
-    display: "swap", // Optional: Controls how the font is displayed
-    prefetch: true, // Optional: Prefetch the font for faster loading
-    preconnect: true, // Optional: Preconnect to the font server
-    preload: true, // Optional: Preload the font
-  },
+
   css: ["/assets/css/main.css"],
+
   modules: [
-    "@kevinmarrec/nuxt-pwa",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
-  ]
+  ],
+
+  compatibilityDate: '2025-04-08'
 });

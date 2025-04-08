@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="mx-auto px-4 py-8">
       <div class="bg-[#3BAB22] rounded-3xl p-8 md:p-12 relative overflow-hidden">
         <!-- Grid overlay - only covers the background, not the globe -->
         <div class="absolute inset-0 grid-pattern"></div>
@@ -7,7 +7,7 @@
         <!-- Content container -->
         <div class="relative z-10">
           <!-- Heading -->
-          <h1 class="text-white text-4xl md:text-6xl uppercase font-bold text-center leading-tight mb-6">
+          <h1 class="text-white text-4xl md:text-7xl uppercase font-bold text-center leading-tight mb-6">
             Enjoy competitive<br />exchange rate
           </h1>
           

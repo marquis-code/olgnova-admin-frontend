@@ -13,7 +13,6 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@kevinmarrec/nuxt-pwa": "^0.17.0",
     "autoprefixer": "^10.4.15",
     "nuxt": "^v3.7.3",
     "postcss": "^8.4.29",
@@ -23,11 +22,11 @@
     "@emailjs/browser": "^4.4.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^5.2.8",
     "@nuxtjs/sitemap": "^7.2.9",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vueuse/core": "^13.0.0",
     "aos": "^3.0.0-beta.6",
-    "lucide-vue-next": "^0.483.0",
-    "vue3-toastify": "^0.2.1"
+    "lucide-vue-next": "^0.483.0"
   }
 }

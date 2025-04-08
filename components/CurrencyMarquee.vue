@@ -183,7 +183,7 @@
     display: flex;
     align-items: center;
     margin-right: 30px;
-    color: #9e9e9e;
+    color: #D7D7D7;
   }
   
   .country-name {
@@ -195,10 +195,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: #e0e0e0;
+    background-color: #D7D7D7;
     font-size: 14px;
     font-weight: 500;
   }
@@ -209,7 +209,7 @@
     justify-content: space-between;
     padding: 15px 0;
     cursor: pointer;
-    color: #9e9e9e;
+    color: #D7D7D7;
     font-size: 14px;
   }
   

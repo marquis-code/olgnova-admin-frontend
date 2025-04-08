@@ -1,26 +1,26 @@
 <template>
-    <section class="max-w-6xl mx-auto px-4 py-16">
+    <section class="mx-auto px-4 py-16">
       <div class="text-center mb-12">
         <h3 class="text-sm uppercase tracking-wider text-gray-800 mb-2">PLATFORM FEATURES</h3>
         <div class="mb-2">
-          <h2 class="text-3xl md:text-6xl font-bold text-[#1A1A1B]">PAYMENTS</h2>
+          <h2 class="text-3xl md:text-7xl font-bold text-[#1A1A1B]">PAYMENTS</h2>
         </div>
         <div class="flex items-center justify-center">
-          <div class="w-10 h-2 bg-[#3BAB22] mr-4"></div>
-          <h2 class="text-3xl md:text-6xl font-bold text-[#3BAB22]">WITHOUT BORDERS</h2>
+          <div class="w-10 h-3 bg-[#3BAB22] mr-4"></div>
+          <h2 class="text-3xl md:text-7xl font-bold text-[#3BAB22]">WITHOUT BORDERS</h2>
         </div>
       </div>
       
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 max-w-4xl mx-auto gap-4 mb-12">
         <button
           v-for="tab in tabs"
           :key="tab.id"
           @click="activeTab = tab.id"
           :class="[
-            'flex items-center px-6 py-3 rounded-full text-xs lg:text-sm font-medium transition-all duration-200 hover:shadow-md',
+            'flex items-center py-3 rounded-full justify-center text-xs lg:text-sm font-medium transition-all duration-200',
             activeTab === tab.id 
               ? 'bg-[#E2FEDC] text-[#3BAB22]' 
-              : 'bg-gray-50 text-gray-700'
+              : 'text-gray-700'
           ]"
         >
           <span class="flex items-center justify-center mr-2">
@@ -31,7 +31,6 @@
       </div>
       
       <div class="mt-8">
-        <!-- Global Payouts Tab Content -->
         <div v-if="activeTab === 'global-payouts'" class="bg-[#F7F7F7] rounded-3xl p-8 md:p-12">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -39,7 +38,7 @@
                 <img src="@/assets/icons/tabs_global_payouts.svg" alt="" class="" />
               </div>
               <h2 class="text-4xl md:text-5xl font-bold text-[#1A1A1B] mb-6">Global<br />Payouts</h2>
-              <p class="text-gray-700 mb-6">
+              <p class="text-gray-700 mb-6 leading-relaxed">
                 Expand globally with instant payouts to 100+ regions
                 —scale effortlessly across borders, streamline
                 operations, and grow your business without limits.
@@ -70,7 +69,7 @@
                 <img  src="@/assets/icons/tabs_currency_exchange.svg" alt="" class="" />
               </div>
               <h2 class="text-4xl md:text-5xl font-bold text-[#1A1A1B] mb-6">Currency<br />Exchange</h2>
-              <p class="text-gray-700 mb-6">
+              <p class="text-gray-700 leading-relaxed mb-6">
                 Seamlessly switch between USD, CNY(RMB), NGN, and
                 more currencies in real-time, enhancing global
                 financial management for your business.
@@ -101,7 +100,7 @@
                 <img src="@/assets/icons/tabs_api_integration.svg" alt="" class="" />
               </div>
               <h2 class="text-4xl md:text-5xl font-bold text-[#1A1A1B] mb-6">API<br />Integration</h2>
-              <p class="text-gray-700 mb-6">
+              <p class="text-gray-700 mb-6 leading-relaxed">
                 Integrate global payment capabilities into your
                 products, enabling features like Collections and
                 Payouts in USD, NGN, CNY(RMB) and other currencies.
@@ -132,7 +131,7 @@
                 <img  src="@/assets/icons/tabs_over_the_counter.svg" alt="" class="" />
               </div>
               <h2 class="text-4xl md:text-5xl font-bold text-[#1A1A1B] mb-6">(OTC) Over<br />the Counter</h2>
-              <p class="text-gray-700 mb-6">
+              <p class="text-gray-700 mb-6 leading-relaxed">
                 Access a decentralized network to buy and sell
                 directly with Capera, offering flexibility, customization,
                 and access to unique financial instruments.

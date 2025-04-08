@@ -1,11 +1,11 @@
 <template>
-    <section class="bg-gray-50 py-16 px-4 relative">
+    <section class="bg-gray-50 py-16 px-4 relative rounded-xl m-6">
       <!-- Grid background pattern -->
       <div class="absolute inset-0 grid grid-cols-6 md:grid-cols-12" aria-hidden="true">
         <div v-for="i in 12" :key="i" class="border-r border-t-[0.5px] border-gray-100"></div>
       </div>
       
-      <div class="max-w-6xl mx-auto relative">
+      <div class="max-w-6xl mx-auto relative rounded-xl">
         <!-- Shield icon at top -->
         <div class="flex justify-center mb-8">
           <div class="w-20 h-20 flex items-center justify-center relative">
@@ -18,7 +18,7 @@
         </div>
         
         <!-- Main heading -->
-        <h2 class="text-4xl text-[#1A1A1B] md:text-6xl font-semibold text-center mb-6">
+        <h2 class="text-4xl text-[#1A1A1B] md:text-7xl font-semibold text-center mb-6">
           SAFETY AND SECURITY<br>GUARANTEED
         </h2>
         

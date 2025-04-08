@@ -16,75 +16,75 @@
           Capera unifies every essential tool for seamless global payments operations. Whether you're sending funds or collecting them, we streamline every step to simplify cross-border transactions.
         </h3>
       </div>
+    </div>
 
-      <!-- Carousel Section -->
-      <div class="relative">
-        <div class="overflow-hidden">
+    <!-- Carousel Section - Full Width -->
+    <div class="relative w-full">
+      <div class="overflow-hidden w-full">
+        <div 
+          ref="carouselRef" 
+          class="flex transition-transform duration-300 ease-in-out"
+          :style="{ transform: `translateX(-${currentSlide * slideWidth}%)` }"
+          @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove"
+          @touchend="handleTouchEnd"
+        >
           <div 
-            ref="carouselRef" 
-            class="flex transition-transform duration-300 ease-in-out"
-            :style="{ transform: `translateX(-${currentSlide * slideWidth}%)` }"
-            @touchstart="handleTouchStart"
-            @touchmove="handleTouchMove"
-            @touchend="handleTouchEnd"
+            v-for="(card, index) in industryCards" 
+            :key="card.id"
+            class="flex-shrink-0 px-2"
+            :style="{ width: `${100 / visibleSlides}%` }"
           >
             <div 
-              v-for="(card, index) in industryCards" 
-              :key="card.id"
-              class="flex-shrink-0 px-2 w-full md:w-1/2 lg:w-1/3"
-              :style="{ width: `${100 / visibleSlides}%` }"
+              class="bg-[#F7F7F7] p-8 rounded-lg transition-all duration-500 hover:shadow-lg h-full opacity-0 transform translate-y-4"
+              :class="{ [`animate-fade-in-up delay-${(index + 3) * 100}`]: isVisible }"
+              @mouseenter="hoverCard = card.id"
+              @mouseleave="hoverCard = null"
             >
               <div 
-                class="bg-[#F7F7F7] p-8 rounded-lg transition-all duration-500 hover:shadow-lg h-full opacity-0 transform translate-y-4"
-                :class="{ [`animate-fade-in-up delay-${(index + 3) * 100}`]: isVisible }"
-                @mouseenter="hoverCard = card.id"
-                @mouseleave="hoverCard = null"
+                class="h-16 w-16 mb-8 text-[#1A1A1B]"
+                :class="{ 'animate-bounce-subtle': hoverCard === card.id }"
               >
-                <div 
-                  class="h-16 w-16 mb-8 text-[#1A1A1B]"
-                  :class="{ 'animate-bounce-subtle': hoverCard === card.id }"
-                >
-                  <component :is="card.icon" class="h-full w-full" />
-                </div>
-                <h3 class="text-2xl font-semibold mb-4">{{ card.title }}</h3>
-                <p class="text-gray-600 leading-relaxed">
-                  {{ card.description }}
-                </p>
+                <component :is="card.icon" class="h-full w-full" />
               </div>
+              <h3 class="text-2xl font-semibold mb-4">{{ card.title }}</h3>
+              <p class="text-gray-600 leading-relaxed">
+                {{ card.description }}
+              </p>
             </div>
           </div>
         </div>
-
-        <!-- Navigation Buttons -->
-        <!-- <div class="flex justify-center mt-8">
-          <button 
-            @click="prevSlide" 
-            class="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm mr-2 hover:bg-gray-50 focus:outline-none"
-            aria-label="Previous slide"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
-          <button 
-            @click="nextSlide" 
-            class="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm ml-2 hover:bg-gray-50 focus:outline-none"
-            aria-label="Next slide"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
-        </div> -->
-
-        <!-- Pagination Dots -->
-        <!-- <div class="flex justify-center mt-4">
-          <button 
-            v-for="(_, index) in Array(totalSlides)" 
-            :key="index"
-            @click="goToSlide(index)"
-            class="h-2 w-2 mx-1 rounded-full focus:outline-none"
-            :class="currentSlide === index ? 'bg-gray-800' : 'bg-gray-300'"
-            :aria-label="`Go to slide ${index + 1}`"
-          ></button>
-        </div> -->
       </div>
+
+      <!-- Navigation Buttons -->
+      <!-- <div class="container mx-auto px-4 flex justify-center mt-8">
+        <button 
+          @click="prevSlide" 
+          class="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm mr-2 hover:bg-gray-50 focus:outline-none"
+          aria-label="Previous slide"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button 
+          @click="nextSlide" 
+          class="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm ml-2 hover:bg-gray-50 focus:outline-none"
+          aria-label="Next slide"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div> -->
+
+      <!-- Pagination Dots -->
+      <!-- <div class="container mx-auto px-4 flex justify-center mt-4">
+        <button 
+          v-for="(_, index) in Array(totalSlides)" 
+          :key="index"
+          @click="goToSlide(index)"
+          class="h-2 w-2 mx-1 rounded-full focus:outline-none"
+          :class="currentSlide === index ? 'bg-gray-800' : 'bg-gray-300'"
+          :aria-label="`Go to slide ${index + 1}`"
+        ></button>
+      </div> -->
     </div>
   </div>
 </template>
@@ -302,4 +302,3 @@ onBeforeUnmount(() => {
   animation-delay: 0.6s;
 }
 </style>
-
