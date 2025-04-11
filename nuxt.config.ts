@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
 
   postcss: {
     plugins: {
@@ -35,11 +35,7 @@ export default defineNuxtConfig({
       { name: 'twitter:image', content: 'https://example.com/og-image.jpg' }, // Example image
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.svg" },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap",
-        },
+        { rel: "icon", type: "image/x-icon", href: "/favicon.svg" }
       ],
       script: [
         {
@@ -54,7 +50,7 @@ export default defineNuxtConfig({
     transpile: ["lucide-vue-next"],
   },
 
-  css: ["/assets/css/main.css"],
+  css: ['/assets/css/font/stylesheet.css', "/assets/css/main.css"],
 
   modules: [
     "@nuxtjs/tailwindcss",
