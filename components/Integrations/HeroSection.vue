@@ -20,7 +20,7 @@
         >
           Introducing the
         </h1>
-        <div class="flex items-center text-xl  -mt-10 pt-0 justify-center">
+        <div class="flex items-center text-xl pt-0 justify-center">
           <div class="w-8 h-2.5 bg-white mr-4"></div>
           <h1 class="text-5xl md:text-7xl -mt- font-bold text-light-green uppercase">
             capera open API
