@@ -6,7 +6,7 @@
           THE PROBLEM<br />
           WE'RE SOLVING
         </h1>
-        <h1 class="text-4xl md:text-6xl -mt-10 lg:text-7xl font-bold leading-tight">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
           <span class="text-[#3BAB22]">— WHY WE EXIST.</span>
         </h1>
       </div>

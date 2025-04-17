@@ -61,7 +61,7 @@
               <li><a href="#" class="text-gray-600 hover:text-gray-900">About us</a></li>
               <li><a href="#" class="text-gray-600 hover:text-gray-900">Careers</a></li>
               <li><a href="#" class="text-gray-600 hover:text-gray-900">Press</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact us</a></li>
+              <li><a href="mailto:hello@withcapera.com" class="text-gray-600 hover:text-gray-900">Contact us</a></li>
             </ul>
           </div>
           
