@@ -32,7 +32,7 @@
     <!-- Dashboard Mockup -->
     <div class="relative z-10 container mx-auto px-4 flex justify-center -mt-24 lg:-mt-48">
       <div class="relative w-full container">
-        <img src="@/assets/img/desktop-mockup.png" alt="Dashboard Mockup" class="w-full" />
+        <img src="@/assets/img/capera-desktop.png" alt="Dashboard Mockup" class="w-full" />
       </div>
     </div>
   </main>

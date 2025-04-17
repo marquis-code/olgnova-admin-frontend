@@ -50,7 +50,7 @@
             <a href="#" class="text-gray-700 hover:text-gray-900">About us</a>
             <a href="#" class="text-gray-700 hover:text-gray-900">Careers</a>
             <a href="#" class="text-gray-700 hover:text-gray-900">Press</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900">Contact us</a>
+            <a href="mailto:hello@withcapera.com" class="text-gray-700 hover:text-gray-900">Contact us</a>
           </div>
           
           <!-- Resources Column -->

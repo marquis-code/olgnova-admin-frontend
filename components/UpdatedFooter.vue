@@ -39,7 +39,7 @@
             <li><NuxtLink to="/about" class="text-[#1A1A1B] hover:text-gray-800">About us</NuxtLink></li>
             <li><NuxtLink to="/" class="text-[#1A1A1B] hover:text-gray-800">Careers</NuxtLink></li>
             <li><NuxtLink to="/" class="text-[#1A1A1B] hover:text-gray-800">Press</NuxtLink></li>
-            <li><NuxtLink to="/contact" class="text-[#1A1A1B] hover:text-gray-800">Contact us</NuxtLink></li>
+            <li><a href="mailto:hello@withcapera.com" class="text-[#1A1A1B] hover:text-gray-800">Contact us</a></li>
           </ul>
         </div>
         
