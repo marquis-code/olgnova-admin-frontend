@@ -18,7 +18,7 @@
         <p class="text-center mb-2 opacity-90 uppercase">Currency exchange</p>
         <main class="container mx-auto px-4 text-center relative z-10">
           <h1 class="text-5xl md:text-7xl pb-0 mb-0 font-bold text-white uppercase">Your Currency</h1>
-          <div class="flex items-center -mt-10 pt-0 justify-center">
+          <div class="flex items-center  pt-0 justify-center">
             <div class="w-8 h-2.5 bg-white mr-4"></div>
             <h1 class="text-5xl md:text-7xl font-bold text-light-green uppercase">Our Expertise</h1>
           </div>
