@@ -19,7 +19,7 @@
     </div>
 
     <!-- Carousel Section - Full Width -->
-    <div class="relative w-full">
+    <div class="relative w-full px-6">
       <div class="overflow-hidden w-full">
         <div 
           ref="carouselRef" 
@@ -183,7 +183,7 @@ const startAutoplay = () => {
   stopAutoplay();
   autoplayInterval.value = setInterval(() => {
     nextSlide();
-  }, 4000);
+  }, 7000);
 };
 
 const stopAutoplay = () => {
