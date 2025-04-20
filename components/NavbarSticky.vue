@@ -18,14 +18,14 @@
         <nav class="hidden md:flex items-center space-x-8">
           <div class="relative group">
             <button 
-              @click="toggleProductsDropdown" 
-              class="flex items-center transition-colors duration-300"
+              @click.stop="toggleDropdown('products')" 
+              class="flex items-center transition-colors duration-300 dropdown-trigger group"
               :class="[scrolled ? 'text-white' : 'text-white']"
             >
               Products
               <ChevronDown 
-                class="ml-1 h-4 w-4 transition-transform duration-300" 
-                :class="{ 'rotate-180': isProductsDropdownOpen }" 
+                class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:text-[#3BAB22]" 
+                :class="{ 'rotate-180': activeDropdown === 'products' }" 
               />
             </button>
             
@@ -37,23 +37,25 @@
               leave-from-class="opacity-100 translate-y-0"
               leave-to-class="opacity-0 -translate-y-2"
             >
-              <div v-if="isProductsDropdownOpen" class="absolute left-0 mt-2 w-56 rounded-lg bg-white shadow-lg overflow-hidden z-50">
+              <div v-if="activeDropdown === 'products'" class="absolute left-0 mt-2 w-56 rounded-lg bg-white shadow-lg overflow-hidden z-50">
                 <div class="py-1">
                   <NuxtLink 
                     v-for="product in products" 
                     :key="product.name" 
                     :to="product.link" 
-                    class="flex items-center px-4 py-2 text-sm text-gray-800 hover:bg-[#3BAB22]/10 hover:text-[#2c5520]"
+                    @click="closeDropdowns"
+                    class="flex items-center px-4 py-2 text-sm text-gray-800 hover:bg-[#3BAB22]/10 hover:text-[#2c5520] group"
                   >
-                    <component :is="product.icon" class="h-4 w-4 mr-2" />
-                    {{ product.name }}
+                    <img :src="product.icon" class="h-4 w-4 mr-3" />
+                    <span>{{ product.name }}</span>
+                    <ChevronRight class="ml-auto h-4 w-4 opacity-0 -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-[#3BAB22]" />
                   </NuxtLink>
                 </div>
               </div>
             </Transition>
           </div>
           
-          <div class="relative">
+          <!-- <div class="relative">
             <NuxtLink 
               to="/about" 
               class="transition-colors duration-300"
@@ -61,16 +63,83 @@
             >
               Company
             </NuxtLink>
+          </div> -->
+          <div class="relative group">
+            <button 
+              @click.stop="toggleDropdown('company')" 
+              class="flex items-center transition-colors duration-300 dropdown-trigger group"
+              :class="[scrolled ? 'text-white' : 'text-white']"
+            >
+            Company
+              <ChevronDown 
+                class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:text-[#3BAB22]" 
+                :class="{ 'rotate-180': activeDropdown === 'company' }" 
+              />
+            </button>
+            
+            <Transition
+              enter-active-class="transition-all duration-300 ease-out"
+              enter-from-class="opacity-0 -translate-y-2"
+              enter-to-class="opacity-100 translate-y-0"
+              leave-active-class="transition-all duration-200 ease-in"
+              leave-from-class="opacity-100 translate-y-0"
+              leave-to-class="opacity-0 -translate-y-2"
+            >
+              <div v-if="activeDropdown === 'company'" class="absolute left-0 mt-2 w-56 rounded-lg bg-white shadow-lg overflow-hidden z-50">
+                <div class="py-1">
+                  <NuxtLink 
+                    v-for="item in company" 
+                    :key="item.name" 
+                    :to="item.link" 
+                    @click="closeDropdowns"
+                    class="flex items-center px-4 py-2 text-sm text-gray-800 hover:bg-[#3BAB22]/10 hover:text-[#2c5520] group"
+                  >
+                    <img :src="item.icon" class="h-4 w-4 mr-3" />
+                    <span>{{ item.name }}</span>
+                    <ChevronRight class="ml-auto h-4 w-4 opacity-0 -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-[#3BAB22]" />
+                  </NuxtLink>
+                </div>
+              </div>
+            </Transition>
           </div>
           
-          <div class="relative">
-            <NuxtLink 
-              to="/contact" 
-              class="transition-colors duration-300"
+          <div class="relative group">
+            <button 
+              @click.stop="toggleDropdown('help')" 
+              class="flex items-center transition-colors duration-300 dropdown-trigger group"
               :class="[scrolled ? 'text-white' : 'text-white']"
             >
               Help
-            </NuxtLink>
+              <ChevronDown 
+                class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:text-[#3BAB22]" 
+                :class="{ 'rotate-180': activeDropdown === 'help' }" 
+              />
+            </button>
+            
+            <Transition
+              enter-active-class="transition-all duration-300 ease-out"
+              enter-from-class="opacity-0 -translate-y-2"
+              enter-to-class="opacity-100 translate-y-0"
+              leave-active-class="transition-all duration-200 ease-in"
+              leave-from-class="opacity-100 translate-y-0"
+              leave-to-class="opacity-0 -translate-y-2"
+            >
+              <div v-if="activeDropdown === 'help'" class="absolute left-0 mt-2 w-56 rounded-lg bg-white shadow-lg overflow-hidden z-50">
+                <div class="py-1">
+                  <NuxtLink 
+                    v-for="item in help" 
+                    :key="item.name" 
+                    :to="item.link" 
+                    @click="closeDropdowns"
+                    class="flex items-center px-4 py-2 text-sm text-gray-800 hover:bg-[#3BAB22]/10 hover:text-[#2c5520] group"
+                  >
+                    <img :src="item.icon" class="h-4 w-4 mr-3" />
+                    <span>{{ item.name }}</span>
+                    <ChevronRight class="ml-auto h-4 w-4 opacity-0 -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-[#3BAB22]" />
+                  </NuxtLink>
+                </div>
+              </div>
+            </Transition>
           </div>
         </nav>
         
@@ -114,13 +183,13 @@
         <div class="px-4 py-6 space-y-4">
           <div class="py-2 border-b border-white/10">
             <button 
-              @click="toggleMobileProductsDropdown" 
+              @click="toggleMobileDropdown('products')" 
               class="text-white flex items-center justify-between w-full"
             >
               Products
               <ChevronDown 
                 class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': isMobileProductsOpen }"
+                :class="{ 'rotate-180': activeMobileDropdown === 'products' }"
               />
             </button>
             
@@ -132,7 +201,7 @@
               leave-from-class="opacity-100 max-h-[250px]"
               leave-to-class="opacity-0 max-h-0"
             >
-              <div v-if="isMobileProductsOpen" class="mt-2 overflow-hidden">
+              <div v-if="activeMobileDropdown === 'products'" class="mt-2 overflow-hidden">
                 <NuxtLink 
                   v-for="product in products" 
                   :key="product.name" 
@@ -140,33 +209,81 @@
                   @click="closeMenu"
                   class="flex items-center py-3 pl-4 text-white/80 hover:text-white transition-colors duration-200"
                 >
-                  <component :is="product.icon" class="h-4 w-4 mr-3" />
+                  <img :src="product.icon" class="h-4 w-4 mr-3" />
                   {{ product.name }}
                 </NuxtLink>
               </div>
             </Transition>
           </div>
-          
+
           <div class="py-2 border-b border-white/10">
-            <NuxtLink 
-              to="/about" 
-              @click="closeMenu"
+            <button 
+              @click="toggleMobileDropdown('company')" 
               class="text-white flex items-center justify-between w-full"
             >
               Company
-              <ChevronRight class="h-4 w-4" />
-            </NuxtLink>
+              <ChevronDown 
+                class="h-4 w-4 transition-transform duration-300"
+                :class="{ 'rotate-180': activeMobileDropdown === 'company' }"
+              />
+            </button>
+            
+            <Transition
+              enter-active-class="transition-all duration-300 ease-out"
+              enter-from-class="opacity-0 max-h-0"
+              enter-to-class="opacity-100 max-h-[250px]"
+              leave-active-class="transition-all duration-200 ease-in"
+              leave-from-class="opacity-100 max-h-[250px]"
+              leave-to-class="opacity-0 max-h-0"
+            >
+              <div v-if="activeMobileDropdown === 'company'" class="mt-2 overflow-hidden">
+                <NuxtLink 
+                  v-for="item in company" 
+                  :key="item.name" 
+                  :to="item.link" 
+                  @click="closeMenu"
+                  class="flex items-center py-3 pl-4 text-white/80 hover:text-white transition-colors duration-200"
+                >
+                  <img :src="item.icon" class="h-4 w-4 mr-3" />
+                  {{ item.name }}
+                </NuxtLink>
+              </div>
+            </Transition>
           </div>
-          
+
           <div class="py-2 border-b border-white/10">
-            <NuxtLink 
-              to="/contact" 
-              @click="closeMenu"
+            <button 
+              @click="toggleMobileDropdown('help')" 
               class="text-white flex items-center justify-between w-full"
             >
               Help
-              <ChevronRight class="h-4 w-4" />
-            </NuxtLink>
+              <ChevronDown 
+                class="h-4 w-4 transition-transform duration-300"
+                :class="{ 'rotate-180': activeMobileDropdown === 'help' }"
+              />
+            </button>
+            
+            <Transition
+              enter-active-class="transition-all duration-300 ease-out"
+              enter-from-class="opacity-0 max-h-0"
+              enter-to-class="opacity-100 max-h-[250px]"
+              leave-active-class="transition-all duration-200 ease-in"
+              leave-from-class="opacity-100 max-h-[250px]"
+              leave-to-class="opacity-0 max-h-0"
+            >
+              <div v-if="activeMobileDropdown === 'help'" class="mt-2 overflow-hidden">
+                <NuxtLink 
+                  v-for="item in help" 
+                  :key="item.name" 
+                  :to="item.link" 
+                  @click="closeMenu"
+                  class="flex items-center py-3 pl-4 text-white/80 hover:text-white transition-colors duration-200"
+                >
+                  <img :src="item.icon" class="h-4 w-4 mr-3" />
+                  {{ item.name }}
+                </NuxtLink>
+              </div>
+            </Transition>
           </div>
 
           <div class="pt-4 flex flex-col space-y-3">
@@ -181,6 +298,17 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import payoutIcon from '@/assets/icons/payouts-nav.svg'
+import otcIcon from '@/assets/icons/otc-nav.svg'
+import apiIntegrationIcon from '@/assets/icons/api-integration-nav.svg'
+import currencyExchangeIcon from '@/assets/icons/exchange-nav.svg'
+
+import aboutIcon from '@/assets/icons/about-nav.svg'
+import careersIcon from '@/assets/icons/careers-nav.svg'
+
+import supportIcon from '@/assets/icons/contact-support-icon.svg'
+import salesIcon from '@/assets/icons/contact-sales-icon.svg'
+import helpCenterIcon from '@/assets/icons/help-center-icon.svg'
 import { 
   ChevronDown, 
   ChevronRight, 
@@ -193,8 +321,6 @@ import {
 } from 'lucide-vue-next'
 
 const isMenuOpen = ref(false)
-const isProductsDropdownOpen = ref(false)
-const isMobileProductsOpen = ref(false)
 const scrolled = ref(false)
 const scrollY = ref(0)
 
@@ -202,46 +328,96 @@ const products = [
   { 
     name: 'Payouts', 
     link: '/payouts',
-    icon: Banknote
-  },
-  { 
-    name: 'OTC', 
-    link: '/otc',
-    icon: BarChart3
-  },
-  { 
-    name: 'API Integration', 
-    link: '/api-integration',
-    icon: Code2
+    icon: payoutIcon
   },
   { 
     name: 'Currency Exchange', 
     link: '/currency-exchange',
-    icon: RefreshCw
+    icon: currencyExchangeIcon
+  },
+  { 
+    name: 'API Integration', 
+    link: '/api-integration',
+    icon: apiIntegrationIcon
+  },
+  { 
+    name: 'OTC', 
+    link: '/otc',
+    icon: otcIcon
+  },
+]
+
+const company = [
+  { 
+    name: 'About', 
+    link: '/about',
+    icon: aboutIcon
+  },
+  { 
+    name: 'Careers', 
+    link: '#',
+    icon: careersIcon
   }
 ]
+
+const help = [
+  { 
+    name: 'Contact support', 
+    link: '/contact',
+    icon: supportIcon
+  },
+  { 
+    name: 'Contact sales', 
+    link: '/contact',
+    icon: salesIcon
+  },
+  { 
+    name: 'Help center', 
+    link: '/contact',
+    icon: helpCenterIcon
+  },
+]
+
+// Replace the individual toggle functions with a single activeDropdown ref
+const activeDropdown = ref<string | null>(null)
+
+const toggleDropdown = (dropdown: string) => {
+  if (activeDropdown.value === dropdown) {
+    activeDropdown.value = null
+  } else {
+    activeDropdown.value = dropdown
+  }
+}
+
+// For mobile dropdowns
+const activeMobileDropdown = ref<string | null>(null)
+
+const toggleMobileDropdown = (dropdown: string) => {
+  if (activeMobileDropdown.value === dropdown) {
+    activeMobileDropdown.value = null
+  } else {
+    activeMobileDropdown.value = dropdown
+  }
+}
+
+// Close dropdowns when clicking outside
+const closeDropdowns = () => {
+  activeDropdown.value = null
+}
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
   // Close any open dropdowns when toggling the menu
   if (!isMenuOpen.value) {
-    isMobileProductsOpen.value = false
+    activeMobileDropdown.value = null
   }
-}
-
-const toggleProductsDropdown = () => {
-  isProductsDropdownOpen.value = !isProductsDropdownOpen.value
-}
-
-const toggleMobileProductsDropdown = () => {
-  isMobileProductsOpen.value = !isMobileProductsOpen.value
 }
 
 const closeMenu = () => {
   // Add a small delay to make the animation visible before closing
   setTimeout(() => {
     isMenuOpen.value = false
-    isMobileProductsOpen.value = false
+    activeMobileDropdown.value = null
   }, 150)
 }
 
@@ -279,12 +455,21 @@ onMounted(() => {
   
   // Also check on resize as layout might change
   window.addEventListener('resize', throttledHandleScroll)
+  
+  // Add click outside listener to close dropdowns
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement
+    if (!target.closest('.dropdown-trigger')) {
+      closeDropdowns()
+    }
+  })
 })
 
 onUnmounted(() => {
   // Clean up event listeners
   window.removeEventListener('scroll', throttledHandleScroll)
   window.removeEventListener('resize', throttledHandleScroll)
+  document.removeEventListener('click', closeDropdowns)
 })
 </script>
 

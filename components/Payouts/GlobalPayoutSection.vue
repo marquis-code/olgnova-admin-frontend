@@ -3,7 +3,7 @@
       <div class="">
         <h2 class="text-3xl pl-16 lg:text-5xl font-bold text-gray-900 mb-16">Global Payouts</h2>
         
-        <div class="flex flex-col lg:flex-row items-center">
+        <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-32 items-center">
           <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5 pl-16">
             <!-- Feature 1 -->
             <div class="flex flex-col space-y-4">
@@ -59,7 +59,7 @@
           
           <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
             <div class="relative">
-              <img src="@/assets/img/device-mockup.png" alt="Payment dashboard on laptop" class="w-full" />
+              <img src="@/assets/icons/globals-payout.svg" alt="Payment dashboard on laptop" class="w-full" />
             </div>
           </div>
         </div>

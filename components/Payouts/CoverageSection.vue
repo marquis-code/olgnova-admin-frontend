@@ -3,7 +3,7 @@
       <div class="">
         <h2 class="text-3xl lg:text-5xl font-bold pl-16 text-[#1A1A1B] mb-16">Coverage</h2>
         
-        <div class="flex flex-col lg:flex-row items-center">
+        <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-32 items-center">
           <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5 pl-16">
             <!-- Feature 1 -->
             <div class="flex flex-col space-y-4">
@@ -58,7 +58,7 @@
           
           <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
             <div class="relative">
-              <img src="@/assets/img/device-mockup.png" alt="Payment dashboard on laptop" class="w-full" />
+              <img src="@/assets/icons/payout-coverage.svg" alt="Payment dashboard on laptop" class="w-full" />
             </div>
           </div>
         </div>

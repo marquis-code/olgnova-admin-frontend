@@ -3,7 +3,7 @@
       <div class="">
         <h2 class="text-3xl pl-16 lg:text-5xl font-bold text-[#1A1A1B] mb-16">Streamlined Processes</h2>
         
-        <div class="flex flex-col lg:flex-row items-center pl-16">
+        <div class="flex flex-col space-x-0 lg:space-x-32 lg:flex-row items-center pl-16">
           <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5">
             <!-- Feature 1 -->
             <div class="flex flex-col space-y-4">
@@ -56,7 +56,7 @@
           
           <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
             <div class="relative">
-              <img src="@/assets/img/device-mockup.png" alt="Payment dashboard on laptop" class="w-full" />
+              <img src="@/assets/icons/streamlined-payouts.svg" alt="Payment dashboard on laptop" class="w-full" />
             </div>
           </div>
         </div>

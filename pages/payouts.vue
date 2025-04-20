@@ -3,10 +3,8 @@
 <NavbarSticky />
 
     <!-- Hero Section -->
- <section class="p-3">
-  <section
-      class="bg-[#1C5310] text-white pt-44 pb-16 relative overflow-hidden rounded-3xl"
-    >
+    <section class="p-4">
+  <section class="bg-[#1C5310] text-white rounded-3xl pt-56 relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="grid grid-cols-12 h-full">
           <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -15,58 +13,45 @@
           <div v-for="i in 12" :key="i" class="border-b border-white/10"></div>
         </div>
       </div>
+      <!-- Instant Payouts,
+— instantly loyal customers -->
       <div class="container mx-auto px-4 relative">
-        <p class="text-center uppercase text-lg opacity-90">Global Payouts</p>
-        <main class="container mx-auto px-4 text-center relative z-10">
-          <h1
-            class="text-5xl md:text-7xl pb-0 mb-0 font-semibold max-w-3xl mx-auto text-white uppercase"
-          >
-            Instant Payouts, instantly loyal customers
-          </h1>
-          <!-- <div class="flex items-center -pt-20 flex-col justify-center">
-            <h1
-              class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
-            >
-              instantly loyal
-            </h1>
-            <h1
-              class="text-5xl md:text-7xl font-semibold text-light-green uppercase"
-            >
-              customers
-            </h1>
-          </div> -->
-        </main>
-        <p
-          class="text-center max-w-2xl mx-auto leading-relaxed pt-10 mb-12 opacity-90"
+        <p class="text-center mb-2 opacity-90 uppercase">Global Payouts</p>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-6xl md:text-8xl font-bold text-white mb-4">
+          INSTANT PAYOUTS
+          <div class="flex items-center justify-center">
+            <div class="w-16 h-3 bg-[#3BAB22] mr-4"></div>
+            <span class="text-[#3BAB22]">INSTANT LOYAL</span>
+          </div>
+          <span class="text-[#3BAB22]">CUSTOMERS</span>
+        </h1>
+        </div>
+        <p 
+          class="text-center max-w-lg text-lg mx-auto leading-relaxed opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
         >
-          Instant Payouts give your customers exactly what they want when they
-          want it. Whether it's refunds, withdrawals or earnings — we send it in
-          seconds.
+        Instant Payouts give your customers exactly what they want when they want it. Whether it's refunds, withdrawals or earnings — we send it in seconds.
         </p>
-        <div class="flex justify-center mb-16">
-          <button
-            class="bg-[#3BAB22] text-white px-8 py-3 rounded-full transition-all transform"
+        <div class="flex justify-center mb-16 mt-10">
+          <button 
+            class="bg-green-600 text-white px-8 py-3.5 rounded-full transition-all transform hover:scale-105"
             v-motion
             :initial="{ opacity: 0, scale: 0.8 }"
-            :enter="{
-              opacity: 1,
-              scale: 1,
-              transition: { delay: 800, duration: 500 },
-            }"
+            :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
           >
             Talk to us
           </button>
         </div>
-
+        
         <div class="flex justify-center items-center">
-          <img src="@/assets/icons/payout-illustration.svg" />
+          <img src="@/assets/icons/payout-illustration.svg" class="" />
         </div>
       </div>
     </section>
- </section>
+</section>
 
     <PayoutsOverview />
 
