@@ -1,7 +1,7 @@
 <template>
     <section class="py-16 px-4">
       <div class="text-center mb-16">
-        <h2 class="text-7xl font-bold mb-4">BUILT FOR SCALABILITY<br>AND RELIABILITY</h2>
+        <h2 class="text-5xl lg:text-7xl font-bold mb-4">BUILT FOR SCALABILITY<br>AND RELIABILITY</h2>
         <p class="text-lg text-gray-700 max-w-3xl mx-auto">
           Discover why Capera's Payments API is the best choice for your global business transfers
         </p>

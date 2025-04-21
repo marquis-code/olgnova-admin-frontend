@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50">
+  <header class="fixed top-0 left-0 right-0 px-3 lg:px-0 z-50">
     <div 
       class="backdrop-blur-sm mt-6 border-b max-w-7xl mx-auto rounded-full transition-colors duration-300"
       :class="[

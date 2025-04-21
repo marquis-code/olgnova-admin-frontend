@@ -122,7 +122,7 @@
                 </svg>
 
           </div>
-          <h3 class="text-2xl font-bold mb-3">FX limit orders</h3>
+          <h3 class="text-4xl font-bold mb-3">FX limit orders</h3>
           <p class="text-gray-600 mb-16 max-w-md">
             Set up limit orders for automatic exchanges at your preferred rates, ensuring seamless transactions when market conditions align.
           </p>
