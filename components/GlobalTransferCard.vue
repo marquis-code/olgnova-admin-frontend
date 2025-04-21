@@ -1,11 +1,11 @@
 <template>
-  <div class="relative flex flex-col rounded-3xl m-6 py-32 items-center justify-center min-h-screen bg-[#3BAB22]">
+  <div class="relative flex flex-col rounded-3xl m-3 py-32 items-center justify-center min-h-screen bg-[#3BAB22]">
     <div class="absolute inset-0 grid-pattern"></div>
     <h1 class="text-white text-4xl md:text-8xl font-bold text-center leading-tight mb-6">
       MOVE MONEY GLOBALLY<br />IN SECONDS
     </h1>
     
-    <p class="text-white text-center max-w-xl mx-auto mb-8 opacity-90 text-base md:text-lg">
+    <p class="text-white text-center max-w-xl px-3 lg:px-0 mx-auto mb-8 opacity-90 text-base md:text-lg">
       Transfer funds faster to and from your digital accounts via 
       bank transfers or mobile wallets in 60+ countries. Enjoy 
       real-time payments at a fraction of the cost of bank wires.
@@ -25,7 +25,7 @@
       <img src="@/assets/icons/circular-globe.svg" class="w-[560px] h-[522px]" />
       
       <!-- Transaction notification - positioned in the center of the globe -->
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out w-[400px] lg:w-[550px]">
+      <div class="absolute top-1/2 left-1/2 scroll-px-16 lg:px-0 px-7 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out w-[400px] lg:w-[550px]">
         <div class="flex items-center justify-between bg-white rounded-full px-4 py-4 shadow-lg">
           <section class="flex items-center space-x-4">
             <div class="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden">
@@ -35,12 +35,12 @@
               </div>
             </div>
             
-            <div class="text-2xl font-semibold">
+            <div class="lg:text-2xl text-lg font-semibold">
               {{ currentState }}
             </div>
           </section>
           
-          <div class="font-bold text-2xl">
+          <div class="font-bold text-lg lg:text-2xl">
             {{ currentTransfer.amount }}
           </div>
         </div>

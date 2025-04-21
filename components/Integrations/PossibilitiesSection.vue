@@ -13,7 +13,7 @@
         
                                                                                                                                                                                           
         <div class="flex justify-center items-center py-20-">
-          <img src="@/assets/img/twist.png" class="w-[720px] h-[346px]" />
+          <img src="@/assets/img/twist.png" class="lg:w-[720px] lg:h-[346px]" />
         </div>
 
          <div class="grid grid-cols-1 md:grid-cols-2 mt-10 max-w-7xl mx-auto lg:mt-0 lg:grid-cols-3 gap-6 py-6">

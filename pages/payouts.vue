@@ -18,7 +18,7 @@
       <div class="container mx-auto px-4 relative">
         <p class="text-center mb-2 opacity-90 uppercase">Global Payouts</p>
         <div class="relative z-10 container mx-auto px-4 text-center">
-        <h1 class="text-6xl md:text-8xl font-bold text-white mb-4">
+        <h1 class="text-5xl lg:text-8xl md:text-8xl font-bold text-white mb-4">
           INSTANT PAYOUTS
           <div class="flex items-center justify-center">
             <div class="w-16 h-3 bg-[#3BAB22] mr-4"></div>

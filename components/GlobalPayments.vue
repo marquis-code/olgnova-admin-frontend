@@ -19,7 +19,7 @@
     </div>
 
     <!-- Carousel Section - Full Width -->
-    <div class="relative w-full px-6">
+    <div class="relative w-full px-3">
       <div class="overflow-hidden w-full">
         <div 
           ref="carouselRef" 
