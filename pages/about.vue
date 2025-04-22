@@ -94,13 +94,4 @@ const jsonLd = {
   }
 }
 
-// Add structured data to the page
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify(jsonLd)
-    }
-  ]
-})
 </script>
