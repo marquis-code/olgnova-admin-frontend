@@ -18,7 +18,7 @@
     </div>
     <!-- <PlatformFeatures /> -->
     <PaymentTabs />
-    <AboutUs />
+    <AboutUs class="pt-60 lg:pt-0" />
     <GlobalTransferCard />
     <CurrencyExchange />
     <PlatformBenefits />
