@@ -16,17 +16,12 @@
         <img src="@/assets/img/plattform.png" class="w-auto lg:h-[920px]" />
       </div>
     </div>
-    <!-- <PlatformFeatures /> -->
     <PaymentTabs />
     <AboutUs class="pt-60 lg:pt-0" />
     <GlobalTransferCard />
     <CurrencyExchange />
     <PlatformBenefits />
-    <!-- <IndustrySolutions /> -->
-    <!-- <GlobalPayouts /> -->
-    <!-- <GlobalPayments class="" /> -->
      <section>
-      <!-- <p>INDUSTRY SOLUTIONS</p> -->
       <div 
           class="my-44 text-center font-light leading-tight text-[#1A1A1B] max-w-5xl mx-auto transform translate-y-4"
         >

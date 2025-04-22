@@ -21,7 +21,6 @@ definePageMeta({
   description: 'Explore CAPERA\'s powerful API integrations and discover how to connect your systems with our versatile solutions.'
 })
 
-// Enhanced SEO with useHead for basic head elements
 useHead({
   title: 'Integrations & API | CAPERA',
   link: [
