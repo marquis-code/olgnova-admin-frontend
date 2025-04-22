@@ -208,8 +208,6 @@ import { PayoutsOverview } from "#components";
 // Mobile menu state
 const mobileMenuOpen = ref(false);
 
-o
-
 // Animation on scroll with Intersection Observer
 onMounted(() => {
   // Initialize any additional functionality here
