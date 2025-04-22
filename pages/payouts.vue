@@ -208,10 +208,7 @@ import { PayoutsOverview } from "#components";
 // Mobile menu state
 const mobileMenuOpen = ref(false);
 
-// Toggle FAQ open/close
-const toggleFaq = (index: number) => {
-  faqs.value[index].open = !faqs.value[index].open;
-};
+o
 
 // Animation on scroll with Intersection Observer
 onMounted(() => {

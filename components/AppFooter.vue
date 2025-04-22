@@ -38,16 +38,16 @@
           <!-- Products Column -->
           <div class="flex flex-col space-y-4">
             <h3 class="font-medium text-gray-900">Products</h3>
-            <a href="#" class="text-gray-700 hover:text-gray-900">Global Payouts</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900">Currency Exchange</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900">API Integration</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900">Over the Counter</a>
+            <NuxtLink to='/payouts' class="text-gray-700 hover:text-gray-900">Global Payouts</NuxtLink>
+            <NuxtLink to='/currency-exchange' class="text-gray-700 hover:text-gray-900">Currency Exchange</NuxtLink>
+            <NuxtLink to='/api-integration' class="text-gray-700 hover:text-gray-900">API Integration</NuxtLink>
+            <NuxtLink to='/otc' class="text-gray-700 hover:text-gray-900">Over the Counter</NuxtLink>
           </div>
           
           <!-- Company Column -->
           <div class="flex flex-col space-y-4">
             <h3 class="font-medium text-gray-900">Company</h3>
-            <a href="#" class="text-gray-700 hover:text-gray-900">About us</a>
+            <NuxtLink href="#" class="text-gray-700 hover:text-gray-900">About us</NuxtLink>
             <a href="#" class="text-gray-700 hover:text-gray-900">Careers</a>
             <a href="#" class="text-gray-700 hover:text-gray-900">Press</a>
             <a href="mailto:hello@withcapera.com" class="text-gray-700 hover:text-gray-900">Contact us</a>
@@ -57,7 +57,7 @@
           <div class="flex flex-col space-y-4">
             <h3 class="font-medium text-gray-900">Resources</h3>
             <a href="#" class="text-gray-700 hover:text-gray-900">Blog</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900">Help Center</a>
+            <NuxtLink to="/contact" class="text-gray-700 hover:text-gray-900">Help Center</NuxtLink>
           </div>
           
           <!-- Legal Column -->
