@@ -1,9 +1,9 @@
 {
   "private": true,
-  "homepage": "https://www.gobuildr.io/",
+  "homepage": "https://www.capera.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardobalk/nuxt3-tailwindcss.git"
+    "url": "https://github.com/withcapera"
   },
   "scripts": {
     "dev": "nuxt dev",
