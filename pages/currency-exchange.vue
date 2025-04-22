@@ -26,13 +26,6 @@
           <!-- <span class="text-[#3BAB22]">CUSTOMERS</span> -->
         </h1>
         </div>
-        <!-- <main class="container mx-auto px-4 text-center relative z-10">
-          <h1 class="text-5xl md:text-7xl pb-0 mb-0 font-bold text-white uppercase">Your Currency</h1>
-          <div class="flex items-center  pt-0 justify-center">
-            <div class="w-8 h-2.5 bg-white mr-4"></div>
-            <h1 class="text-5xl md:text-7xl font-bold text-light-green uppercase">Our Expertise</h1>
-          </div>
-        </main> -->
         <p 
           class="text-center max-w-lg text-lg mx-auto leading-relaxed opacity-90"
           v-motion
