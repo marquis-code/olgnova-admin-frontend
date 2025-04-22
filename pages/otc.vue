@@ -1,6 +1,5 @@
 <template>
   <div class="font-sans text-gray-900">
-    <!-- Navigation -->
     <NavbarSticky />
 
 
@@ -18,14 +17,11 @@
       </div>
       <div class="container mx-auto px-4 relative">
         <p class="text-center mb-2 opacity-90">(OTC) OVER THE COUNTER</p>
-        <!-- <main class="container mx-auto px-4 text-center relative  flex justify-center items-center z-10">
-        <h1 class="text-5xl md:text-7xl pb-0 mb-0 max-w-xl max-auto font-semibold text-white uppercase">Trade Beyond Exchanges</h1>
-        </main> -->
+
         <div class="relative z-10 container mx-auto px-4 text-center">
         <h1 class="text-5xl lg:text-8xl md:text-8xl font-bold text-white mb-4">
          TRADE BEYOND
           <div class="flex items-center justify-center">
-            <!-- <div class="w-16 h-3 bg-[#3BAB22] mr-4"></div> -->
             <span class="text-white">EXCHANGES</span>
           </div>
           <!-- <span class="text-[#3BAB22]">CUSTOMERS</span> -->
