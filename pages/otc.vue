@@ -1,9 +1,6 @@
 <template>
   <div class="font-sans text-gray-900">
     <NavbarSticky />
-
-
-
     <!-- Hero Section -->
  <section class="p-4">
   <section class="bg-[#1C5310] text-white pt-56 pb-16 rounded-3xl relative overflow-hidden">

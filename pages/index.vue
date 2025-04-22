@@ -55,13 +55,13 @@ import IndustryCarousel from '../components/IndustryCarousel.vue';
 
 // Basic page metadata
 definePageMeta({
-  title: 'CAPERA - Global Payment Solutions',
+  title: 'CAPERA - Make money move globally',
   description: 'Access top-tier global payment solutions with a single contract and API integration. Simplify cross-border transactions, currency exchange, and international payments.'
 })
 
 // Enhanced SEO with useHead for basic head elements
 useHead({
-  title: 'CAPERA - Global Payment Solutions & Currency Exchange Platform',
+  title: 'CAPERA - Make money move globally',
   titleTemplate: '%s | Simplify Cross-Border Transactions',
   link: [
     {
@@ -77,11 +77,11 @@ useHead({
 
 // Comprehensive SEO meta tags with useSeoMeta
 useSeoMeta({
-  title: 'CAPERA - Global Payment Solutions & Currency Exchange Platform',
+  title: 'CAPERA - Make money move globally',
   description: 'Access top-tier global payment solutions with a single contract and API integration. Simplify cross-border transactions, currency exchange, and international payments with CAPERA.',
   
   // OpenGraph meta tags for social sharing
-  ogTitle: 'CAPERA - Simplify Global Payments & Currency Exchange',
+  ogTitle: 'CAPERA - Make money move globally',
   ogDescription: 'Access top-tier global payment solutions with a single contract and API integration. Join other businesses using CAPERA for seamless cross-border transactions.',
   ogImage: 'https://yourdomain.com/images/capera-homepage-og.jpg',
   ogUrl: 'https://yourdomain.com',
@@ -90,7 +90,7 @@ useSeoMeta({
   
   // Twitter Card meta tags
   twitterCard: 'summary_large_image',
-  twitterTitle: 'CAPERA - Simplify Global Payments & Currency Exchange',
+  twitterTitle: 'CAPERA - Make money move globally',
   twitterDescription: 'Access top-tier global payment solutions with a single contract and API integration. Join other businesses using CAPERA for seamless cross-border transactions.',
   twitterImage: 'https://yourdomain.com/images/capera-homepage-og.jpg',
   
@@ -156,14 +156,4 @@ const jsonLd = [
     ]
   }
 ]
-
-// Add structured data to the page
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify(jsonLd)
-    }
-  ]
-})
 </script>
