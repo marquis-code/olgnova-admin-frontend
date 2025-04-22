@@ -24,7 +24,18 @@
     <PlatformBenefits />
     <!-- <IndustrySolutions /> -->
     <!-- <GlobalPayouts /> -->
-    <GlobalPayments class="pt-20" />
+    <!-- <GlobalPayments class="" /> -->
+     <section>
+      <!-- <p>INDUSTRY SOLUTIONS</p> -->
+      <div 
+          class="my-44 text-center font-light leading-tight text-[#1A1A1B] max-w-5xl mx-auto transform translate-y-4"
+        >
+         <p class="font-semibold py-4 tracking-wider uppercase">INDUSTRY SOLUTIONS</p>
+         <h3 class="text-4xl md:text-5xl lg:text-6xl"> Capera unifies every essential tool for seamless global payments operations. Whether you're sending funds or collecting them, we streamline every step to simplify cross-border transactions.</h3>
+        </div>
+     </section>
+
+    <IndustryCarousel class="my-16" />
     <TestimonialCarousel />
     <SecuritySection />
     <PaymentFooter 
@@ -45,6 +56,7 @@ import { useHead } from '#app' // or 'nuxt/app'
 import { useSeoMeta } from '#imports' // or directly from 'nuxt/head'
 import GlobalPayments from '~/components/GlobalPayments.vue';
 import GlobalPayouts from '~/components/GlobalPayouts.vue';
+import IndustryCarousel from '../components/IndustryCarousel.vue';
 
 // Basic page metadata
 definePageMeta({

@@ -11,7 +11,7 @@
       real-time payments at a fraction of the cost of bank wires.
     </p>
     
-    <div class="flex justify-center mb-12">
+    <div class="flex justify-center z-50 mb-12">
       <NuxtLink to="/payouts" class="inline-flex items-center text-white font-medium hover:underline">
         Learn about Payout
         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
       <img src="@/assets/icons/circular-globe.svg" class="w-[560px] h-[522px]" />
       
       <!-- Transaction notification - positioned in the center of the globe -->
-      <div class="absolute top-1/2 left-1/2 scroll-px-16 lg:px-0 px-7 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out w-[400px] lg:w-[550px]">
+      <div class="absolute top-1/2 left-1/2 scroll-px-16 lg:px-0 px-2  transform -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out w-full">
         <div class="flex items-center justify-between bg-white rounded-full px-4 py-4 shadow-lg">
           <section class="flex items-center space-x-4">
             <div class="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden">

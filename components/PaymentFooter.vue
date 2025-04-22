@@ -1,5 +1,5 @@
 <template>
-    <main class="m-4">
+    <main class="m-2 lg:m-4">
       <div class="relative w-full overflow-hidden rounded-3xl bg-[#1A1A1B] text-white">
         <!-- Main content -->
         <div class="relative z-10 px-6 py-16 text-center md:px-12 md:py-24 mb-60">
