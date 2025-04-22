@@ -1,5 +1,5 @@
 <template>
-    <div class="px-6 py-12">
+    <div class="lg:px-6 py-12 px-3">
       <div class="relative">
         <!-- Carousel container -->
         <div class="overflow-hidden">

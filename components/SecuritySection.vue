@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-gray-50 py-16 px-4 relative rounded-xl m-6">
+    <section class="bg-gray-50 py-16 px-4 relative rounded-xl m-2 lg:m-6">
       <!-- Grid background pattern -->
       <div class="absolute inset-0 grid grid-cols-6 md:grid-cols-12" aria-hidden="true">
         <div v-for="i in 12" :key="i" class="border-r border-t-[0.5px] border-gray-100"></div>
