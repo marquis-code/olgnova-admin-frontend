@@ -10,24 +10,24 @@
     <div class="platform-container space-y-10 mt-32">
       <div class="flex justify-center space-y-2 items-center flex-col">
         <h2 class="text-[#1A1A1B] font-medium uppercase text-[20px]">Our Platform</h2>
-        <p class="text-[#1A1A1B] mx-3 lg:px-0 text-6xl max-w-6xl text-center">Gain seamless access to top-tier global payment solutions with a single contract and API integration.</p>
+        <p class="text-[#1A1A1B] mx-3 lg:px-0 text-[28px] lg:text-6xl max-w-xs lg:max-w-6xl text-center">Gain seamless access to top-tier global payment solutions with a single contract and API integration.</p>
       </div>
 
       <div class="flex justify-center items-center">
         <img src="@/assets/img/plattform.png" class="w-auto lg:h-[920px]" />
       </div>
     </div>
-    <PaymentTabs />
+    <PaymentTabs class="" />
     <AboutUs class="pt-60 lg:pt-0" />
-    <GlobalTransferCard />
+    <GlobalTransferCard class="my-20" />
     <CurrencyExchange />
     <PlatformBenefits />
      <section>
       <div 
-          class="my-44 text-center font-light leading-tight text-[#1A1A1B] max-w-5xl mx-auto transform translate-y-4"
+          class="my-20 lg:my-44 text-center font-light leading-tight text-[#1A1A1B] max-w-5xl mx-auto transform translate-y-4"
         >
-         <p class="font-medium py-4 text-[20px] tracking-wider uppercase">INDUSTRY SOLUTIONS</p>
-         <h3 class="text-4xl md:text-5xl text-[#1A1A1B] font-medium leading-[72px] lg:text-6xl"> Capera unifies every essential tool for seamless global payments operations. Whether you're sending funds or collecting them, we streamline every step to simplify cross-border transactions.</h3>
+         <p class="font-medium py-4 text-[16px] lg:text-[20px] tracking-wider uppercase">INDUSTRY SOLUTIONS</p>
+         <h3 class="text-[28px] md:text-5xl p-3 text-[#1A1A1B] font-medium lg:text-6xl"> Capera unifies every essential tool for seamless global payments operations. Whether you're sending funds or collecting them, we streamline every step to simplify cross-border transactions.</h3>
         </div>
      </section>
 

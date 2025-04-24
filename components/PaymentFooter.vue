@@ -6,7 +6,7 @@
           <h2 class="mb-4 text-5xl lg:text-8xl md:text-8xl font-bold uppercase mx-auto tracking-tight">
             {{title}}
           </h2>
-          <p class="mx-auto mb-10 max-w-2xl text-base md:text-lg">
+          <p class="mx-auto mb-10 text-[16px] max-w-2xl text-base md:text-lg">
            {{description}}
           </p>
   

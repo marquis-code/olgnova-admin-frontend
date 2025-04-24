@@ -20,12 +20,12 @@
       
       <!-- Mobile version -->
       <div class="block md:hidden">
-        <h2 class="text-4xl font-bold text-[#1A1A1B] mb-2">
+        <h2 class="text-5xl font-bold text-[#1A1A1B] mb-2">
           MAXIMUM<br>REACH
         </h2>
         <div class="flex items-center justify-center">
           <div class="w-8 h-2 bg-[#3BAB22] mr-2"></div>
-          <h2 class="text-4xl font-bold text-[#3BAB22]">
+          <h2 class="text-5xl font-bold text-[#3BAB22]">
             MINIMUM<br>EFFORT
           </h2>
         </div>
@@ -33,7 +33,7 @@
     </div>
     
     <div class="mx-auto">
-      <p class="text-base leading-relaxed md:text-[20px] text-center">
+      <p class="text-[18px] leading-relaxed md:text-[20px] text-center">
         Send payments globally with speed and affordability
         <br>— no need to be physically present in the destination region.
       </p>

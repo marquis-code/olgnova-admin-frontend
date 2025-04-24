@@ -4,7 +4,7 @@
         <div class="text-center mb-12">
           <p class="uppercase text-sm font-semibold tracking-wider mb-4">INTEGRATIONS</p>
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight">
-            Access to a complete payments infrastructure through a single integration.
+             <!-- Access to a complete payments infrastructure through a single integration. -->
           </h2>
           <p class="mt-6 text-gray-700 max-w-3xl mx-auto text-lg">
             Whether you want to connect to us via our dashboard or our API, safety and security are always top of mind. You'll be working with the world's leading infrastructure providers, so you can rest easy knowing your funds are taken care of.

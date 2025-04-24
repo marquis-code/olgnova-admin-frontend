@@ -28,7 +28,7 @@
         </h1>
         </div>
         <p 
-          class="text-center max-w-lg text-[20px] mx-auto leading-relaxed opacity-90"
+          class="text-center max-w-lg text-[18px] lg:text-[20px] mx-auto leading-relaxed opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
@@ -69,9 +69,9 @@
     <!-- Features Section -->
     <section id="features" class="py-20 bg-white">
       <div class="px-4">
-        <p class="text-center uppercase text-[20px] font-medium text-gray-600 mb-2">Integrations</p>
+        <p class="text-center uppercase text-[16px] lg:text-[20px] font-medium text-gray-600 mb-2">Integrations</p>
         <h2
-          class="text-4xl md:text-6xl py-4 font- max-w-4xl mx-auto text-center"
+          class="text-[28px] md:text-6xl py-4 font- max-w-xs lg:max-w-4xl mx-auto text-center"
           v-motion
           :initial="{ opacity: 0, y: 50 }"
           :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800 } }"
@@ -118,8 +118,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-5xl font-semibold my-6">API</h3>
-            <p class="text-[#454745] leading-relaxed text-lg">
+            <h3 class="text-[24px] lg:text-5xl font-semibold my-6">API</h3>
+            <p class="text-[#454745] leading-relaxed text-[16px] lg:text-lg">
               Putting you in control of your payments. Customise our payout
               flows with your branding via our API. Automatically collect all
               payout information in the format that works for you.
@@ -171,8 +171,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-5xl font-semibold my-6">Portal</h3>
-            <p class="text-[#454745] leading-relaxed text-lg">
+            <h3 class="text-[24px] lg:text-5xl font-semibold my-6">Portal</h3>
+            <p class="text-[#454745] leading-relaxed text-[16px] lg:text-lg">
               Quickly unlock access to new markets by using our ready to go
               portal. Gain real-time insight into all of your payments, pull
               reports and easily track all of your money movements.

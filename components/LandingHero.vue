@@ -8,7 +8,7 @@
 
       <!-- Hero Section -->
       <div class="relative z-10 container mx-auto px-4 pt-44 pb-12 text-center">
-        <h1 class="text-5xl lg:text-8xl md:text-8xl font-bold text-white mb-4">
+        <h1 class="text-7xl lg:text-8xl font-bold text-white mb-4">
           MAKE MONEY
           <div class="flex items-center justify-center">
             <div class="w-16 h-3 bg-[#3BAB22] mr-4"></div>
@@ -19,10 +19,10 @@
           Manage currency accounts, pay across borders, and streamline global financial operations.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-          <button class="bg-[#3BAB22] text-white font-medium px-6 py-4 rounded-full transition-colors w-full">
+          <button class="bg-[#3BAB22] text-white font-medium px-6 py-4 rounded-full transition-colors lg:w-full">
             Create account
           </button>
-          <button class="bg-white hover:bg-gray-100 text-gray-800 font-medium px-6 py-4 rounded-full transition-colors w-full">
+          <button class="bg-white hover:bg-gray-100 text-gray-800 font-medium px-6 py-4 rounded-full transition-colors lg:w-full">
             Contact Sales
           </button>
         </div>

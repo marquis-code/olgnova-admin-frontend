@@ -27,50 +27,15 @@
               >
                 <component :is="card.icon" class="h-full w-full" />
               </div>
-              <h3 class="text-5xl font-semibold my-[64px]">{{ card.title }}</h3>
-              <p class="text-[#454745] text-lg mt-10 leading-relaxed">
+              <h3 class="text-2xl lg:text-5xl font-semibold lg:my-[64px]">{{ card.title }}</h3>
+              <p class="text-[#454745] text-[16px] lg:text-lg mt-10 leading-relaxed">
                 {{ card.description }}
               </p>
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- Navigation Controls -->
-      <!-- <div class="flex justify-center mt-8 space-x-2">
-        <button 
-          v-for="index in totalSlides" 
-          :key="index"
-          @click="goToSlide(index - 1)"
-          class="w-3 h-3 rounded-full transition-all duration-300"
-          :class="currentSlide === index - 1 ? 'bg-gray-800 scale-125' : 'bg-gray-300 hover:bg-gray-400'"
-          aria-label="Go to slide"
-        ></button>
-      </div> -->
-      
-      <!-- Arrow Navigation -->
-      <!-- <button 
-        @click="prevSlide" 
-        class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
-        aria-label="Previous slide"
-      >
-        <span class="sr-only">Previous</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      
-      <button 
-        @click="nextSlide" 
-        class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
-        aria-label="Next slide"
-      >
-        <span class="sr-only">Next</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button> -->
-    </div>
+          </div>
   </template>
   
   <script setup lang="ts">
