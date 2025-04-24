@@ -18,16 +18,16 @@
                 <img 
                     :src="testimonial.logoSrc" 
                     :alt="testimonial.company" 
-                    class="h-[300px] w-full object-cover rounded-xl"
+                    class="w-[560px] h-[568px] object-cover rounded-xl"
                   />
               </div>
               
               <!-- Testimonial content -->
-              <div class="bg-gray-50 rounded-3xl p-8 md:p-12 w-full md:w-7/12">
-                <blockquote class="text-2xl md:text-3xl font-medium text-gray-800 mb-6 leading-loose">
+              <div class="bg-gray-50 rounded-3xl p-8 md:p-[48px] w-full h-[568px] md:w-[704px]">
+                <h1 style="font-weight: 700;" class="text-2xl leading-[60px] md:text-5xl font-medium text-[#1A1A1B] mb-6">
                   "{{ testimonial.quote }}"
-                </blockquote>
-                <div class="text-gray-600">
+                </h1>
+                <div class="text-gray-600 text-[22px]">
                   {{ testimonial.author }}, {{ testimonial.title }}
                 </div>
               </div>

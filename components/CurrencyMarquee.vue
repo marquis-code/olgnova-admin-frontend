@@ -5,8 +5,9 @@
         <div class="marquee" ref="marqueeRef">
           <div class="marquee-content" :style="{ transform: `translateX(${marqueePosition}px)` }">
             <div v-for="(item, index) in duplicatedItems" :key="`currency-${index}`" class="marquee-item">
+              <!-- <img src="@/assets/img/countries-supported.png" /> -->
               <span class="country-name">{{ item.country }}</span>
-              <span class="currency-symbol" :class="item.symbolClass">{{ item.symbol }}</span>
+              <span :class="item.size === 'small' ? 'text-[14px]' : 'text-[30px]'" class="currency-symbol text-white">{{ item.symbol }}</span>
             </div>
           </div>
         </div>
@@ -15,7 +16,7 @@
       <!-- Toggle button for coverage list -->
      <section class="px-10">
       <div class="coverage-toggle" @click="toggleCoverageList">
-        <span>{{ isListOpen ? 'Close coverage list' : 'View full coverage list' }}</span>
+        <span class="text-[18px]">{{ isListOpen ? 'Close coverage list' : 'View full coverage list' }}</span>
         <span class="toggle-icon">{{ isListOpen ? '−' : '+' }}</span>
       </div>
   
@@ -40,6 +41,7 @@
   
   <script setup lang="ts">
   import { ref, onMounted, onUnmounted, computed } from 'vue';
+  import countriesSupported from "@/assets/img/countries-supported.png"
   
   // State for toggling the coverage list
   const isListOpen = ref(false);
@@ -54,13 +56,18 @@
   
   // Currency items for the marquee
   const currencyItems = [
-    { country: 'Germany', symbol: '€', symbolClass: 'eur' },
-    { country: 'United States', symbol: '$', symbolClass: 'usd' },
-    { country: 'United Kingdom', symbol: '£', symbolClass: 'gbp' },
-    { country: 'Nigeria', symbol: '₦', symbolClass: 'ngn' },
-    { country: 'China', symbol: 'CNY', symbolClass: 'cny' },
-    { country: 'Canada', symbol: 'CAD', symbolClass: 'cad' },
-    { country: 'Ghana', symbol: 'GHS', symbolClass: 'ghs' }
+    { country: 'Germany', symbol: '€', symbolClass: 'eur', size: 'big' },
+    { country: 'United States', symbol: '$', symbolClass: 'usd', size: 'big' },
+    { country: 'United Kingdom', symbol: '£', symbolClass: 'gbp', size: 'big' },
+    { country: 'Nigeria', symbol: '₦', symbolClass: 'ngn', size: 'big' },
+    { country: 'China', symbol: 'CNY', symbolClass: 'cny', size: 'small' },
+    { country: 'Canada', symbol: 'CAD', symbolClass: 'cad', size: 'small' },
+    { country: 'Ghana', symbol: 'GHS', symbolClass: 'ghs', size: 'small' },
+    { country: 'Kenya', symbol: 'KES', symbolClass: 'kes', size: 'small' },
+    { country: 'Cameroon', symbol: 'XAF', symbolClass: 'xaf', size: 'small' },
+    { country: 'Ivory Coast', symbol: 'XOF', symbolClass: 'xof', size: 'small' },
+    { country: 'Portugal', symbol: '€', symbolClass: 'eur', size: 'big' },
+    { country: 'Scotland', symbol: '£', symbolClass: 'usd', size: 'big' }
   ];
   
   // Duplicate items to create seamless infinite scroll effect
@@ -188,18 +195,21 @@
   
   .country-name {
     margin-right: 8px;
-    font-size: 20px;
+    font-size: 34px;
+    font-weight: 500;
+    color: #D7D7D7;
   }
   
   .currency-symbol {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
+    color: #FFFFFF;
     background-color: #D7D7D7;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 500;
   }
   
@@ -210,11 +220,11 @@
     padding: 15px 0;
     cursor: pointer;
     color: #D7D7D7;
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .toggle-icon {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 300;
   }
   

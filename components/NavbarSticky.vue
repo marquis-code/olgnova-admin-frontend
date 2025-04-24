@@ -29,7 +29,7 @@
               />
             </button>
             
-            <Transition
+            <!-- <Transition
               enter-active-class="transition-all duration-300 ease-out"
               enter-from-class="opacity-0 -translate-y-2"
               enter-to-class="opacity-100 translate-y-0"
@@ -38,13 +38,13 @@
               leave-to-class="opacity-0 -translate-y-2"
             >
               <div v-if="activeDropdown === 'products'" class="absolute left-0 mt-2 w-56 rounded-lg bg-white shadow-lg overflow-hidden z-50">
-                <div class="py-1">
+                <div class="py-1 space-y-3">
                   <NuxtLink 
                     v-for="product in products" 
                     :key="product.name" 
                     :to="product.link" 
                     @click="closeDropdowns"
-                    class="flex items-center px-4 py-2 text-sm text-gray-800 hover:bg-[#3BAB22]/10 hover:text-[#2c5520] group"
+                    class="flex items-center px-4 py-2 text-[16px] text-gray-800 hover:bg-[#3BAB22]/10 hover:text-[#2c5520] group"
                   >
                     <img :src="product.icon" class="h-4 w-4 mr-3" />
                     <span>{{ product.name }}</span>
@@ -52,7 +52,37 @@
                   </NuxtLink>
                 </div>
               </div>
-            </Transition>
+            </Transition> -->
+            <Transition
+  enter-active-class="transition-all duration-300 ease-out"
+  enter-from-class="opacity-0 -translate-y-2"
+  enter-to-class="opacity-100 translate-y-0"
+  leave-active-class="transition-all duration-200 ease-in"
+  leave-from-class="opacity-100 translate-y-0"
+  leave-to-class="opacity-0 -translate-y-2"
+>
+  <div v-if="activeDropdown === 'products'" class="absolute left-0 mt-2 w-[336px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
+    <div class="p-1">
+      <NuxtLink 
+        v-for="product in products" 
+        :key="product.name" 
+        :to="product.link" 
+        @click="closeDropdowns"
+        class="flex items-center px-4 py-3 text-[16px] text-[#1A1A1B] hover:bg-[#F9FAFB] rounded-xl"
+        @mouseenter="hoveredProduct = product.name"
+        @mouseleave="hoveredProduct = null"
+      >
+        <img :src="product.icon" class="h-[24px] w-[24px] mr-3" />
+        <span>{{ product.name }}</span>
+        <svg  :class="hoveredProduct === product.name ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'" class="ml-auto h-[20px] w-[20px] transition-all duration-200 text-[#3BAB22]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 10C17.5 10.4602 17.1269 10.8333 16.6667 10.8333L3.33332 10.8333C2.87308 10.8333 2.49998 10.4602 2.49998 10C2.49998 9.53976 2.87308 9.16667 3.33332 9.16667L16.6667 9.16667C17.1269 9.16667 17.5 9.53976 17.5 10Z" fill="#1A1A1B"/>
+        <path d="M15.8101 10C15.7324 9.87103 15.5694 9.63926 15.3911 9.43755C15.0364 9.03602 14.5474 8.57737 14.037 8.13421C13.5307 7.69464 13.022 7.28637 12.6384 6.98698C12.447 6.83763 12.1167 6.58814 12.0058 6.50434C11.6352 6.2314 11.5561 5.70978 11.829 5.33922C12.1019 4.96863 12.6236 4.88947 12.9942 5.16239L12.9973 5.16472C13.1176 5.2556 13.4664 5.51909 13.6637 5.67306C14.0613 5.98335 14.5943 6.41086 15.1297 6.8757C15.6609 7.33695 16.2136 7.85133 16.6401 8.33398C16.8525 8.57436 17.0512 8.82649 17.2013 9.0755C17.3376 9.30163 17.5 9.63066 17.5 9.99997C17.5 10.3693 17.3376 10.6984 17.2013 10.9245C17.0512 11.1735 16.8525 11.4256 16.6401 11.666C16.2136 12.1487 15.6609 12.663 15.1297 13.1243C14.5943 13.5891 14.0613 14.0167 13.6637 14.3269C13.4664 14.4809 13.1178 14.7442 12.9975 14.8351L12.9942 14.8376C12.6236 15.1105 12.1019 15.0314 11.829 14.6608C11.5561 14.2902 11.6352 13.7686 12.0058 13.4957C12.1167 13.4119 12.447 13.1624 12.6384 13.013C13.022 12.7136 13.5307 12.3054 14.037 11.8658C14.5474 11.4226 15.0364 10.964 15.3911 10.5624C15.5694 10.3607 15.7324 10.129 15.8101 10Z" fill="#1A1A1B"/>
+        </svg>
+
+      </NuxtLink>
+    </div>
+  </div>
+</Transition>
           </div>
           
           <!-- <div class="relative">
@@ -77,7 +107,7 @@
               />
             </button>
             
-            <Transition
+            <!-- <Transition
               enter-active-class="transition-all duration-300 ease-out"
               enter-from-class="opacity-0 -translate-y-2"
               enter-to-class="opacity-100 translate-y-0"
@@ -100,7 +130,37 @@
                   </NuxtLink>
                 </div>
               </div>
-            </Transition>
+            </Transition> -->
+            <Transition
+  enter-active-class="transition-all duration-300 ease-out"
+  enter-from-class="opacity-0 -translate-y-2"
+  enter-to-class="opacity-100 translate-y-0"
+  leave-active-class="transition-all duration-200 ease-in"
+  leave-from-class="opacity-100 translate-y-0"
+  leave-to-class="opacity-0 -translate-y-2"
+>
+  <div v-if="activeDropdown === 'company'" class="absolute left-0 mt-2 w-[336px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
+    <div class="p-1">
+      <NuxtLink 
+        v-for="item in company" 
+        :key="item.name" 
+        :to="item.link" 
+        @click="closeDropdowns"
+        class="flex items-center px-4 py-3 text-[16px] text-[#1A1A1B] hover:bg-[#F9FAFB] rounded-xl"
+        @mouseenter="hoveredCompany = item.name"
+        @mouseleave="hoveredCompany = null"
+      >
+        <img :src="item.icon" class="h-[24px] w-[24px] mr-3" />
+        <span>{{ item.name }}</span>
+        <svg  :class="hoveredCompany === item.name ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'" class="ml-auto h-[20px] w-[20px] transition-all duration-200 text-[#3BAB22]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 10C17.5 10.4602 17.1269 10.8333 16.6667 10.8333L3.33332 10.8333C2.87308 10.8333 2.49998 10.4602 2.49998 10C2.49998 9.53976 2.87308 9.16667 3.33332 9.16667L16.6667 9.16667C17.1269 9.16667 17.5 9.53976 17.5 10Z" fill="#1A1A1B"/>
+        <path d="M15.8101 10C15.7324 9.87103 15.5694 9.63926 15.3911 9.43755C15.0364 9.03602 14.5474 8.57737 14.037 8.13421C13.5307 7.69464 13.022 7.28637 12.6384 6.98698C12.447 6.83763 12.1167 6.58814 12.0058 6.50434C11.6352 6.2314 11.5561 5.70978 11.829 5.33922C12.1019 4.96863 12.6236 4.88947 12.9942 5.16239L12.9973 5.16472C13.1176 5.2556 13.4664 5.51909 13.6637 5.67306C14.0613 5.98335 14.5943 6.41086 15.1297 6.8757C15.6609 7.33695 16.2136 7.85133 16.6401 8.33398C16.8525 8.57436 17.0512 8.82649 17.2013 9.0755C17.3376 9.30163 17.5 9.63066 17.5 9.99997C17.5 10.3693 17.3376 10.6984 17.2013 10.9245C17.0512 11.1735 16.8525 11.4256 16.6401 11.666C16.2136 12.1487 15.6609 12.663 15.1297 13.1243C14.5943 13.5891 14.0613 14.0167 13.6637 14.3269C13.4664 14.4809 13.1178 14.7442 12.9975 14.8351L12.9942 14.8376C12.6236 15.1105 12.1019 15.0314 11.829 14.6608C11.5561 14.2902 11.6352 13.7686 12.0058 13.4957C12.1167 13.4119 12.447 13.1624 12.6384 13.013C13.022 12.7136 13.5307 12.3054 14.037 11.8658C14.5474 11.4226 15.0364 10.964 15.3911 10.5624C15.5694 10.3607 15.7324 10.129 15.8101 10Z" fill="#1A1A1B"/>
+        </svg>
+
+      </NuxtLink>
+    </div>
+  </div>
+</Transition>
           </div>
           
           <div class="relative group">
@@ -116,7 +176,7 @@
               />
             </button>
             
-            <Transition
+            <!-- <Transition
               enter-active-class="transition-all duration-300 ease-out"
               enter-from-class="opacity-0 -translate-y-2"
               enter-to-class="opacity-100 translate-y-0"
@@ -139,7 +199,37 @@
                   </NuxtLink>
                 </div>
               </div>
-            </Transition>
+            </Transition> -->
+            <Transition
+  enter-active-class="transition-all duration-300 ease-out"
+  enter-from-class="opacity-0 -translate-y-2"
+  enter-to-class="opacity-100 translate-y-0"
+  leave-active-class="transition-all duration-200 ease-in"
+  leave-from-class="opacity-100 translate-y-0"
+  leave-to-class="opacity-0 -translate-y-2"
+>
+  <div v-if="activeDropdown === 'help'" class="absolute left-0 mt-2 w-[336px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
+    <div class="p-1">
+      <NuxtLink 
+        v-for="item in help" 
+        :key="item.name" 
+        :to="item.link" 
+        @click="closeDropdowns"
+        class="flex items-center px-4 py-3 text-[16px] text-[#1A1A1B] hover:bg-[#F9FAFB] rounded-xl"
+        @mouseenter="hoveredCompany = item.name"
+        @mouseleave="hoveredCompany = null"
+      >
+        <img :src="item.icon" class="h-[24px] w-[24px] mr-3" />
+        <span>{{ item.name }}</span>
+        <svg  :class="hoveredCompany === item.name ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'" class="ml-auto h-[20px] w-[20px] transition-all duration-200 text-[#3BAB22]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 10C17.5 10.4602 17.1269 10.8333 16.6667 10.8333L3.33332 10.8333C2.87308 10.8333 2.49998 10.4602 2.49998 10C2.49998 9.53976 2.87308 9.16667 3.33332 9.16667L16.6667 9.16667C17.1269 9.16667 17.5 9.53976 17.5 10Z" fill="#1A1A1B"/>
+        <path d="M15.8101 10C15.7324 9.87103 15.5694 9.63926 15.3911 9.43755C15.0364 9.03602 14.5474 8.57737 14.037 8.13421C13.5307 7.69464 13.022 7.28637 12.6384 6.98698C12.447 6.83763 12.1167 6.58814 12.0058 6.50434C11.6352 6.2314 11.5561 5.70978 11.829 5.33922C12.1019 4.96863 12.6236 4.88947 12.9942 5.16239L12.9973 5.16472C13.1176 5.2556 13.4664 5.51909 13.6637 5.67306C14.0613 5.98335 14.5943 6.41086 15.1297 6.8757C15.6609 7.33695 16.2136 7.85133 16.6401 8.33398C16.8525 8.57436 17.0512 8.82649 17.2013 9.0755C17.3376 9.30163 17.5 9.63066 17.5 9.99997C17.5 10.3693 17.3376 10.6984 17.2013 10.9245C17.0512 11.1735 16.8525 11.4256 16.6401 11.666C16.2136 12.1487 15.6609 12.663 15.1297 13.1243C14.5943 13.5891 14.0613 14.0167 13.6637 14.3269C13.4664 14.4809 13.1178 14.7442 12.9975 14.8351L12.9942 14.8376C12.6236 15.1105 12.1019 15.0314 11.829 14.6608C11.5561 14.2902 11.6352 13.7686 12.0058 13.4957C12.1167 13.4119 12.447 13.1624 12.6384 13.013C13.022 12.7136 13.5307 12.3054 14.037 11.8658C14.5474 11.4226 15.0364 10.964 15.3911 10.5624C15.5694 10.3607 15.7324 10.129 15.8101 10Z" fill="#1A1A1B"/>
+        </svg>
+
+      </NuxtLink>
+    </div>
+  </div>
+</Transition>
           </div>
         </nav>
         
@@ -323,6 +413,8 @@ import {
 const isMenuOpen = ref(false)
 const scrolled = ref(false)
 const scrollY = ref(0)
+const hoveredProduct = ref(null)
+const hoveredCompany = ref(null)
 
 const products = [
   { 

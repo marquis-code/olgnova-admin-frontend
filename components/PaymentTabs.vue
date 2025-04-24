@@ -1,13 +1,13 @@
 <template>
   <section class="mx-auto px-4 py-16">
     <div class="text-center mb-12">
-      <h3 class="text-sm uppercase tracking-wider text-gray-800 mb-2">PLATFORM FEATURES</h3>
+      <h3 class="uppercase tracking-wider text-[20px] font-medium text-gray-800 mb-2">PLATFORM FEATURES</h3>
       <div class="mb-2">
-        <h2 class="text-3xl md:text-7xl font-bold text-[#1A1A1B]">PAYMENTS</h2>
+        <h2 class="text-5xl lg:text-8xl md:text-8xl font-bold text-[#1A1A1B]">PAYMENTS</h2>
       </div>
       <div class="flex items-center justify-center">
         <div class="w-10 h-3 bg-[#3BAB22] mr-4"></div>
-        <h2 class="text-3xl md:text-7xl font-bold text-[#3BAB22]">WITHOUT BORDERS</h2>
+        <h2 class="text-5xl lg:text-8xl md:text-8xl font-bold text-[#3BAB22]">WITHOUT BORDERS</h2>
       </div>
     </div>
 
@@ -48,7 +48,7 @@
                 <img :src="activeTab === tab.id ? tab.activeIcon : tab.icon" alt="" class="h-[96px] w-[96px]" />
               </div>
               <h2 class="text-4xl md:text-7xl font-bold text-[#1A1A1B] mb-6 whitespace-pre-line">{{ tab.content.title }}</h2>
-              <p class="text-gray-700 mb-6 leading-relaxed">{{ tab.content.description }}</p>
+              <p class="text-gray-700 mb-6 text-lg leading-relaxed">{{ tab.content.description }}</p>
               <NuxtLink
                 :to="tab.content.learnMoreLink"
                 class="inline-flex items-center text-[#3BAB22] font-medium space-x-3"

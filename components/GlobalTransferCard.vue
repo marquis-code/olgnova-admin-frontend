@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex flex-col rounded-3xl m-3 py-32 items-center justify-center min-h-screen bg-[#3BAB22]">
     <div class="absolute inset-0 grid-pattern"></div>
-    <h1 class="text-white text-4xl md:text-8xl font-bold text-center leading-tight mb-6">
+    <h1 class="text-white text-5xl lg:text-8xl md:text-8xl z-40 font-bold text-center leading-tight mb-6">
       MOVE MONEY GLOBALLY<br />IN SECONDS
     </h1>
     

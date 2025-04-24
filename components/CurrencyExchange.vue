@@ -19,7 +19,7 @@
         </div>
   
         <!-- Right side currency converter -->
-        <div class="l">
+        <div class="">
           <CurrencyCalculator />
               <!-- <img src="@/assets/img/capera-value.png" class="h-full w-full" /> -->
         </div>
