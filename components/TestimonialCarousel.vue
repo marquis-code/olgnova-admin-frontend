@@ -24,7 +24,7 @@
               
               <!-- Testimonial content -->
               <div class="bg-gray-50 rounded-3xl p-8 md:p-[48px] w-full h-[568px] md:w-[704px]">
-                <h1 style="font-weight: 700;" class="text-2xl leading-[60px] md:text-5xl font-medium text-[#1A1A1B] mb-6">
+                <h1 style="font-weight: 700;" class="text-[30px] lg:leading-[60px] md:text-5xl font-medium text-[#1A1A1B] mb-6">
                   "{{ testimonial.quote }}"
                 </h1>
                 <div class="text-gray-600 text-[22px]">

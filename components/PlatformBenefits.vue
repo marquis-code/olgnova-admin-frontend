@@ -1,7 +1,7 @@
 <template>
 <main>
     <section class="max-w-7xl mx-auto px-6 pt-20">
-      <h2 class="text-[20px] text-[#1A1A1B] pb-20 font-medium text-center">PLATFORM BENEFITS</h2>
+      <h2 class="text-[16px] lg:text-[20px] text-[#1A1A1B] pb-20 font-medium text-center">PLATFORM BENEFITS</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div v-for="(benefit, index) in benefits" :key="index" class="space-y-3">
@@ -9,13 +9,13 @@
             <!-- <component :is="benefit.icon" /> -->
              <img :src="benefit.icon" />
           </div>
-          <h3 class="text-[#1A1A1B] font-medium text-2xl">{{ benefit.title }}</h3>
-          <p class="text-[#454745] text-lg leading-relaxed">{{ benefit.description }}</p>
+          <h3 class="text-[#1A1A1B] font-medium text-lg lg:text-2xl">{{ benefit.title }}</h3>
+          <p class="text-[#454745] text-[14px] leading-relaxed">{{ benefit.description }}</p>
         </div>
       </div>
     </section>
     <div class="p-6 mt-14">
-        <img src="@/assets/img/smiling.png" class="w-full h-" />
+        <img src="@/assets/img/smiling.png" class="w-full h-full" />
     </div>
 </main>
   </template>

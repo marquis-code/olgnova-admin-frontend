@@ -21,7 +21,7 @@
         </div>
         
         <!-- Text content with rounded white background -->
-        <div class="bg-[#F7F7F7] rounded-3xl p-8 md:p-12 mt-[-150px] relative z-10 mx-4 md:mx-8">
+        <div class="bg-[#F7F7F7] rounded-3xl p-8 md:p-12 lg:mt-[-150px] relative z-10 mx-4 md:mx-8">
           <p class="text-center text-[#1A1A1B] text-lg md:text-4xl leading-relaxed max-w-4xl mx-auto">
             Capera enables seamless cross-border money transfers, facilitates local account fund reception, reduces foreign exchange fees, simplifies reconciliation processes, and accelerates settlement times, empowering your business to expand smoothly into new markets.
           </p>
@@ -56,7 +56,7 @@
 
                   <!-- Text content with rounded white background -->
 </section>
-<div class="bg-[#F7F7F7] rounded-3xl p-8 md:p-12 relative z-10 mx-4 md:mx-8">
+<div class="bg-[#F7F7F7] rounded-3xl p-8 md:p-12 -mt-60 relative z-10 mx-6 md:mx-8">
           <p class="text-center text-gray-800 text-lg md:text-2xl leading-relaxed max-w-4xl mx-auto">
             Capera enables seamless cross-border money transfers, facilitates local account fund reception, reduces foreign exchange fees, simplifies reconciliation processes, and accelerates settlement times, empowering your business to expand smoothly into new markets.
           </p>

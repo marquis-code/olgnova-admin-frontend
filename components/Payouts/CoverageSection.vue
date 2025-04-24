@@ -1,7 +1,7 @@
 <template>
     <section class="py-16 bg-[#F7F7F7] rounded-xl m-2 lg:m-6">
       <div class="">
-        <h2 class="text-3xl lg:text-5xl font-bold pl-6 lg:pl-16 text-[#1A1A1B] mb-16">Coverage</h2>
+        <h2 class="text-4xl lg:text-7xl font-bold pl-6 lg:pl-16 text-[#1A1A1B] mb-16">Coverage</h2>
         
         <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-32 items-center">
           <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5 pl-6 lg:pl-16">
@@ -19,8 +19,8 @@
 
                 </div>
               </div>
-              <h3 class="lg:text-2xl text-xl font-medium text-[#1A1A1B]">Process payouts across 10+ global currencies</h3>
-              <p class="text-[#454745] lg:text-lg text-base">Process global payouts to bank accounts worldwide with competitive rates and reliable delivery.</p>
+              <h3 class="lg:text-2xl text-lg font-medium text-[#1A1A1B]">Process payouts across 10+ global currencies</h3>
+              <p class="text-[#454745] lg:text-lg text-[14px]">Process global payouts to bank accounts worldwide with competitive rates and reliable delivery.</p>
             </div>
             
             <!-- Feature 2 -->
@@ -36,8 +36,8 @@
 
                 </div>
               </div>
-              <h3 class="lg:text-2xl text-xl font-medium text-[#1A1A1B]">Pay like you belong in over 100 regions worldwide</h3>
-              <p class="text-[#454745] lg:text-lg text-base">Process fast, secure, and cost-effective local payouts with guaranteed full amounts using Capera.</p>
+              <h3 class="lg:text-2xl text-lg font-medium text-[#1A1A1B]">Pay like you belong in over 100 regions worldwide</h3>
+              <p class="text-[#454745] lg:text-lg text-[14px]">Process fast, secure, and cost-effective local payouts with guaranteed full amounts using Capera.</p>
             </div>
             
             <!-- Feature 3 -->
@@ -51,8 +51,8 @@
 
                 </div>
               </div>
-              <h3 class="lg:text-2xl text-xl font-medium text-[#1A1A1B]">Immediate and same-day payment solutions serving 100+ regions</h3>
-              <p class="text-[#454745] lg:text-lg text-base">Eliminate payment delays with Capera's seamless local payment solutions.</p>
+              <h3 class="lg:text-2xl text-lg font-medium text-[#1A1A1B]">Immediate and same-day payment solutions serving 100+ regions</h3>
+              <p class="text-[#454745] lg:text-lg text-[14px]">Eliminate payment delays with Capera's seamless local payment solutions.</p>
             </div>
           </div>
           

@@ -1,7 +1,7 @@
 <template>
     <section class="py-16 bg-white">
       <div class="">
-        <h2 class="text-3xl lg:text-7xl font-semibold text-center my-20 pb-24">BUILT WITH DEVELOPERS<br />IN MIND</h2>
+        <h2 class="text-5xl lg:text-8xl md:text-8xl font-semibold text-center my-20 pb-24">BUILT WITH DEVELOPERS<br />IN MIND</h2>
         
         <div class="grid md:grid-cols-3 px-4 md:px-8 max-w-7xl mx-auto p-3 lg:p-0 gap-8 mb-16">
           <!-- Feature 1 -->
@@ -23,8 +23,8 @@
 
               </div>
             </div>
-            <h3 class="text-xl font-semibold text-[#1A1A1B]">A single integration to speed up time to market</h3>
-            <p class="text-[#454745] leading-loose">
+            <h3 class="lg:text-2xl text-lg font-medium max-w-sm text-[#1A1A1B]">A single integration to speed up time to market</h3>
+            <p class="text-[#454745] text-[14px] lg:text-lg leading-loose">
               Integrations can be painful - let alone when you have to do 15+ just to facilitate your payments. At Capera, you can unlock access to the best payments infrastructure via one simple integration - so you can get going quickly and pain free.
             </p>
           </div>
@@ -40,8 +40,8 @@
 
               </div>
             </div>
-            <h3 class="text-xl font-semibold text-[#1A1A1B]">Access to best-in-class infrastructure</h3>
-            <p class="text-[#454745] leading-loose">
+            <h3 class="lg:text-2xl text-lg font-medium max-w-sm text-[#1A1A1B]">Access to best-in-class infrastructure</h3>
+            <p class="text-[#454745] text-[14px] lg:text-lg leading-loose">
               We think that everyone should be able to access the world's best and most exclusive banking and technology partners. But we know that in reality, this is too complex and expensive for most. We've done the hard work so you don't have to.
             </p>
           </div>
@@ -60,8 +60,8 @@
 
               </div>
             </div>
-            <h3 class="text-xl font-semibold text-[#1A1A1B]">On-hand support & excellent documentation</h3>
-            <p class="text-[#454745] leading-loose">
+            <h3 class="lg:text-2xl text-lg font-medium max-w-sm text-[#1A1A1B]">On-hand support & excellent documentation</h3>
+            <p class="text-[#454745] text-[14px] lg:text-lg leading-loose">
               Our whole business is built on helping you navigate your growth - this includes how you onboard with us. Our documentation is first-class, and should you have any questions, so is the support you can expect to receive.
             </p>
           </div>

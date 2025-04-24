@@ -3,11 +3,11 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Text Content -->
         <div>
-          <h2 class="text-2xl lg:text-4xl font-semibold mb-6">Getting started is easy.</h2>
-          <p class="text-lg text-gray-700 mb-6">
+          <h2 class="text-2xl lg:text-5xl font-semibold mb-6">Getting started is easy.</h2>
+          <p class="text-[22px] text-[#1A1A1B] mb-6">
             Getting a sandbox account is quick and easy—it only takes a few minutes. Once you're set up, you can immediately start testing and building with our API.
           </p>
-          <p class="text-lg text-gray-700">
+          <p class="text-[22px] text-[#1A1A1B]">
             When you're ready to go live, simply log in to your Capera Business account to access your live API keys.
           </p>
         </div>

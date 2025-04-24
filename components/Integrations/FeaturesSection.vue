@@ -1,6 +1,6 @@
 <template>
-    <section class="py-16 px-4 max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section class=" px-4 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 py-[120px] md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- 24/7 Customer Support -->
         <div class="flex flex-col items-start">
           <div class="mb-4">
@@ -12,7 +12,7 @@
 </svg>
 
           </div>
-          <h3 class="text-xl  text-[#1A1A1B]mb-2">24/7 customer support</h3>
+          <h3 class="text-2xl font-medium  text-[#1A1A1B] mb-2">24/7 customer support</h3>
           <p class="text-[#454745] text-lg">We're here to help. Get in touch with any questions.</p>
         </div>
   
@@ -31,7 +31,7 @@
 </svg>
 
           </div>
-          <h3 class="text-xl text-[#1A1A1B] mb-2">Sandbox account</h3>
+          <h3 class="text-2xl font-medium text-[#1A1A1B] mb-2">Sandbox account</h3>
           <p class="text-[#454745] text-lg">Test your integrations before going live.</p>
         </div>
   
@@ -46,7 +46,7 @@
 </svg>
 
           </div>
-          <h3 class="text-xl text-[#1A1A1B] mb-2">API documentation</h3>
+          <h3 class="text-2xl font-medium text-[#1A1A1B] mb-2">API documentation</h3>
           <p class="text-[#454745] text-lg">Learn how to implement and make the most of our API.</p>
         </div>
   
@@ -59,7 +59,7 @@
 </svg>
 
           </div>
-          <h3 class="text-xl text-[#1A1A1B] mb-2">API tokens</h3>
+          <h3 class="text-2xl font-medium text-[#1A1A1B] mb-2">API tokens</h3>
           <p class="text-[#454745] text-lg">Easily create and manage your personal tokens.</p>
         </div>
       </div>

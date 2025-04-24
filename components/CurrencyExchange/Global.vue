@@ -7,16 +7,16 @@
         <!-- Content container -->
         <div class="relative z-10">
           <!-- Heading -->
-          <h1 class="text-white text-4xl md:text-7xl uppercase font-bold text-center leading-tight mb-6">
+          <h1 class="text-white text-5xl lg:text-8xl md:text-8xl uppercase font-bold text-center leading-tight mb-6">
             Enjoy competitive<br />exchange rate
           </h1>
           
           <!-- Subtext -->
-          <p class="text-white text-center max-w-xl mx-auto mb-8 opacity-90 text-base md:text-lg">
+          <!-- <p class="text-white text-center max-w-xl mx-auto mb-8 opacity-90 text-base md:text-lg">
             Transfer funds faster to and from your digital accounts via 
             bank transfers or mobile wallets in 60+ countries. Enjoy 
             real-time payments at a fraction of the cost of bank wires.
-          </p>
+          </p> -->
           
 <!-- <div>
     <p class="text-2xl text-center text-white">Save up to</p>
@@ -31,11 +31,11 @@
     
     <!-- Content -->
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-white text-2xl md:text-3xl font-medium mb-2">Save up to</h2>
+      <h2 class="text-white text-2xl md:text-5xl font-medium mb-2">Save up to</h2>
       <div class="inline-flex items-center justify-center bg-black rounded-full px-6 py-2 mb-2">
-        <span class="text-white text-5xl md:text-7xl font-bold">80%</span>
+        <span class="text-white text-5xl md:text-9xl font-bold">80%</span>
       </div>
-      <p class="text-white text-2xl md:text-3xl font-medium">on your currency exchanges</p>
+      <p class="text-white text-2xl md:text-5xl font-medium">on your currency exchanges</p>
     </div>
   </section>
                                                                                                                                                                                             

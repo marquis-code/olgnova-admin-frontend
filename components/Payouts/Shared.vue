@@ -7,7 +7,7 @@
         <!-- Content container -->
         <div class="relative z-10">
           <!-- Heading -->
-          <h1 class="text-white text-4xl md:text-7xl uppercase font-bold text-center leading-tight mb-6">
+          <h1 class="text-white text-5xl lg:text-8xl md:text-8xl uppercase font-bold text-center leading-tight mb-6">
             Pay out around the<br />world
           </h1>
           
