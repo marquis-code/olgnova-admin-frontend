@@ -15,13 +15,13 @@
         </div>
       </div>
       <div class="container mx-auto px-4 relative">
-        <p class="text-center mb-2 opacity-90 uppercase">Currency exchange</p>
+        <p class="text-center mb-2 opacity-90 text-[20px] uppercase">Currency exchange</p>
         <div class="relative z-10 container mx-auto px-4 text-center">
-        <h1 class="text-6xl md:text-8xl font-bold text-white mb-4">
+        <h1 class="text-5xl lg:text-8xl md:text-8xl font-bold text-white mb-4">
           YOUR CURRENCY
           <div class="flex items-center justify-center">
             <div class="w-16 h-3 bg-[#3BAB22] mr-4"></div>
-            <span class="text-[#3BAB22]">OUR EXPERTISE</span>
+            <span class="text-[#3BAB22] text-5xl lg:text-8xl md:text-8xl">OUR EXPERTISE</span>
           </div>
           <!-- <span class="text-[#3BAB22]">CUSTOMERS</span> -->
         </h1>
@@ -82,7 +82,7 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-4xl max-w-xs py-6 font-semibold mb-4">Instant conversions</h3>
+            <h3 class="text-5xl max-w-xs py-[64px] font-semibold mb-4">Instant conversions</h3>
             <p class="text-[#454745] text-lg leading-relaxed">Convert your funds in seconds with no hidden charges..</p>
           </div>
           
@@ -100,7 +100,7 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-4xl max-w-xs py-6 font-semibold mb-4">Faster withdrawals</h3>
+            <h3 class="text-5xl max-w-xs py-[64px] font-semibold mb-4">Faster withdrawals</h3>
             <p class="text-[#454745] text-lg leading-relaxed">Withdraw your funds to local accounts within minutes.</p>
           </div>
 
@@ -118,7 +118,7 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-4xl max-w-xs py-6 font-semibold mb-4">The best FX rates</h3>
+            <h3 class="text-5xl max-w-xs py-[64px] font-semibold mb-4">The best FX rates</h3>
             <p class="text-[#454745] text-lg leading-relaxed">Benefit from the most competitive rates available..</p>
           </div>
         </div>

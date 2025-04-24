@@ -1,7 +1,7 @@
 <template>
     <section class="py-16 bg-[#F7F7F7] rounded-xl m-2 lg:m-6">
       <div class="">
-        <h2 class="text-3xl pl-6 lg:pl-16 lg:text-5xl font-bold text-gray-900 mb-16">Global Payouts</h2>
+        <h2 class="text-3xl pl-6 lg:pl-16 lg:text-7xl font-bold text-gray-900 mb-16">Global Payouts</h2>
         
         <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-32 items-center">
           <div class="w-full lg:w-1/2 space-y-10 lg:space-y-5 pl-6 lg:pl-16">

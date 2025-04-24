@@ -7,7 +7,7 @@
       <!-- Content container -->
       <div class="relative z-10 space-y-20">
         <!-- Heading -->
-        <h1 class="text-white text-4xl uppercase md:text-7xl font-bold text-center leading-tight mb-6">
+        <h1 class="text-white uppercase text-5xl lg:text-8xl md:text-8xl font-bold text-center leading-tight mb-6">
           The possibilities are<br />endless.
         </h1>
         

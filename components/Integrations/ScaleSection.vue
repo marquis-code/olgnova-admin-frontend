@@ -1,8 +1,8 @@
 <template>
     <section class="py-16 px-4">
       <div class="text-center mb-16">
-        <h2 class="text-5xl lg:text-7xl font-bold mb-4">BUILT FOR SCALABILITY<br>AND RELIABILITY</h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        <h2 class="text-5xl lg:text-8xl md:text-8xl font-bold mb-4">BUILT FOR SCALABILITY<br>AND RELIABILITY</h2>
+        <p class="text-lg text-[#454745] max-w-3xl mx-auto">
           Discover why Capera's Payments API is the best choice for your global business transfers
         </p>
       </div>
@@ -18,7 +18,7 @@
                 </svg>
             </div>
           </div>
-          <h3 class="lg:text-4xl lg:font-bold py-10 text-xl  font-semibold mb-4">Scalable</h3>
+          <h3 class="lg:text-5xl lg:font-bold py-[64px] text-xl  font-semibold mb-4">Scalable</h3>
           <p class="text-[#454745] text-lg">
             Our RESTful API design supports efficient development, testing, and scaling as your business grows.
           </p>
@@ -40,7 +40,7 @@
 
             </div>
           </div>
-          <h3 class="lg:text-4xl lg:font-bold py-10 text-xl  font-semibold mb-4">Secure</h3>
+          <h3 class="lg:text-5xl lg:font-bold py-[64px] text-xl  font-semibold mb-4">Secure</h3>
           <p class="text-[#454745] text-lg">
             Industry-leading encryption and security practices ensure your transactions and data are protected.
           </p>
@@ -56,7 +56,7 @@
               </svg>
             </div>
           </div>
-          <h3 class="lg:text-4xl lg:font-bold py-10 text-xl  font-semibold mb-4">Reliable</h3>
+          <h3 class="lg:text-5xl lg:font-bold py-[64px] text-xl  font-semibold mb-4">Reliable</h3>
           <p class="text-[#454745] text-lg">
             Backed by 10+ years of experience in international payments, Capera delivers accurate, and dependable results.
           </p>

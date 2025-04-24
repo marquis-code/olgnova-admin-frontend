@@ -10,9 +10,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         <!-- Card 1: New to Capera? -->
         <div class="bg-[#F7F7F7] rounded-2xl p-8">
-          <h2 class="text-3xl md:text-4xl text-[#1A1A1B] font-bold mb-3">New to Capera?</h2>
-          <p class="text-[#454745] mb-8">Send us questions, comments, or a poem.</p>
-          <a href="mailto:someone@example.com" class="inline-flex items-center text-[#3BAB22] font-medium">
+          <h2 class="text-3xl md:text-5xl text-[#1A1A1B] font-bold mb-3">New to Capera?</h2>
+          <p class="text-[#454745] text-lg mb-8">Send us questions, comments, or a poem.</p>
+          <a href="mailto:someone@example.com" class="inline-flex text-lg pt-[64px] items-center text-[#3BAB22] font-medium">
             Email Us
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,9 +22,9 @@
         
         <!-- Card 2: Have an account? -->
         <div class="bg-[#F7F7F7] rounded-2xl p-8">
-          <h2 class="text-3xl md:text-4xl text-[#1A1A1B] font-bold mb-3">Have an account?</h2>
-          <p class="text-[#454745] mb-8">Log in to message our support team.</p>
-          <a href="#" class="inline-flex items-center text-[#3BAB22] font-medium">
+          <h2 class="text-3xl md:text-5xl text-[#1A1A1B] font-bold mb-3">Have an account?</h2>
+          <p class="text-[#454745] text-lg mb-8">Log in to message our support team.</p>
+          <a href="#" class="inline-flex text-lg items-center pt-[64px] text-[#3BAB22] font-medium">
             Log In
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -34,9 +34,9 @@
         
         <!-- Card 3: Want to partner? -->
         <div class="bg-[#F7F7F7] rounded-2xl p-8">
-          <h2 class="text-3xl md:text-4xl text-[#1A1A1B] font-bold mb-3">Want to partner?</h2>
-          <p class="text-[#454745] mb-8">Let's chat about how we can work together</p>
-          <a :href="'mailto:hello@withcapera.com'" class="inline-flex items-center text-[#3BAB22] font-medium">
+          <h2 class="text-3xl md:text-5xl text-[#1A1A1B] font-bold mb-3">Want to partner?</h2>
+          <p class="text-[#454745] text-lg mb-8">Let's chat about how we can work together</p>
+          <a :href="'mailto:hello@withcapera.com'" class="inline-flex text-lg pt-[64px] items-center text-[#3BAB22] font-medium">
             Reach out
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -46,9 +46,9 @@
         
         <!-- Card 4: Contact sales? -->
         <div class="bg-[#F7F7F7] rounded-2xl p-8">
-          <h2 class="text-3xl md:text-4xl text-[#1A1A1B] font-bold mb-3">Contact sales?</h2>
-          <p class="text-[#454745] mb-8">Elevate your business with unmatched expertise</p>
-          <a :href="'mailto:hello@withcapera.com'" class="inline-flex items-center text-[#3BAB22] font-medium">
+          <h2 class="text-3xl md:text-5xl text-[#1A1A1B] font-bold mb-3">Contact sales?</h2>
+          <p class="text-[#454745] text-lg mb-8">Elevate your business with unmatched expertise</p>
+          <a :href="'mailto:hello@withcapera.com'" class="inline-flex text-lg pt-[64px] items-center text-[#3BAB22] font-medium">
             Email Us
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

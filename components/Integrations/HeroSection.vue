@@ -1,7 +1,7 @@
 <template>
 <NavbarSticky />
 <section class="p-4">
-  <section class="bg-[#1C5310] text-white pt-56 pb-16 rounded-3xl relative overflow-hidden">
+  <section class="bg-[#1C5310] text-white h-[130vh] pt-56 pb-16 rounded-3xl relative overflow-hidden">
     <div class="absolute inset-0 opacity-20">
       <div class="grid grid-cols-12 h-full">
         <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
@@ -62,7 +62,7 @@
         </button>
       </div>
 
-      <div class="lg:flex justify-center items-center mt-10">
+      <div class="lg:flex absolute  mx-auto justify-center items-center mt-10">
         <img src="@/assets/icons/hero-codes.svg" />
       </div>
     </div>

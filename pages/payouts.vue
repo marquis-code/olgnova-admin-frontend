@@ -16,7 +16,7 @@
       <!-- Instant Payouts,
 — instantly loyal customers -->
       <div class="container mx-auto px-4 relative">
-        <p class="text-center mb-2 opacity-90 uppercase">Global Payouts</p>
+        <p class="text-center text-[20px] mb-2 opacity-90 uppercase">Global Payouts</p>
         <div class="relative z-10 container mx-auto px-4 text-center">
         <h1 class="text-5xl lg:text-8xl md:text-8xl font-bold text-white mb-4">
           INSTANT PAYOUTS
@@ -28,7 +28,7 @@
         </h1>
         </div>
         <p 
-          class="text-center max-w-lg text-lg mx-auto leading-relaxed opacity-90"
+          class="text-center max-w-lg text-[20px] mx-auto leading-relaxed opacity-90"
           v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"
@@ -59,7 +59,7 @@
       <PayoutsCoverageSection />
       <PayoutsGlobalPayoutSection />
       <PayoutsStreamlinedProcessesSection />
-      <PayoutsIntegrationkkSection />
+      <!-- <PayoutsIntegrationSection /> -->
       <PayoutsShared />
       <div class="pt-32">
         <PlatformBenefits />
@@ -69,7 +69,7 @@
     <!-- Features Section -->
     <section id="features" class="py-20 bg-white">
       <div class="px-4">
-        <p class="text-center uppercase text-lg text-gray-600 mb-2">Integrations</p>
+        <p class="text-center uppercase text-[20px] font-medium text-gray-600 mb-2">Integrations</p>
         <h2
           class="text-4xl md:text-6xl py-4 font- max-w-4xl mx-auto text-center"
           v-motion
@@ -118,7 +118,7 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-3xl font-semibold my-6">API</h3>
+            <h3 class="text-5xl font-semibold my-6">API</h3>
             <p class="text-[#454745] leading-relaxed text-lg">
               Putting you in control of your payments. Customise our payout
               flows with your branding via our API. Automatically collect all
@@ -171,7 +171,7 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-3xl font-semibold my-6">Portal</h3>
+            <h3 class="text-5xl font-semibold my-6">Portal</h3>
             <p class="text-[#454745] leading-relaxed text-lg">
               Quickly unlock access to new markets by using our ready to go
               portal. Gain real-time insight into all of your payments, pull

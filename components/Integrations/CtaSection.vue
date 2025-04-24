@@ -4,10 +4,10 @@
     <section
       class="relative overflow-hidden  text-white py-16 px-4"
     >
-      <div class="max-w-5xl mx-auto relative z-10">
+      <div class="mx-auto relative z-10">
         <!-- Heading section -->
         <div class="text-center mb-12">
-          <h2 class="text-5xl sm:text-7xl font-bold mb-4 leading-tight">
+          <h2 class="text-5xl lg:text-8xl md:text-8xl font-bold mb-4">
             START BUILDING FOR FREE<br />TODAY
           </h2>
           <p class="text-lg mb-8">
