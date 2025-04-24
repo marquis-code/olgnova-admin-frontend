@@ -1,6 +1,6 @@
 <template>
   <main class="p-3">
-    <div class="min-h-screen bg-[#1C5210] relative rounded-3xl overflow-hidden">
+    <div class=" h-[120vh] relative rounded-3xl overflow-hidden">
       <!-- Grid background that matches the image exactly -->
       <div class="absolute inset-0 grid-background"></div>
       
@@ -30,7 +30,7 @@
     </div>
     
     <!-- Dashboard Mockup -->
-    <div class="relative z-10 container mx-auto px-4 flex justify-center -mt-24 lg:-mt-48">
+    <div class="relative z-10 container mx-auto px-4 flex justify-center -mt-24 lg:-mt-[360px]">
       <div class="relative w-full container">
         <img src="@/assets/img/capera-desktop.png" alt="Dashboard Mockup" class="w-full" />
       </div>

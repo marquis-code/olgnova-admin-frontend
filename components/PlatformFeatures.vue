@@ -1,6 +1,6 @@
 <template>
     <section class="max-w-6xl mx-auto px-4 py-16 text-center">
-      <h3 class="text-sm uppercase tracking-wider text-gray-800 mb-2">PLATFORM FEATURES</h3>
+      <h3 class="uppercase text-[20px] font-medium tracking-wider text-gray-800 mb-2">PLATFORM FEATURES sss</h3>
       
       <div class="mb-12">
         <h2 class="text-5xl md:text-6xl font-bold text-[#1A1A1B] mb-2">PAYMENTS</h2>

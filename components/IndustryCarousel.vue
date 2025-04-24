@@ -16,7 +16,7 @@
             :style="{ width: `${100 / visibleSlides}%` }"
           >
             <div 
-              class="bg-[#F7F7F7] p-8 rounded-lg transition-all duration-500 hover:shadow-lg h-full opacity-0 transform translate-y-4"
+              class="bg-[#F7F7F7] p-10 rounded-lg transition-all flex flex-col justify-between duration-500 hover:shadow-lg h-full opacity-0 transform translate-y-4"
               :class="{ [`animate-fade-in-up delay-${(index + 3) * 100}`]: isVisible }"
               @mouseenter="hoverCard = card.id"
               @mouseleave="hoverCard = null"
@@ -27,8 +27,8 @@
               >
                 <component :is="card.icon" class="h-full w-full" />
               </div>
-              <h3 class="text-2xl font-semibold mb-4">{{ card.title }}</h3>
-              <p class="text-gray-600 leading-relaxed">
+              <h3 class="text-5xl font-semibold my-[64px]">{{ card.title }}</h3>
+              <p class="text-[#454745] text-lg mt-10 leading-relaxed">
                 {{ card.description }}
               </p>
             </div>

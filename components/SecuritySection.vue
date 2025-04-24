@@ -18,12 +18,12 @@
         </div>
         
         <!-- Main heading -->
-        <h2 class="text-4xl text-[#1A1A1B] md:text-7xl font-semibold text-center mb-6">
+        <h2 class="text-5xl lg:text-8xl md:text-8xl text-[#1A1A1B] font-semibold text-center mb-6">
           SAFETY AND SECURITY<br>GUARANTEED
         </h2>
         
         <!-- Description text -->
-        <p class="text-center text-gray-700 max-w-xl mx-auto mb-16 leading-relaxed">
+        <p class="text-center text-lg text-gray-700 max-w-xl mx-auto mb-16 leading-relaxed">
           Your money and data are safe. With our PCI DSS Level-1, SOC 2 compliance and NDPA certification, your online transactions and personal information are securely protected.
         </p>
         
@@ -38,7 +38,7 @@
               </svg>
 
             </div>
-            <p class="text-lg leading-loose text-left">
+            <p class="text-2xl leading-relaxd text-left">
               Our dedicated fraud and security teams work to keep your money safe
             </p>
           </div>
@@ -52,7 +52,7 @@
 </svg>
 
             </div>
-            <p class="text-lg  leading-loose text-left">
+            <p class="text-2xl  leading-relaxd text-left">
               We use 2-factor authentication to protect your account
             </p>
           </div>
@@ -70,7 +70,7 @@
 </svg>
 
             </div>
-            <p class="text-lg leading-loose text-left">
+            <p class="text-2xl leading-relaxd text-left">
               We hold your money with licensed financial institutions
             </p>
           </div>

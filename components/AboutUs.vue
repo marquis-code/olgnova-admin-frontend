@@ -22,15 +22,15 @@
         
         <!-- Text content with rounded white background -->
         <div class="bg-[#F7F7F7] rounded-3xl p-8 md:p-12 mt-[-150px] relative z-10 mx-4 md:mx-8">
-          <p class="text-center text-gray-800 text-lg md:text-2xl leading-relaxed max-w-4xl mx-auto">
+          <p class="text-center text-[#1A1A1B] text-lg md:text-4xl leading-relaxed max-w-4xl mx-auto">
             Capera enables seamless cross-border money transfers, facilitates local account fund reception, reduces foreign exchange fees, simplifies reconciliation processes, and accelerates settlement times, empowering your business to expand smoothly into new markets.
           </p>
           
           <div class="flex justify-center mt-8">
-            <NuxtLink to="/about" class="inline-flex items-center text-[#3BAB22] font-medium">
-              About us
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <NuxtLink to="/about" class="inline-flex text-lg items-center text-[#3BAB22] font-medium">
+              <span class="pr-2">About us</span>
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.50005 6C9.50005 6 15.5 10.4189 15.5 12C15.5 13.5812 9.5 18 9.5 18" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </NuxtLink>
           </div>
