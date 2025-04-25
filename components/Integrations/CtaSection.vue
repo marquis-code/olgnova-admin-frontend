@@ -10,7 +10,7 @@
           <h2 class="text-5xl lg:text-8xl md:text-8xl font-bold mb-4">
             START BUILDING FOR FREE<br />TODAY
           </h2>
-          <p class="text-lg mb-8">
+          <p class="text-[16px] lg:text-lg mb-8">
             Access our platform API documentation to get started
           </p>
           <a

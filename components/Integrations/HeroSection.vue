@@ -38,7 +38,7 @@
         </div>
       </main> -->
       <p
-        class="text-center max-w-lg mx-auto leading-relaxed mb-12 opacity-90"
+        class="text-center max-w-lg mx-auto text-[18px] lg:text-[20px] leading-relaxed mb-12 opacity-90"
         v-motion
         :initial="{ opacity: 0 }"
         :enter="{ opacity: 1, transition: { delay: 600, duration: 800 } }"

@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="container mx-auto px-4 relative">
-        <p class="text-center mb-2 opacity-90 text-[20px] uppercase">Currency exchange</p>
+        <p class="text-center mb-2 opacity-90 text-[16px] lg:text-[20px] uppercase">Currency exchange</p>
         <div class="relative z-10 container mx-auto px-4 text-center">
         <h1 class="text-5xl lg:text-8xl md:text-8xl font-bold text-white mb-4">
           YOUR CURRENCY
@@ -82,8 +82,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-5xl max-w-xs py-[64px] font-semibold mb-4">Instant conversions</h3>
-            <p class="text-[#454745] text-lg leading-relaxed">Convert your funds in seconds with no hidden charges..</p>
+            <h3 class="text-[24px] lg:text-5xl text-[#1A1A1B] max-w-xs py-[32px] lg:py-[64px] font-bold lg:mb-4">Instant conversions</h3>
+            <p class="text-[#454745] text-[16px] font-[400] lg:text-lg leading-relaxed">Convert your funds in seconds with no hidden charges..</p>
           </div>
           
           <div 
@@ -100,8 +100,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-5xl max-w-xs py-[64px] font-semibold mb-4">Faster withdrawals</h3>
-            <p class="text-[#454745] text-lg leading-relaxed">Withdraw your funds to local accounts within minutes.</p>
+            <h3 class="text-[24px] lg:text-5xl text-[#1A1A1B] max-w-xs py-[32px] lg:py-[64px] font-bold lg:mb-4">Faster withdrawals</h3>
+            <p class="text-[#454745] text-[16px] font-[400] lg:text-lg leading-relaxed">Withdraw your funds to local accounts within minutes.</p>
           </div>
 
           <div 
@@ -118,8 +118,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-5xl max-w-xs py-[64px] font-semibold mb-4">The best FX rates</h3>
-            <p class="text-[#454745] text-lg leading-relaxed">Benefit from the most competitive rates available..</p>
+            <h3 class="text-[24px] lg:text-5xl text-[#1A1A1B] max-w-xs py-[32px] lg:py-[64px] font-bold lg:mb-4">The best FX rates</h3>
+            <p class="text-[#454745] text-[16px] font-[400] lg:text-lg leading-relaxed">Benefit from the most competitive rates available..</p>
           </div>
         </div>
       </div>

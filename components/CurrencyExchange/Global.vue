@@ -31,11 +31,11 @@
     
     <!-- Content -->
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-white text-2xl md:text-5xl font-medium mb-2">Save up to</h2>
+      <h2 class="text-white text-[36px] md:text-5xl font-medium mb-2">Save up to</h2>
       <div class="inline-flex items-center justify-center bg-black rounded-full px-6 py-2 mb-2">
-        <span class="text-white text-5xl md:text-9xl font-bold">80%</span>
+        <span class="text-white text-[96px] md:text-9xl font-bold">80%</span>
       </div>
-      <p class="text-white text-2xl md:text-5xl font-medium">on your currency exchanges</p>
+      <p class="text-white text-[36px] md:text-5xl font-medium">on your currency exchanges</p>
     </div>
   </section>
                                                                                                                                                                                             
