@@ -12,8 +12,8 @@
 </svg>
 
           </div>
-          <h3 class="text-2xl font-medium  text-[#1A1A1B] mb-2">24/7 customer support</h3>
-          <p class="text-[#454745] text-lg">We're here to help. Get in touch with any questions.</p>
+          <h3 class="lg:text-2xl text-lg font-medium  text-[#1A1A1B] mb-2">24/7 customer support</h3>
+          <p class="text-[#454745] text-[14px] lg:text-lg">We're here to help. Get in touch with any questions.</p>
         </div>
   
         <!-- Sandbox Account -->
@@ -31,8 +31,8 @@
 </svg>
 
           </div>
-          <h3 class="text-2xl font-medium text-[#1A1A1B] mb-2">Sandbox account</h3>
-          <p class="text-[#454745] text-lg">Test your integrations before going live.</p>
+          <h3 class="lg:text-2xl text-lg font-medium text-[#1A1A1B] mb-2">Sandbox account</h3>
+          <p class="text-[#454745] text-[14px] lg:text-lg">Test your integrations before going live.</p>
         </div>
   
         <!-- API Documentation -->
@@ -46,8 +46,8 @@
 </svg>
 
           </div>
-          <h3 class="text-2xl font-medium text-[#1A1A1B] mb-2">API documentation</h3>
-          <p class="text-[#454745] text-lg">Learn how to implement and make the most of our API.</p>
+          <h3 class="lg:text-2xl text-lg font-medium text-[#1A1A1B] mb-2">API documentation</h3>
+          <p class="text-[#454745] text-[14px] lg:text-lg">Learn how to implement and make the most of our API.</p>
         </div>
   
         <!-- API Tokens -->
@@ -60,7 +60,7 @@
 
           </div>
           <h3 class="text-2xl font-medium text-[#1A1A1B] mb-2">API tokens</h3>
-          <p class="text-[#454745] text-lg">Easily create and manage your personal tokens.</p>
+          <p class="text-[#454745] text-[14px] lg:text-lg">Easily create and manage your personal tokens.</p>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@
       <div class="relative z-10 space-y-20">
         <!-- Heading -->
         <h1 class="text-white uppercase text-5xl lg:text-8xl md:text-8xl font-bold text-center leading-tight mb-6">
-          The possibilities are<br />endless.
+          The possibilities are endless.
         </h1>
         
                                                                                                                                                                                           
@@ -17,7 +17,7 @@
         </div>
 
          <div class="grid grid-cols-1 md:grid-cols-2 mt-10 max-w-7xl mx-auto lg:mt-0 lg:grid-cols-3 gap-6 py-6">
-          <div class=" text-white max-w-xs text-lg" v-for="(item, idx) in possibilitiesList" :key="idx">
+          <div class=" text-white max-w-xs text-[16px] lg:text-lg" v-for="(item, idx) in possibilitiesList" :key="idx">
             {{item}}
          </div>
          </div>                                                                                                                                                                             

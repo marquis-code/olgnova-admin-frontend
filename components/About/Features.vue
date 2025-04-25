@@ -1,6 +1,6 @@
 <template>
     <section class="py-20 px-4 md:px-8">
-      <h2 class="text-3xl md:text-4xl lg:text-6xl font-medium  text-center mb-16 max-w-6xl mx-auto leading-relaxed">
+      <h2 class="text-[28px] md:text-4xl lg:text-6xl font-medium  text-center mb-16 max-w-6xl mx-auto leading-relaxed">
         We're redefining global payments to enable the businesses of tomorrow.
       </h2>
       
@@ -17,9 +17,9 @@
             </div>
           </div>
           
-          <h3 class="text-5xl max-w-sm text-[#1A1A1B] py-[64px] font-bold">Transparent prices</h3>
+          <h3 class="text-[24px] lg:text-5xl max-w-sm text-[#1A1A1B] py-[32px] lg:py-[64px] font-bold">Transparent prices</h3>
           
-          <p class="text-[#454745] text-lg pt-10">
+          <p class="text-[#454745] text-[16px] font-[400px] lg:text-lg">
             Stay informed with our transparent rates. Enjoy competitive exchange rates and minimal fees, no surprises.
           </p>
         </div>
@@ -36,9 +36,9 @@
             </div>
           </div>
           
-          <h3 class="text-5xl max-w-sm text-[#1A1A1B] py-[64px] font-bold">Faster settlement</h3>
+          <h3 class="text-[24px] lg:text-5xl max-w-sm text-[#1A1A1B] py-[32px] lg:py-[64px] font-bold">Faster settlement</h3>
           
-          <p class="text-[#454745] text-lg pt-10">
+          <p class="text-[#454745] text-[16px] font-[400px] lg:text-lg">
             We value your hard-earned money. Our transfers are safe and fast, reaching recipients in seconds.
           </p>
         </div>
@@ -57,9 +57,9 @@
             </div>
           </div>
           
-          <h3 class="text-5xl max-w-sm text-[#1A1A1B] py-[64px] font-bold">Global access</h3>
+          <h3 class="text-[24px] lg:text-5xl max-w-sm text-[#1A1A1B] py-[32px] lg:py-[64px] font-bold">Global access</h3>
           
-          <p class="text-[#454745] text-lg pt-10">
+          <p class="text-[#454745] text-[16px] font-[400px] lg:text-lg">
             Send and receive money across 60+ countries in 10+ currencies. Get funds in your local bank account(s).
           </p>
         </div>

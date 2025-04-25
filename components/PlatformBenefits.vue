@@ -1,6 +1,6 @@
 <template>
 <main>
-    <section class="max-w-7xl mx-auto px-6 pt-20">
+    <section class="max-w-7xl mx-auto px-6">
       <h2 class="text-[16px] lg:text-[20px] text-[#1A1A1B] pb-20 font-medium text-center">PLATFORM BENEFITS</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
