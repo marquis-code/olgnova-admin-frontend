@@ -135,7 +135,7 @@
                   class="text-[#1A1A1B]  bg-white py-0 w-1/2  focus:outline-none"
                 />
 
-                <p class="-ml-4 lg:-ml-9">{{ sourceCurrency }}</p>
+                <p class="">{{ sourceCurrency }}</p>
                 </div>
             </div>
             <span class="text-[#454745] font-light">Total amount we'll convert</span>
