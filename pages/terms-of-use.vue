@@ -33,7 +33,7 @@
             </h1>
             
             <div class="text-[#1A1A1B] space-y-6 terms-content">
-              <p class="text-[#1A1A1B] mb-8">Effective Date: [Insert Date]</p>
+              <p class="text-[#1A1A1B] mb-8">Effective Date: 25th April 2025.</p>
               
               <p>These Terms and Conditions ("Terms") govern your access to and use of Capera Limited's mobile application and services platform. By using our App, you agree to these Terms.</p>
               
@@ -102,8 +102,7 @@
                 <p>
                   Capera Limited<br>
                   42, Local Airport Road, Ikeja, Lagos – Nigeria<br>
-                  Email: <a href="mailto:founders@withcapera.com" class="text-primary-600 hover:underline">founders@withcapera.com</a><br>
-                  Phone: +234 806 812 0887
+                  Email: <a href="mailto:hello@withcapera.com" class="text-primary-600 hover:underline">hello@withcapera.com</a><br>
                 </p>
               </section>
             </div>
