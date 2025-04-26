@@ -12,7 +12,7 @@
         <div class="bg-[#F7F7F7] rounded-2xl p-8">
           <h2 class="text-[24px] md:text-5xl text-[#1A1A1B] font-bold mb-3">New to Capera?</h2>
           <p class="text-[#454745] text-[16px] lg:text-lg lg:mb-8 py-[32px]">Send us questions, comments, or a poem.</p>
-          <a href="mailto:someone@example.com" class="inline-flex text-lg lg:pt-[64px] items-center text-[#3BAB22] font-medium">
+          <a href="mailto:hello@withcapera.com" class="inline-flex text-lg lg:pt-[64px] items-center text-[#3BAB22] font-medium">
             Email Us
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#3BAB22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

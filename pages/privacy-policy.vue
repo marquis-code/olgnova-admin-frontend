@@ -19,7 +19,7 @@
             </h1>
             
             <div class="text-[#1A1A1B] space-y-6 policy-content">
-              <p class="text-[#1A1A1B] mb-8">Effective Date: [Insert Date]</p>
+              <p class="text-[#1A1A1B] mb-8">Effective Date: 25th April 2025.</p>
               
               <p>Capera Limited ("Capera", "we", "our", or "us") is committed to protecting the privacy of individuals who use our mobile application and related services (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.</p>
               
@@ -106,8 +106,7 @@
                 <p>
                   Capera Limited<br>
                   42, Local airport Road, Ikeja, Lagos<br>
-                  Email: <a href="mailto:Hello@withcapera.com" class="text-primary-600 hover:underline">Hello@withcapera.com</a><br>
-                  Phone: +234 806 812 0887
+                  Email: <a href="mailto:hello@withcapera.com" class="text-primary-600 hover:underline">hello@withcapera.com</a><br>
                 </p>
               </section>
             </div>
