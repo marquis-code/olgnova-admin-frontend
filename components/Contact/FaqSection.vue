@@ -62,7 +62,7 @@
     {
       question: 'What currencies does Capera support?',
       answer: [
-        'Capera supports a wide range of currencies for international transfers. Our platform currently handles major currencies including USD, EUR, GBP, JPY, CAD, NGN, and many others. We are continuously expanding our currency support to serve more markets globally.'
+        'Capera supports a wide range of currencies for international transfers. Our platform currently handles major currencies including USD, EUR, GBP, CYN, CAD, NGN, and many others. We are continuously expanding our currency support to serve more markets globally.'
       ],
       isOpen: false
     }
