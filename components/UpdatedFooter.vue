@@ -56,8 +56,8 @@
         <div>
           <h3 class="f text-[#454745] mb-3">Legal</h3>
           <ul class="space-y-1.5">
-            <li><a href="#" class="text-[#1A1A1B] ">Terms & Conditions</a></li>
-            <li><a href="#" class="text-[#1A1A1B] ">Privacy Policy</a></li>
+            <li><NuxtLink to="/terms-of-use" class="text-[#1A1A1B] ">Terms & Conditions</NuxtLink></li>
+            <li><NuxtLink to="/privacy-policy" class="text-[#1A1A1B] ">Privacy Policy</NuxtLink></li>
             <li><a href="#" class="text-[#1A1A1B] ">Regulatory</a></li>
           </ul>
         </div>
