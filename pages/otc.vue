@@ -34,14 +34,15 @@
         Access a decentralized network to buy and sell directly with Capera, offering flexibility, customization, and access to unique financial instruments.
         </p>
         <div class="flex justify-center mb-16">
-          <button 
-            class="bg-[#3BAB22] hover:bg-green-500 text-white px-8 py-3.5 rounded-full transition-all transform"
+          <a 
+            href="mailto:hello@withcapera.com"
+            class="bg-[#3BAB22] block hover:bg-green-500 text-white px-8 py-3.5 rounded-full transition-all transform"
             v-motion
             :initial="{ opacity: 0, scale: 0.8 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
           >
             Talk to us
-          </button>
+          </a>
         </div>
         
          
@@ -202,7 +203,7 @@
           </button>
         </div> -->
         <div class="flex justify-center mb-16">
-        <a href="#" class="inline-flex text-lg items-center text-white font-medium hover:underline">
+        <a href="mailto:hello@withcapera.com" class="inline-flex text-lg items-center text-white font-medium hover:underline">
           Talk to us
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.50005 6C9.50005 6 15.5 10.4189 15.5 12C15.5 13.5812 9.5 18 9.5 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

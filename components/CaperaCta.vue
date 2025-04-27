@@ -40,9 +40,9 @@
           <button class="px-8 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition-colors">
             Get started
           </button>
-          <button class="px-8 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors">
+          <a href="mailto:hello@withcapera.com" class="px-8 py-3 block bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors">
             Contact Sales
-          </button>
+          </a>
         </div>
       </div>
     </section>

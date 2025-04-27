@@ -65,10 +65,15 @@
     },
   })
   
-  function handleClick(action: { onClick?: () => void }) {
-    if (action.onClick) {
-      action.onClick()
-    }
+  function handleClick(action: { onClick?: () => void, text: string }) {
+  if (action.text === 'Talk to us') {
+    window.location.href = 'mailto:hello@withcapera.com'; // replace with your actual email
+    return; // optionally prevent further execution
   }
+
+  if (action.onClick) {
+    action.onClick();
+  }
+}
   </script>
   
