@@ -37,14 +37,15 @@
         Instant Payouts give your customers exactly what they want when they want it. Whether it's refunds, withdrawals or earnings — we send it in seconds.
         </p>
         <div class="flex justify-center mb-16 mt-10">
-          <button 
-            class="bg-green-600 text-white px-8 py-3.5 rounded-full transition-all transform hover:scale-105"
+          <a 
+            href="mailto:hello@withcapera.com"
+            class="bg-green-600 block text-white px-8 py-3.5 rounded-full transition-all transform hover:scale-105"
             v-motion
             :initial="{ opacity: 0, scale: 0.8 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 500 } }"
           >
             Talk to us
-          </button>
+          </a>
         </div>
         
         <div class="flex justify-center items-center">

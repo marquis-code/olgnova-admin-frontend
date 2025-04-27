@@ -22,9 +22,9 @@
           <button class="bg-[#3BAB22] text-white font-medium px-6 py-4 rounded-full transition-colors lg:w-full">
             Create account
           </button>
-          <button class="bg-white hover:bg-gray-100 text-gray-800 font-medium px-6 py-4 rounded-full transition-colors lg:w-full">
+          <a href="mailto:hello@withcapera.com" class="bg-white block hover:bg-gray-100 text-gray-800 font-medium px-6 py-4 rounded-full transition-colors lg:w-full">
             Contact Sales
-          </button>
+          </a>
         </div>
       </div>
     </div>
