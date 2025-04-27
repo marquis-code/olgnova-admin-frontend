@@ -2,14 +2,15 @@
 <NavbarSticky />
 <section class="p-4">
   <section class="bg-[#1C5310] text-white h-[130vh] pt-56 pb-16 rounded-3xl relative overflow-hidden">
-    <div class="absolute inset-0 opacity-20">
+    <div class="absolute inset-0 grid-background"></div>
+    <!-- <div class="absolute inset-0 opacity-20">
       <div class="grid grid-cols-12 h-full">
         <div v-for="i in 12" :key="i" class="border-r border-white/10"></div>
       </div>
       <div class="grid grid-rows-12 h-full absolute inset-0">
         <div v-for="i in 12" :key="i" class="border-b border-white/10"></div>
       </div>
-    </div>
+    </div> -->
     <!-- Introducing the   -->
     <!-- — capera open API -->
     <div class="container mx-auto px-4 relative">
@@ -73,3 +74,15 @@
 <script setup lang="ts">
 import Navbar from "../Navbar.vue";
 </script>
+
+<style>
+.grid-background {
+  background-color: #1C5210; /* Match the base color */
+  background-image: url('/assets/icons/bg-mesh.svg'); /* Replace with the actual path */
+  /* background-size: 100px 100px; */
+  /* background-position: center center; */
+  /* background-repeat: repeat; */
+  z-index: -0.5;
+}
+
+</style>

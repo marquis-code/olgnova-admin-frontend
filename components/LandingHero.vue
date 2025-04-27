@@ -1,6 +1,6 @@
 <template>
   <main class="p-3">
-    <div class=" h-[120vh] relative rounded-3xl overflow-hidden">
+  <div class=" h-[120vh] bg-[#1C5210] relative rounded-3xl overflow-hidden">
       <!-- Grid background that matches the image exactly -->
       <div class="absolute inset-0 grid-background"></div>
       
@@ -46,11 +46,10 @@ import NavbarSticky from './NavbarSticky.vue';
 /* Grid background that matches the image exactly */
 .grid-background {
   background-color: #1C5210; /* Match the base color */
-  background-image: 
-    linear-gradient(to right, rgba(76, 175, 80, 0.15) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(76, 175, 80, 0.15) 1px, transparent 1px);
-  background-size: 100px 100px; /* Adjust grid size to match image */
-  background-position: center center; /* Center the grid */
+  background-image: url('/assets/icons/bg-mesh.svg'); /* Replace with the actual path */
+  /* background-size: 100px 100px; */
+  /* background-position: center center; */
+  /* background-repeat: repeat; */
   z-index: 0;
 }
 
