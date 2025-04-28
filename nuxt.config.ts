@@ -14,19 +14,19 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Capera - Make money move globally",
+      title: "Capera - Move Money Globally",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "Make money move globally" },
+        { name: "description", content: "Move Money Globally" },
         { name: "format-detection", content: "telephone=no" },
         { name: "keywords", content: "Capera, Fintech, Finance, Global Payments, Money Transfer" },
         { name: "robots", content: "index, follow" },
 
         // Open Graph Meta Tags
-        { property: "og:title", content: "Capera - Make money move globally" },
-        { property: "og:description", content: "Make money move globally." },
+        { property: "og:title", content: "Capera - Move Money Globally" },
+        { property: "og:description", content: "Move Money Globally." },
         { property: "og:image", content: "/images/capera-og-image.jpg" },
         { property: "og:url", content: "https://www.capera.com" },
         { property: "og:type", content: "website" },
@@ -34,8 +34,8 @@ export default defineNuxtConfig({
       
         // Twitter Cards
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "Capera - Make money move globally" },
-        { name: "twitter:description", content: "Make money move globally." },
+        { name: "twitter:title", content: "Capera - Move Money Globally" },
+        { name: "twitter:description", content: "Move Money Globally." },
         { name: "twitter:image", content: "/images/capera-twitter-image.jpg" },
         { name: "twitter:site", content: "@capera" },
       ],
