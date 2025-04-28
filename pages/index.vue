@@ -56,13 +56,13 @@ import IndustryCarousel from '../components/IndustryCarousel.vue';
 
 // Basic page metadata
 definePageMeta({
-  title: 'CAPERA - Make money move globally',
+  title: 'CAPERA - Move Money Globally',
   description: 'Access top-tier global payment solutions with a single contract and API integration. Simplify cross-border transactions, currency exchange, and international payments.'
 })
 
 // Enhanced SEO with useHead for basic head elements
 useHead({
-  title: 'CAPERA - Make money move globally',
+  title: 'CAPERA - Move Money Globally',
   titleTemplate: '%s | Simplify Cross-Border Transactions',
   link: [
     {
@@ -78,11 +78,11 @@ useHead({
 
 // Comprehensive SEO meta tags with useSeoMeta
 useSeoMeta({
-  title: 'CAPERA - Make money move globally',
+  title: 'CAPERA - Move Money Globally',
   description: 'Access top-tier global payment solutions with a single contract and API integration. Simplify cross-border transactions, currency exchange, and international payments with CAPERA.',
   
   // OpenGraph meta tags for social sharing
-  ogTitle: 'CAPERA - Make money move globally',
+  ogTitle: 'CAPERA - Move Money Globally',
   ogDescription: 'Access top-tier global payment solutions with a single contract and API integration. Join other businesses using CAPERA for seamless cross-border transactions.',
   ogImage: 'https://yourdomain.com/images/capera-homepage-og.jpg',
   ogUrl: 'https://yourdomain.com',
@@ -91,7 +91,7 @@ useSeoMeta({
   
   // Twitter Card meta tags
   twitterCard: 'summary_large_image',
-  twitterTitle: 'CAPERA - Make money move globally',
+  twitterTitle: 'CAPERA - Move Money Globally',
   twitterDescription: 'Access top-tier global payment solutions with a single contract and API integration. Join other businesses using CAPERA for seamless cross-border transactions.',
   twitterImage: 'https://yourdomain.com/images/capera-homepage-og.jpg',
   
