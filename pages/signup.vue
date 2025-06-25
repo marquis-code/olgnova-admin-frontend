@@ -1,12 +1,12 @@
 <template>
     <div class="min-h-screen flex">
       <!-- Left Side - Carousel Animation -->
-      <div class="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 relative overflow-hidden">
+      <div class="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-green-600 via-teal-600 to-blue-800 relative overflow-hidden">
         <!-- Animated Background Elements -->
         <div class="absolute inset-0">
-          <div class="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
-          <div class="absolute bottom-32 right-16 w-24 h-24 bg-white/5 rounded-full animate-bounce"></div>
-          <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white/15 rounded-full animate-ping"></div>
+          <div class="absolute top-16 right-20 w-40 h-40 bg-white/10 rounded-full animate-pulse"></div>
+          <div class="absolute bottom-20 left-16 w-28 h-28 bg-white/5 rounded-full animate-bounce"></div>
+          <div class="absolute top-1/3 right-1/4 w-20 h-20 bg-white/15 rounded-full animate-ping"></div>
         </div>
   
         <!-- Carousel Content -->
@@ -39,20 +39,56 @@
         </div>
       </div>
   
-      <!-- Right Side - Login Form -->
+      <!-- Right Side - Signup Form -->
       <div class="w-full lg:w-1/2 flex items-center justify-center p-8 bg-gray-50">
         <div class="max-w-md w-full">
           <!-- Logo -->
           <div class="text-center mb-8">
-            <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-teal-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
               <span class="text-white font-bold text-2xl">O</span>
             </div>
-            <h1 class="text-3xl font-bold text-gray-900">Welcome Back</h1>
-            <p class="text-gray-600 mt-2">Sign in to your admin dashboard</p>
+            <h1 class="text-3xl font-bold text-gray-900">Join Olgnova</h1>
+            <p class="text-gray-600 mt-2">Create your admin account</p>
           </div>
   
-          <!-- Login Form -->
-          <form @submit.prevent="handleLogin" class="space-y-6">
+          <!-- Signup Form -->
+          <form @submit.prevent="handleSignup" class="space-y-6">
+            <!-- Name Fields -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="transform transition-all duration-300 hover:scale-105">
+                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">
+                  First Name
+                </label>
+                <input
+                  id="firstName"
+                  v-model="signupForm.firstName"
+                  type="text"
+                  required
+                  :class="[
+                    'w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300',
+                    error ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                  ]"
+                  placeholder="John"
+                />
+              </div>
+              <div class="transform transition-all duration-300 hover:scale-105">
+                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">
+                  Last Name
+                </label>
+                <input
+                  id="lastName"
+                  v-model="signupForm.lastName"
+                  type="text"
+                  required
+                  :class="[
+                    'w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300',
+                    error ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                  ]"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+  
             <!-- Email Field -->
             <div class="transform transition-all duration-300 hover:scale-105">
               <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
@@ -62,14 +98,14 @@
                 <Icon name="heroicons:envelope" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
                   id="email"
-                  v-model="loginForm.email"
+                  v-model="signupForm.email"
                   type="email"
                   required
                   :class="[
-                    'w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300',
+                    'w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300',
                     error ? 'border-red-300 bg-red-50' : 'border-gray-300'
                   ]"
-                  placeholder="admin@olgnova.com"
+                  placeholder="john@example.com"
                 />
               </div>
             </div>
@@ -83,14 +119,14 @@
                 <Icon name="heroicons:lock-closed" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
                   id="password"
-                  v-model="loginForm.password"
+                  v-model="signupForm.password"
                   :type="showPassword ? 'text' : 'password'"
                   required
                   :class="[
-                    'w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300',
+                    'w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300',
                     error ? 'border-red-300 bg-red-50' : 'border-gray-300'
                   ]"
-                  placeholder="Enter your password"
+                  placeholder="Create a strong password"
                 />
                 <button
                   type="button"
@@ -102,6 +138,27 @@
               </div>
             </div>
   
+            <!-- Role Selection -->
+            <div class="transform transition-all duration-300 hover:scale-105">
+              <label for="role" class="block text-sm font-medium text-gray-700 mb-2">
+                Role
+              </label>
+              <select
+                id="role"
+                v-model="signupForm.role"
+                required
+                :class="[
+                  'w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300',
+                  error ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                ]"
+              >
+                <option value="">Select a role</option>
+                <option value="admin">Admin</option>
+                <option value="editor">Editor</option>
+                <option value="viewer">Viewer</option>
+              </select>
+            </div>
+  
             <!-- Error Message -->
             <transition name="shake">
               <div v-if="error" class="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center space-x-3">
@@ -110,41 +167,43 @@
               </div>
             </transition>
   
-            <!-- Remember Me -->
-            <div class="flex items-center justify-between">
-              <label class="flex items-center">
-                <input
-                  v-model="loginForm.rememberMe"
-                  type="checkbox"
-                  class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-                />
-                <span class="ml-2 text-sm text-gray-600">Remember me</span>
+            <!-- Terms Agreement -->
+            <div class="flex items-start space-x-3">
+              <input
+                id="terms"
+                v-model="signupForm.agreeToTerms"
+                type="checkbox"
+                required
+                class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500 mt-1"
+              />
+              <label for="terms" class="text-sm text-gray-600">
+                I agree to the
+                <a href="#" class="text-green-600 hover:text-green-500">Terms of Service</a>
+                and
+                <a href="#" class="text-green-600 hover:text-green-500">Privacy Policy</a>
               </label>
-              <NuxtLink to="/auth/forgot-password" class="text-sm text-blue-600 hover:text-blue-500">
-                Forgot password?
-              </NuxtLink>
             </div>
   
             <!-- Submit Button -->
             <button
               type="submit"
-              :disabled="loading"
-              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200 disabled:opacity-50 disabled:cursor-not-allowed transform transition-all duration-300 hover:scale-105 active:scale-95"
+              :disabled="loading || !signupForm.agreeToTerms"
+              class="w-full bg-gradient-to-r from-green-600 to-teal-600 text-white py-3 px-4 rounded-lg font-medium hover:from-green-700 hover:to-teal-700 focus:ring-4 focus:ring-green-200 disabled:opacity-50 disabled:cursor-not-allowed transform transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <div v-if="loading" class="flex items-center justify-center space-x-2">
                 <div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                <span>Signing in...</span>
+                <span>Creating account...</span>
               </div>
-              <span v-else>Sign In</span>
+              <span v-else>Create Account</span>
             </button>
           </form>
   
-          <!-- Sign Up Link -->
+          <!-- Login Link -->
           <div class="text-center mt-8">
             <p class="text-gray-600">
-              Don't have an account?
-              <NuxtLink to="/signup" class="text-blue-600 hover:text-blue-500 font-medium">
-                Sign up here
+              Already have an account?
+              <NuxtLink to="/" class="text-green-600 hover:text-green-500 font-medium">
+                Sign in here
               </NuxtLink>
             </p>
           </div>
@@ -157,7 +216,7 @@
   import { ref, onMounted, onUnmounted } from 'vue'
   import { useRouter } from 'vue-router'
   import Icon from '@/components/Icon.vue'
-  import { useLogin } from '@/composables/modules/auth/useLogin'
+  import { useSignup } from '@/composables/modules/auth/useSignup'
   import { definePageMeta } from '#imports'
   
   // Meta
@@ -168,13 +227,16 @@
   
   // Composables
   const router = useRouter()
-  const { loading, error, success, login } = useLogin()
+  const { loading, error, success, signup } = useSignup()
   
   // Reactive data
-  const loginForm = ref({
+  const signupForm = ref({
+    firstName: '',
+    lastName: '',
     email: '',
     password: '',
-    rememberMe: false
+    role: '',
+    agreeToTerms: false
   })
   
   const showPassword = ref(false)
@@ -183,24 +245,24 @@
   // Carousel data
   const slides = [
     {
-      icon: 'heroicons:chart-bar',
-      title: 'Powerful Analytics',
-      description: 'Get deep insights into your platform performance with comprehensive analytics and reporting tools.'
+      icon: 'heroicons:user-plus',
+      title: 'Easy Onboarding',
+      description: 'Get started quickly with our streamlined registration process and intuitive interface.'
     },
     {
-      icon: 'heroicons:users',
-      title: 'User Management',
-      description: 'Efficiently manage users, roles, and permissions with our intuitive admin interface.'
+      icon: 'heroicons:cog-6-tooth',
+      title: 'Powerful Tools',
+      description: 'Access comprehensive admin tools to manage your platform efficiently and effectively.'
     },
     {
-      icon: 'heroicons:shield-check',
-      title: 'Secure & Reliable',
-      description: 'Built with security in mind, featuring audit logs and comprehensive access controls.'
+      icon: 'heroicons:chart-pie',
+      title: 'Real-time Insights',
+      description: 'Monitor your platform performance with live analytics and detailed reporting.'
     },
     {
-      icon: 'heroicons:rocket-launch',
-      title: 'Scale with Confidence',
-      description: 'Designed to grow with your business, handling everything from startups to enterprise.'
+      icon: 'heroicons:globe-alt',
+      title: 'Global Reach',
+      description: 'Scale your operations worldwide with our robust and reliable infrastructure.'
     }
   ]
   
@@ -220,18 +282,21 @@
   }
   
   // Methods
-  const handleLogin = async () => {
+  const handleSignup = async () => {
     try {
-      await login({
-        email: loginForm.value.email,
-        password: loginForm.value.password
+      await signup({
+        firstName: signupForm.value.firstName,
+        lastName: signupForm.value.lastName,
+        email: signupForm.value.email,
+        password: signupForm.value.password,
+        role: signupForm.value.role as 'admin' | 'editor' | 'viewer'
       })
       
       if (success.value) {
         await router.push('/dashboard')
       }
     } catch (err) {
-      console.error('Login failed:', err)
+      console.error('Signup failed:', err)
     }
   }
   

@@ -14,30 +14,45 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Capera - Move Money Globally",
+      title: "OLGNova | Admin",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "Move Money Globally" },
         { name: "format-detection", content: "telephone=no" },
-        { name: "keywords", content: "Capera, Fintech, Finance, Global Payments, Money Transfer" },
-        { name: "robots", content: "index, follow" },
-
-        // Open Graph Meta Tags
-        { property: "og:title", content: "Capera - Move Money Globally" },
-        { property: "og:description", content: "Move Money Globally." },
-        { property: "og:image", content: "/images/capera-og-image.jpg" },
-        { property: "og:url", content: "https://www.capera.com" },
+        {
+          name: "description",
+          content:
+            "OLGNova - Health research publications and resources for healthcare professionals in Africa",
+        },
+        {
+          name: "keywords",
+          content:
+            "health research, publications, Africa, healthcare, medical research",
+        },
+        { name: "author", content: "OLGNova" },
+        { property: "og:title", content: "OLGNova" },
+        {
+          property: "og:description",
+          content:
+            "Health research publications and resources for healthcare professionals in Africa",
+        },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Capera" },
-      
-        // Twitter Cards
+        { property: "og:url", content: "https://olgnova.com" },
+        { property: "og:image", content: "https://olgnova.com/icon.jpg" },
+
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "Capera - Move Money Globally" },
-        { name: "twitter:description", content: "Move Money Globally." },
-        { name: "twitter:image", content: "/images/capera-twitter-image.jpg" },
-        { name: "twitter:site", content: "@capera" },
+        { property: "twitter:url", content: "https://olgnova.com" },
+        { name: "twitter:title", content: "olgnova" },
+        {
+          name: "twitter:description",
+          content:
+            "Health research publications and resources for healthcare professionals in Africa",
+        },
+        {
+          name: "twitter:image",
+          content: "https://olgnova.com/icon.jpg",
+        },
       ],
       link: [
         { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
