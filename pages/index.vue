@@ -45,7 +45,8 @@
           <!-- Logo -->
           <div class="text-center mb-8">
             <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
-              <span class="text-white font-bold text-2xl">O</span>
+              <img src="@/assets/img/logo.jpeg" class="rounded-xl" />
+              <!-- <span class="text-white font-bold text-2xl">O</span> -->
             </div>
             <h1 class="text-3xl font-bold text-gray-900">Welcome Back</h1>
             <p class="text-gray-600 mt-2">Sign in to your admin dashboard</p>
@@ -69,7 +70,7 @@
                     'w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300',
                     error ? 'border-red-300 bg-red-50' : 'border-gray-300'
                   ]"
-                  placeholder="admin@olgnova.com"
+                  placeholder="admin@medlabconvo.com"
                 />
               </div>
             </div>
@@ -182,25 +183,25 @@
   
   // Carousel data
   const slides = [
+  {
+      icon: 'heroicons:academic-cap',
+      title: 'Leading Change',
+      description: 'We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large.'
+    },
     {
-      icon: 'heroicons:chart-bar',
-      title: 'Powerful Analytics',
-      description: 'Get deep insights into your platform performance with comprehensive analytics and reporting tools.'
+      icon: 'heroicons:light-bulb',
+      title: 'Career Clarity',
+      description: 'MedLabConvo gave me clarity about my career path. The mentorship and resources have transformed the way I approach learning and professional growth. I now feel equipped to excel in the health ecosystem.'
+    },
+    {
+      icon: 'heroicons:star',
+      title: 'Game-Changer',
+      description: 'MedLabConvo has been a game-changer for me. From knowledge gained through webinars to career mentorship, MedLabConvo has helped me grow professionally and personally.'
     },
     {
       icon: 'heroicons:users',
-      title: 'User Management',
-      description: 'Efficiently manage users, roles, and permissions with our intuitive admin interface.'
-    },
-    {
-      icon: 'heroicons:shield-check',
-      title: 'Secure & Reliable',
-      description: 'Built with security in mind, featuring audit logs and comprehensive access controls.'
-    },
-    {
-      icon: 'heroicons:rocket-launch',
-      title: 'Scale with Confidence',
-      description: 'Designed to grow with your business, handling everything from startups to enterprise.'
+      title: 'Global Collaboration',
+      description: 'MedLabConvo fosters collaboration among medical lab scientists worldwide. It\'s a great place to connect, learn, and contribute to the advancement of our profession.'
     }
   ]
   

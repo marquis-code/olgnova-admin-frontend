@@ -22,6 +22,14 @@ export type AuthUser = {
   role: string
 }
 
+export type ForgotPasswordPayload = {
+  email: string
+}
+
+export type ResetPasswordPayload = {
+  password: string
+}
+
 export type AuthResponse = {
   access_token: string
   user: AuthUser
@@ -37,5 +45,19 @@ export const auth_api = {
   $_signup: async (userData: SignupData) => {
     const url = `/users/signup`
     return GATEWAY_ENDPOINT.post(url, userData)
+  },
+  $_verify_email: async (token: string) => {
+    const url = `/auth/verify-email/${token}`
+    return GATEWAY_ENDPOINT.get(url)
+  },
+
+  $_forgot_password: async (payload: ForgotPasswordPayload) => {
+    const url = `/auth/forgot-password`
+    return GATEWAY_ENDPOINT.post(url, payload)
+  },
+
+  $_reset_password: async (token: string, payload: ResetPasswordPayload) => {
+    const url = `/auth/reset-password/${token}`
+    return GATEWAY_ENDPOINT.post(url, payload)
   },
 }

@@ -10,7 +10,7 @@
       >
         <div
           v-if="modelValue"
-          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          class="fixed inset-0 bg-black bg-opacity-50 flex backdrop-blur-lg items-center justify-center z-50 p-4"
           @click="closeModal"
         >
           <Transition
@@ -24,7 +24,7 @@
             <div
               v-if="modelValue"
               :class="[
-                'bg-white rounded-xl shadow-xl max-h-[90vh] overflow-y-auto',
+                'bg-white rounded-xl shadow-xl w-full max-h-[90vh] overflow-y-auto',
                 size === 'sm' ? 'max-w-md' :
                 size === 'lg' ? 'max-w-2xl' :
                 size === 'xl' ? 'max-w-4xl' :

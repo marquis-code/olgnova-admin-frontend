@@ -7,7 +7,7 @@
           <div class="flex items-center mt-2">
             <span :class="[
               'text-sm font-medium',
-              change.startsWith('+') ? 'text-green-600' : 'text-red-600'
+              change?.startsWith('+') ? 'text-green-600' : 'text-red-600'
             ]">
               {{ change }}
             </span>

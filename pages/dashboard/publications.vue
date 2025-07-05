@@ -1,5 +1,5 @@
 <template>
-    <TeamsModule />
+    <PublicationsList />
   </template>
   
   <script setup lang="ts">

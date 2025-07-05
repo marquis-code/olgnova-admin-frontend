@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "OLGNova | Admin",
+      title: "medlabconvo | Admin",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
@@ -23,27 +23,27 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "OLGNova - Health research publications and resources for healthcare professionals in Africa",
+            "medlabconvo - Health research publications and resources for healthcare professionals in Africa",
         },
         {
           name: "keywords",
           content:
             "health research, publications, Africa, healthcare, medical research",
         },
-        { name: "author", content: "OLGNova" },
-        { property: "og:title", content: "OLGNova" },
+        { name: "author", content: "medlabconvo" },
+        { property: "og:title", content: "medlabconvo" },
         {
           property: "og:description",
           content:
             "Health research publications and resources for healthcare professionals in Africa",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://olgnova.com" },
-        { property: "og:image", content: "https://olgnova.com/icon.jpg" },
+        { property: "og:url", content: "https://medlabconvo.com" },
+        { property: "og:image", content: "https://medlabconvo.com/icon.jpg" },
 
         { name: "twitter:card", content: "summary_large_image" },
-        { property: "twitter:url", content: "https://olgnova.com" },
-        { name: "twitter:title", content: "olgnova" },
+        { property: "twitter:url", content: "https://medlabconvo.com" },
+        { name: "twitter:title", content: "medlabconvo" },
         {
           name: "twitter:description",
           content:
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://olgnova.com/icon.jpg",
+          content: "https://medlabconvo.com/icon.jpg",
         },
       ],
       link: [

@@ -58,11 +58,11 @@
               <div class="flex items-center space-x-6 text-sm text-slate-500 mb-4">
                 <div class="flex items-center space-x-1">
                   <Icon name="heroicons:user" class="w-4 h-4" />
-                  <span>{{ publication.authors?.join(', ') || 'No authors' }}</span>
+                  <span>{{ publication?.authors }}</span>
                 </div>
                 <div class="flex items-center space-x-1">
                   <Icon name="heroicons:calendar" class="w-4 h-4" />
-                  <span>{{ formatDate(publication.createdAt) }}</span>
+                  <span>{{ formatDate(publication?.createdAt) }}</span>
                 </div>
                 <div v-if="publication.journal" class="flex items-center space-x-1">
                   <Icon name="heroicons:book-open" class="w-4 h-4" />

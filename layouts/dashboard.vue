@@ -18,19 +18,23 @@
         sidebarOpen && isMobile ? 'translate-x-0 w-64' : '-translate-x-full w-64 lg:translate-x-0'
       ]"
     >
+    
       <!-- Logo Section -->
       <div class="flex items-center justify-between p-4 border-b border-slate-200">
         <div v-if="sidebarOpen || !isMobile" class="flex items-center space-x-3">
-          <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+          <img src="@/assets/img/logo.jpeg" class="h-10 w-10 rounded-lg" />
+          <!-- <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
             <span class="text-white font-bold text-sm">O</span>
-          </div>
-          <span v-if="sidebarOpen || !isMobile" class="font-bold text-xl text-slate-800">Olgnova</span>
+          </div> -->
+          <!-- <span v-if="sidebarOpen || !isMobile" class="font-bold text-xl text-slate-800">medlabconvo</span> -->
         </div>
+        
         <button 
           @click="toggleSidebar"
           class="p-2 rounded-lg lg:hidden hover:bg-slate-100 transition-colors"
         >
-          <Icon name="heroicons:bars-3" class="w-5 h-5 text-slate-600" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+          <!-- <Icon name="heroicons:bars-3" class="w-5 h-5 text-slate-600" /> -->
         </button>
       </div>
 
@@ -50,7 +54,7 @@
             <Icon :name="item.icon" class="w-5 h-5 flex-shrink-0" />
             <span v-if="sidebarOpen || !isMobile" class="ml-3 font-medium">{{ item.name }}</span>
             <span 
-              v-if="(sidebarOpen || !isMobile) && item.badge" 
+              v-if="(sidebarOpen || !isMobile) && item.badge && item.badge > 0" 
               class="ml-auto px-2 py-1 text-xs rounded-full bg-red-100 text-red-600"
             >
               {{ item.badge }}
@@ -95,13 +99,13 @@
             
             <div>
               <h1 class="text-xl lg:text-2xl font-bold text-slate-800">{{ currentPageTitle }}</h1>
-              <p class="text-slate-600 mt-1 text-sm lg:text-base hidden sm:block">{{ currentPageDescription }}</p>
+              <p class="text-slate-600 text-sm lg:text-base hidden sm:block">{{ currentPageDescription }}</p>
             </div>
           </div>
           
           <div class="flex items-center space-x-2 lg:space-x-4">
             <!-- Search - Hidden on small screens -->
-            <div class="relative hidden md:block">
+            <!-- <div class="relative hidden md:block">
               <Icon name="heroicons:magnifying-glass" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400" />
               <input
                 v-model="globalSearch"
@@ -109,20 +113,20 @@
                 placeholder="Search..."
                 class="pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
-            </div>
+            </div> -->
             
             <!-- Notifications -->
-            <button class="relative p-2 rounded-lg hover:bg-slate-100 transition-colors">
+            <!-- <button class="relative p-2 rounded-lg hover:bg-slate-100 transition-colors">
               <Icon name="heroicons:bell" class="w-5 h-5 text-slate-600" />
               <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></span>
-            </button>
+            </button> -->
             
             <!-- User Menu -->
             <div class="flex items-center space-x-2 lg:space-x-3">
               <div class="w-8 h-8 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
                 <span class="text-white font-medium text-sm">{{ userInitials }}</span>
               </div>
-              <span class="font-medium text-slate-700 hidden sm:block">{{ currentUser?.firstName }} {{ currentUser?.lastName }}</span>
+              <span class="font-medium text-slate-700 hidden sm:block">{{ user?.firstName }} {{ user?.lastName }}</span>
             </div>
           </div>
         </div>
@@ -179,6 +183,30 @@ import Icon from '~/components/Icon.vue'
 import Modal from '~/components/Modal.vue'
 import { useLogout } from '@/composables/modules/auth/useLogout'
 import { useUser } from '@/composables/modules/auth/user'
+import { useGetUsers } from '@/composables/modules/users/useGetUsers'
+import { useGetEnquiries } from '@/composables/modules/enquires/useGetEnquiries'
+import { useGetSubscriptions } from '@/composables/modules/subscriptions/useGetSubscriptions'
+import { useGetBlogs } from '@/composables/modules/blogs/useGetBlogs'
+import { useGetTeamMembers } from '@/composables/modules/teams/useGetTeamMembers'
+import { useGetPublications } from '@/composables/modules/publications/useGetPublications'
+import { useGetLabCasts } from '@/composables/modules/labcast/useGetLabCasts'
+import { useGetProducts } from '@/composables/modules/products/useGetProducts'
+import { useGetPrograms } from '@/composables/modules/programs/useGetPrograms'
+import { useGetForms } from '@/composables/modules/forms/useGetForms'
+import { useGetAuditLogs } from '@/composables/modules/audit/useGetAuditLogs'
+
+// Composables
+const { users, getUsers } = useGetUsers()
+const { enquiries, getEnquiries } = useGetEnquiries()
+const { subscriptions, getSubscriptions } = useGetSubscriptions()
+const { blogs, getBlogs } = useGetBlogs()
+const { teamMembers, getTeamMembers } = useGetTeamMembers()
+const { publications, getPublications } = useGetPublications()
+const { labcasts, getLabCasts } = useGetLabCasts()
+const { products, getProducts } = useGetProducts()
+const { programs, getPrograms } = useGetPrograms()
+const { forms, getForms } = useGetForms()
+const { auditLogs, loading: loadingActivities, getAuditLogs } = useGetAuditLogs()
 
 // Composables
 const router = useRouter()
@@ -193,24 +221,80 @@ const globalSearch = ref('')
 const globalLoading = ref(false)
 const showLogoutModal = ref(false)
 
-
-// Navigation items
-const navigationItems = [
+// Navigation items - Now as computed property to be reactive
+const navigationItems = computed(() => [
   { name: 'Dashboard', path: '/dashboard', icon: 'heroicons:home', badge: null },
-  { name: 'Users', path: '/dashboard/users', icon: 'heroicons:users', badge: null },
-  { name: 'Enquiries', path: '/dashboard/enquiries', icon: 'heroicons:envelope', badge: '5' },
-  { name: 'Subscriptions', path: '/dashboard/subscriptions', icon: 'heroicons:newspaper', badge: null },
-  { name: 'Team Members', path: '/dashboard/teams', icon: 'heroicons:user-group', badge: null },
-  { name: 'Publications', path: '/dashboard/publications', icon: 'heroicons:document-text', badge: '2' },
-  { name: 'Programs', path: '/dashboard/programs', icon: 'heroicons:academic-cap', badge: null },
-  { name: 'Blogs', path: '/dashboard/blogs', icon: 'heroicons:pencil-square', badge: null },
-  { name: 'Forms', path: '/dashboard/forms', icon: 'heroicons:clipboard-document-list', badge: null },
-  { name: 'Audit Logs', path: '/dashboard/audit', icon: 'heroicons:shield-check', badge: null },
-]
+  { 
+    name: 'Users', 
+    path: '/dashboard/users', 
+    icon: 'heroicons:users', 
+    badge: users.value?.length || 0
+  },
+  { 
+    name: 'Enquiries', 
+    path: '/dashboard/enquiries', 
+    icon: 'heroicons:envelope', 
+    badge: enquiries.value?.length || 0
+  },
+  { 
+    name: 'Subscriptions', 
+    path: '/dashboard/subscriptions', 
+    icon: 'heroicons:newspaper', 
+    badge: subscriptions.value?.length || 0
+  },
+  { 
+    name: 'Team Members', 
+    path: '/dashboard/teams', 
+    icon: 'heroicons:user-group', 
+    badge: teamMembers.value?.length || 0
+  },
+  { 
+    name: 'Publications', 
+    path: '/dashboard/publications', 
+    icon: 'heroicons:document-text', 
+    badge: publications.value?.length || 0
+  },
+  { 
+    name: 'LabCast', 
+    path: '/dashboard/labcast', 
+    icon: 'heroicons:document-text', 
+    badge: labcasts.value?.length || 0
+  },
+  { 
+    name: 'Products', 
+    path: '/dashboard/products', 
+    icon: 'heroicons:document-text', 
+    badge: products.value?.length || 0
+  },
+  { 
+    name: 'Programs', 
+    path: '/dashboard/programs', 
+    icon: 'heroicons:academic-cap', 
+    badge: programs.value?.length || 0
+  },
+  { 
+    name: 'Blogs', 
+    path: '/dashboard/blogs', 
+    icon: 'heroicons:pencil-square', 
+    badge: blogs.value?.length || 0
+  },
+  { 
+    name: 'Forms', 
+    path: '/dashboard/forms', 
+    icon: 'heroicons:clipboard-document-list', 
+    badge: forms.value?.length || 0
+  },
+  { 
+    name: 'Audit Logs', 
+    path: '/dashboard/audit', 
+    icon: 'heroicons:shield-check', 
+    badge: auditLogs.value?.length || 0
+  },
+])
 
 // Computed properties
 const currentPageTitle = computed(() => {
-  const item = navigationItems.find(item => item.path === route.path)
+  const item = navigationItems.value.find(item => item.path === route.path)
   return item?.name || 'Dashboard'
 })
 
@@ -221,9 +305,11 @@ const currentPageDescription = computed(() => {
     '/dashboard/enquiries': 'Handle customer inquiries and support requests',
     '/dashboard/subscriptions': 'Manage newsletter subscriptions and communications',
     '/dashboard/teams': 'Organize team members and their roles',
+    '/dashboard/labcast': 'Overview of your LabCast episodes and analytics',
     '/dashboard/publications': 'Manage research publications and academic content',
     '/dashboard/programs': 'Create and manage educational programs',
     '/dashboard/blogs': 'Publish and manage blog content',
+    '/dashboard/products': 'Manage your books, courses, and digital products.value',
     '/dashboard/forms': 'Create dynamic forms and collect responses',
     '/dashboard/audit': 'Monitor system activities and security logs'
   }
@@ -270,19 +356,30 @@ const confirmLogout = async () => {
 // Provide global loading state
 provide('globalLoading', globalLoading)
 
-// Lifecycle hooks
+// Load all data on mount
 onMounted(async () => {
   // Check mobile on mount
   checkMobile()
   window.addEventListener('resize', checkMobile)
   
-  // Get current user
-  // try {
-  //   await getCurrentUser()
-  // } catch (error) {
-  //   console.error('Failed to get current user:', error)
-  //   await router.push('/auth/login')
-  // }
+  // Load all data
+  try {
+    await Promise.all([
+      getUsers(),
+      getEnquiries(),
+      getSubscriptions(),
+      getBlogs(),
+      getTeamMembers(),
+      getPublications(),
+      getLabCasts(),
+      getProducts(),
+      getPrograms(),
+      getForms(),
+      getAuditLogs()
+    ])
+  } catch (error) {
+    console.error('Failed to load data:', error)
+  }
 })
 
 onUnmounted(() => {

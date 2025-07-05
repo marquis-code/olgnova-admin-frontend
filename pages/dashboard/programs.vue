@@ -1,5 +1,5 @@
 <template>
-    <ProgramsModule />
+    <ProgramsList />
   </template>
   
   <script setup lang="ts">
